@@ -10,6 +10,10 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
+  "usingComponents": {
+    "topbar": "/pages/components/topbar/topbar",
+    "t-icon": "tdesign-miniprogram/icon/icon"
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
