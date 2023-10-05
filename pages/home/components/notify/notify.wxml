@@ -1,2 +1,10 @@
 <!--pages/home/components/notify/notify.wxml-->
-<text>notify</text>
+<view class="body flex">
+  <view class="label">
+    <t-icon name="loudspeaker" />
+  </view>
+  <view>:</view>
+  <view>
+    <text>{{ content }}</text>
+  </view>
+</view>

@@ -1,1 +1,4 @@
 /* pages/home/components/notify/notify.wxss */
+.flex {
+  display: flex;
+}
