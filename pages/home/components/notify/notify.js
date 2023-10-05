@@ -16,6 +16,7 @@ Component({
    * 组件的初始数据
    */
   data: {
+    isInit: false,
     bkg: '/home/notify_bg.png'
   },
 
@@ -35,6 +36,9 @@ Component({
     init() {
       const bkg = app.globalData.globalImgUrl + this.data.bkg
       this.setData({bkg})
+      this.setData({
+        isInit: true
+      })
     }
   }
 })
