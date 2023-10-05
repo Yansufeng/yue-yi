@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isInit: false,
     logo: {
       top: 0,
       height: 0,
@@ -14,7 +15,8 @@ Page({
     },
     imgs: {
       logo: 'logo.png', 
-      bkg: 'bkg.png'
+      bkg: 'bkg.png',
+      map: 'map.png'
     }
     // imgMap: {}
   },
@@ -51,6 +53,10 @@ Page({
     const imgs = this.data.imgs
     for(let k in imgs) imgs[k] = baseUrl + imgs[k]
     this.setData({imgs})
+
+    this.setData({
+      isInit: true
+    })
   },
 
   /**

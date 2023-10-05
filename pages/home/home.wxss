@@ -57,3 +57,13 @@
   border-radius: 20rpx;
   margin-top: -20rpx;
 }
+
+.map {
+  text-align: center;
+  margin: 8.5vw 0;
+}
+
+.map image {
+  width: 91vw;
+  height: 24vw;
+}

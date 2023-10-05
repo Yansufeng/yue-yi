@@ -6,7 +6,12 @@
     style="margin-top: {{ logo.top }}px; line-height: {{ logo.height }}px; margin-left: {{ logo.left }}px;"
   >
     <view class="logo-img">
-      <t-image src="{{ imgs.logo }}" width="52rpx" height="52rpx" />
+      <t-image 
+        wx:if="{{ isInit }}" 
+        src="{{ imgs.logo }}" 
+        width="52rpx" 
+        height="52rpx" 
+      />
     </view>
     <text class="title">悦艺·永定</text>
   </view>
@@ -22,16 +27,26 @@
   </view>
 
 	<view class="bkg">
-    <t-image src="{{ imgs.bkg }}" mode="aspectFill"/>
+    <t-image wx:if="{{ isInit }}" src="{{ imgs.bkg }}" mode="aspectFill"/>
   </view>
 </view>
 
 <view class="content">
-	<view class="nav"></view>
-	<view class="map"></view>
-	<view class="heritage"></view>
-	<view class="culture"></view>
-	<view class="serve"></view>
+	<view class="nav">
+    <navbar />
+  </view>
+	<view class="map">
+    <t-image wx:if="{{ isInit }}" src="{{ imgs.map }}" mode="aspectFit" />
+  </view>
+	<view class="heritage">
+    <heritage />
+  </view>
+	<view class="culture">
+    <culture />
+  </view>
+	<view class="serve">
+    <serve />
+  </view>
 </view>
 
-<tabbar />
+<!-- <tabbar /> -->

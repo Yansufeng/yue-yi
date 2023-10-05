@@ -2,6 +2,9 @@
   "navigationStyle": "custom",
   "usingComponents": {
     "notify": "./components/notify/notify",
-    "tabbar": "/pages/components/tabbar/tabbar"
+    "navbar": "./components/navbar/navbar",
+    "heritage": "./components/heritage/heritage",
+    "culture": "./components/culture/culture",
+    "serve": "./components/serve/serve"
   }
 }
