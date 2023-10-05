@@ -1,1 +1,22 @@
 /* pages/home/components/navbar/navbar.wxss */
+.body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 25vw;
+  height: 26vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 300;
+}
+
+.card image {
+  width: 12vw;
+  height: 12vw;
+  margin-bottom: 16rpx;
+}

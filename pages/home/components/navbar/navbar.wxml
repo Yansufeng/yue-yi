@@ -1,2 +1,9 @@
 <!--pages/home/components/navbar/navbar.wxml-->
-<text>pages/home/components/navbar/navbar.wxml</text>
+<view class="body" wx:if="{{ isInit }}">
+  <view class="card" wx:key="title" wx:for="{{ list }}">
+    <t-image src="{{ item.cover }}" />
+    <view>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</view>
