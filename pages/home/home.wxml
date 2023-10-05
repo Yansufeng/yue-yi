@@ -1,2 +1,37 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view class="header" style="height: calc(73vw - {{ logo.top }}px);">
+	<!-- <topbar /> -->
+  <view 
+    class="logo flex"
+    style="margin-top: {{ logo.top }}px; line-height: {{ logo.height }}px; margin-left: {{ logo.left }}px;"
+  >
+    <view class="logo-img">
+      <t-image src="{{ imgs.logo }}" width="52rpx" height="52rpx" />
+    </view>
+    <text class="title">悦艺·永定</text>
+  </view>
+
+  <view class="search-body">
+    <view class="search">
+      <t-icon name="search" size="32rpx" color="#FFF" bind:click="doSearch" />
+    </view>
+  </view>
+
+  <view class="notify">
+    <notify />
+  </view>
+
+	<view class="bkg">
+    <t-image src="{{ imgs.bkg }}" mode="aspectFill"/>
+  </view>
+</view>
+
+<view class="content">
+	<view class="nav"></view>
+	<view class="map"></view>
+	<view class="heritage"></view>
+	<view class="culture"></view>
+	<view class="serve"></view>
+</view>
+
+<tabbar />

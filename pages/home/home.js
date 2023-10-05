@@ -1,18 +1,56 @@
 // pages/home/home.js
+const app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    logo: {
+      top: 0,
+      height: 0,
+      left: 0
+    },
+    imgs: {
+      logo: 'logo.png', 
+      bkg: 'bkg.png'
+    }
+    // imgMap: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.init()
+  },
 
+  /**
+   * 初始化相关数据
+   */
+  init() {
+    const capsule = wx.getMenuButtonBoundingClientRect()
+    const windowW = wx.getSystemInfoSync().windowWidth
+    const logo = {
+      top: capsule.top,
+      height: capsule.height,
+      left: windowW - capsule.right
+    }
+    this.setData({logo})
+
+    const baseUrl = app.globalData.globalImgUrl + '/home/'
+    // const imgMap = new Map([
+    //   ['logo', 'logo.png'], 
+    //   ['bkg','bkg.png']
+    // ])
+    // imgMap.forEach((v, k) => {
+    //   imgMap.set(k, baseUrl + v)
+    // })
+    // this.setData({imgMap})
+    const imgs = this.data.imgs
+    for(let k in imgs) imgs[k] = baseUrl + imgs[k]
+    this.setData({imgs})
   },
 
   /**
