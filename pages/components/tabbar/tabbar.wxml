@@ -1,4 +1,38 @@
 <!--pages/components/tabbar/tabbar.wxml-->
 <view class="body">
-  <text> tabbar </text>
+  <view class="btns flex">
+    <view class="btns-i flex">
+      <view 
+        wx:for="{{ tabsL }}" 
+        wx:key="pagePath"
+        class="btn {{ item.id == active ? 'active' : '' }}"
+        bindtap="onTap({{ item.id }})"
+      >
+        <view class="icon">
+          <t-icon name="{{ item.icon }}" color="{{ item.id == active ? '#B01F1A' : 'rgba(0, 0, 0, 0.6)' }}" size="40rpx"/>
+        </view>
+        <text>{{ item.text }}</text>
+      </view>
+    </view>
+
+    <view class="btns-i flex">
+      <view 
+        wx:for="{{ tabsR }}" 
+        wx:key="pagePath"
+        class="btn {{ item.id == active ? 'active' : '' }}"
+        bindtap="onTap({{ item.id }})"
+      >        
+        <view class="icon">
+          <t-icon name="{{ item.icon }}" color="{{ item.id == active ? '#B01F1A' : 'rgba(0, 0, 0, 0.6)' }}" size="40rpx"/>
+        </view>
+        <text>{{ item.text }}</text></view>
+    </view>
+  </view>
+  <view class="qr">
+    <view class="qr-body">
+      <view class="qr-btn">
+        <t-icon name="qrcode" color="#FFF" size="54rpx"/>
+      </view>
+    </view>
+  </view>
 </view>
