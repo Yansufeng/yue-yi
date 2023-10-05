@@ -2,3 +2,15 @@
 .flex {
   display: flex;
 }
+
+.body {
+  background-size: 100% 100%;
+  padding: 2.2vw 5.2vw;
+  color: #FFF;
+  font-size: 32rpx;
+  line-height: 32rpx;
+}
+
+.line {
+  margin: 0 8rpx;
+}

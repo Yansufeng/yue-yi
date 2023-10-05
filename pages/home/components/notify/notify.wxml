@@ -1,9 +1,9 @@
 <!--pages/home/components/notify/notify.wxml-->
-<view class="body flex">
+<view class="body flex" style="background-image: url({{bkg}})">
   <view class="label">
-    <t-icon name="loudspeaker" />
+    <t-icon name="loudspeaker" color="#FFF" size="40rpx"/>
   </view>
-  <view>:</view>
+  <view class="line">:</view>
   <view>
     <text>{{ content }}</text>
   </view>

@@ -53,7 +53,7 @@
 
 .content {
   min-height: calc(100vh - 73vw + 20rpx);
-  background-color: #FBEEC7;
+  background-color: #F8F4E6;
   border-radius: 20rpx;
   margin-top: -20rpx;
 }
