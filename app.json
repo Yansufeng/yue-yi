@@ -4,8 +4,15 @@
     "pages/map/map",
     "pages/resource/resource",
     "pages/user/user",
-    "pages/index/index",
-    "pages/logs/logs"
+
+    "pages/column/book",
+    "pages/column/show",
+    "pages/column/activity",
+    "pages/column/training",
+    "pages/column/media",
+    "pages/column/local",
+    "pages/column/celebrity",
+    "pages/column/volunteer"
   ],
   "window":{
     "backgroundTextStyle":"light",

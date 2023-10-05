@@ -11,7 +11,13 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    list: [
+      {
+        cover: 'book.png',
+        title: '好书推荐',
+        path: ''
+      }
+    ]
   },
 
   /**
