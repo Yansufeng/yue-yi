@@ -5,14 +5,14 @@
     "pages/resource/resource",
     "pages/user/user",
 
-    "pages/column/book",
-    "pages/column/show",
-    "pages/column/activity",
-    "pages/column/training",
-    "pages/column/media",
-    "pages/column/local",
-    "pages/column/celebrity",
-    "pages/column/volunteer"
+    "pages/column/book/book",
+    "pages/column/show/show",
+    "pages/column/activity/activity",
+    "pages/column/training/training",
+    "pages/column/media/media",
+    "pages/column/local/local",
+    "pages/column/celebrity/celebrity",
+    "pages/column/volunteer/volunteer"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,4 +1,4 @@
-// pages/column/celebrity.js
+// pages/column/local/local.js
 Page({
 
   /**

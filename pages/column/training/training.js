@@ -1,4 +1,4 @@
-// pages/column/local.js
+// pages/column/training/training.js
 Page({
 
   /**

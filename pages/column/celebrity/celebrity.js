@@ -1,4 +1,4 @@
-// pages/column/activity.js
+// pages/column/celebrity/celebrity.js
 Page({
 
   /**

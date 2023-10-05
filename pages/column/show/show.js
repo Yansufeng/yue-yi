@@ -1,4 +1,4 @@
-// pages/column/volunteer.js
+// pages/column/show/show.js
 Page({
 
   /**

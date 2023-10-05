@@ -1,4 +1,4 @@
-// pages/column/media.js
+// pages/column/book/book.js
 Page({
 
   /**

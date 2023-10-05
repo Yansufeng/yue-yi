@@ -1,4 +1,4 @@
-// pages/column/show.js
+// pages/column/activity/activity.js
 Page({
 
   /**
