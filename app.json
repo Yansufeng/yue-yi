@@ -1,6 +1,9 @@
 {
   "pages":[
     "pages/home/home",
+    "pages/map/map",
+    "pages/resource/resource",
+    "pages/user/user",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -10,9 +13,29 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
+  "tabBar": {
+    "custom": true,
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页"
+    }, 
+    {
+      "pagePath": "pages/map/map",
+      "text": "文化地图"
+    }, 
+    {
+      "pagePath": "pages/resource/resource",
+      "text": "资源推荐"
+    }, 
+    {
+      "pagePath": "pages/user/user",
+      "text": "我的"
+    }]
+  },
   "usingComponents": {
     "topbar": "/pages/components/topbar/topbar",
-    "t-icon": "tdesign-miniprogram/icon/icon"
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-image": "tdesign-miniprogram/image/image"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

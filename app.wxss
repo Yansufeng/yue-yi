@@ -1,4 +1,8 @@
 /**app.wxss**/
+.flex {
+  display: flex;
+}
+
 .container {
   height: 100%;
   display: flex;

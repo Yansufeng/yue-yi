@@ -14,6 +14,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    globalImgUrl: 'https://yansufeng.github.io/img/yuanxi/yue-yi'
   }
 })
