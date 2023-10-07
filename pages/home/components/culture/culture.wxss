@@ -77,7 +77,7 @@
   background-color: var(--bkg);
 }
 
-.tab text {
+.tab-title {
   z-index: 3;
   position: relative;
 }

@@ -39,7 +39,7 @@ Component({
     },
 
     getTabs() {
-            const tabs = [
+      const tabs = [
         {
           id: '0',
           title: '全部',
@@ -67,22 +67,22 @@ Component({
         },
         {
           id: '1',
-          title: '通知',
+          title: '通2',
           code: '0'
         },
         {
           id: '2',
-          title: '活动',
+          title: '活2',
           code: '0'
         },
         {
           id: '3',
-          title: '演出',
+          title: '演2',
           code: '0'
         },
         {
           id: '4',
-          title: '培训',
+          title: '培2',
           code: '0'
         }
       ]
@@ -103,7 +103,7 @@ Component({
           cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
           tag: '培训',
           tagType: 0,
-          title: '春风伏笔——公益书法行动',
+          title: '春风伏笔——公益书法行动2',
           loc: '永定区文化馆',
           date: '2023.06.21'
         },
@@ -111,7 +111,7 @@ Component({
           cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
           tag: '培训',
           tagType: 0,
-          title: '春风伏笔——公益书法行动',
+          title: '春风伏笔——公益书法行动3',
           loc: '永定区文化馆',
           date: '2023.06.21'
         }

@@ -10,7 +10,7 @@
   </view>
 </view>
 
-<view class="tabs" wx:if="{{ isInit }}">
+<view class="tabs">
   <scroll-view class="scroll-body" scroll-x >
     <view 
       wx:key="title" 
@@ -19,7 +19,7 @@
     >
       <view class="tab-bkg"></view>
       <view class="tab-bkg__c"></view>
-      <text>{{ item.title }}</text>
+      <text class="tab-title">{{ item.title }}</text>
     </view>
   </scroll-view>
 </view>

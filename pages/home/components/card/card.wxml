@@ -1,7 +1,7 @@
 <!--pages/home/components/card/card.wxml-->
 <view class="body">
   <view class="cover">
-    <t-image src="{{ info.cover }}" shape="round" />
+    <t-image class="img" src="{{ info.cover }}" shape="round" />
   </view>
 
   <view class="content">
