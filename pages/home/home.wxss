@@ -56,6 +56,12 @@
   background-color: #F8F4E6;
   border-radius: 20rpx;
   margin-top: -20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 25vw;
+}
+
+.item {
+  margin-bottom: 12vw;
 }
 
 .map {

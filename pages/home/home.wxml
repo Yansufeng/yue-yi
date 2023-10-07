@@ -38,13 +38,13 @@
 	<view class="map">
     <t-image wx:if="{{ isInit }}" src="{{ imgs.map }}" mode="aspectFit" />
   </view>
-	<view class="heritage">
+	<view class="heritage item">
     <heritage />
   </view>
-	<view class="culture">
+	<view class="culture item">
     <culture />
   </view>
-	<view class="serve">
+	<view class="serve item">
     <serve />
   </view>
 </view>
