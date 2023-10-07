@@ -1,1 +1,92 @@
 /* pages/home/components/culture/culture.wxss */
+
+.top {
+  width: 91vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.more {
+  display: flex;
+  color: #9B7437;
+  font-size: 28rpx;
+  line-height: 48rpx;
+}
+
+.more .right {
+  display: flex ;
+  align-items: center;
+}
+
+.tabs {
+  margin-top: 28rpx;
+}
+
+.scroll-body {
+  white-space: nowrap;
+}
+
+.tab {
+  position: relative;
+  display: inline-block;
+  width: 11.7vw;
+  height: 44rpx;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 44rpx;
+  margin-right: 20rpx;
+  color: #9B7437;
+  --bkg: #F8F4E6;
+}
+
+.tab-active {
+  color: #FFF;
+  --bkg: #B01F1A;
+}
+
+.tab:first-child {
+  margin-left: 4.5vw;
+}
+
+.tab-bkg {
+  position: absolute;
+  height: 44rpx;
+  width: 72rpx;
+  left: calc(5.85vw - 36rpx);
+  border: 1px solid #D0BFA5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: var(--bkg);
+}
+
+.tab-bkg__c {
+  position: absolute;
+  width: 11.7vw;
+  height: 32rpx;
+  border-left: 1px solid #D0BFA5;
+  border-right: 1px solid #D0BFA5;
+  border-radius: 32rpx;
+  box-sizing: border-box;
+  top: 6rpx;
+  background-color: var(--bkg);
+}
+
+.tab text {
+  z-index: 3;
+  position: relative;
+}
+
+.content {
+  margin-top: 7vw;
+}
+
+.card-body {
+  width: 91vw;
+  margin: 4vw auto;
+}
