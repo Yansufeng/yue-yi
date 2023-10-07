@@ -1,1 +1,81 @@
 /* pages/home/components/serve/serve.wxss */
+.top {
+  width: 91vw;
+  margin: 0 auto;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.content {
+  margin-top: 5.3vw;
+}
+
+.btns {
+  white-space: nowrap;
+}
+
+.btn {
+  width: 38.1vw;
+  height: 17.6vw;
+  display: inline-block;
+  position: relative;
+  margin-left: 3.73vw;
+}
+
+.btn:first-child {
+  margin-left: 4.5vw;
+}
+
+.btn .info {
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  color: #FFF;
+}
+
+.btn .bkg {
+  width: 38.1vw;
+  height: 17.6vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.btn .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80rpx;
+  height: 17.6vw;
+  margin-left: 32rpx;
+}
+
+.btn .logo-c {
+  position: absolute;
+  left: 38rpx;
+  height: 68rpx;
+  width: 68rpx;
+  box-sizing: border-box;
+  border-radius: 80rpx;
+  border: 1px solid #FFF;
+}
+
+.btn .logo-c2 {
+  position: absolute;
+  left: 32rpx;
+  height: 80rpx;
+  width: 80rpx;
+  box-sizing: border-box;
+  border-radius: 80rpx;
+  border: 1px solid #FFF;
+}
+
+.btn .title {
+  position: absolute;
+  right: 32rpx;
+  top: 0;
+  line-height: 17.6vw;
+  font-weight: 600;
+}

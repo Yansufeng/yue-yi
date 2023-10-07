@@ -1,2 +1,22 @@
 <!--pages/home/components/serve/serve.wxml-->
-<text>pages/home/components/serve/serve.wxml</text>
+<view class="top">
+  <view class="title">
+    <text>便民服务</text>
+  </view>
+</view>
+
+<view class="content" wx:if="{{ isInit }}">
+  <scroll-view class="btns" scroll-x>
+    <view class="btn" wx:for="{{ btns }}" wx:key="title">
+      <view class="info">
+        <view class="logo">
+          <t-icon name="{{ item.icon }}" size="48rpx" color="#FFF" />
+          <view class="logo-c"></view>
+          <view class="logo-c2"></view>
+        </view>
+        <view class="title">{{ item.title }}</view>
+      </view>
+      <t-image class="bkg" src="{{ item.bkg }}" />
+    </view>
+  </scroll-view>
+</view>
