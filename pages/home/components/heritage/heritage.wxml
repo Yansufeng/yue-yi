@@ -1,2 +1,25 @@
 <!--pages/home/components/heritage/heritage.wxml-->
-<text>pages/home/components/heritage/heritage.wxml</text>
+<view class="top">
+  <view class="title">
+    <text>非遗中心</text>
+  </view>
+
+  <view class="more">
+    <text>更多</text>
+    <t-icon class="right" name="chevron-right" color="#9B7437" size="32rpx" />
+  </view>
+</view>
+
+<view class="tabs">
+  <scroll-view class="scroll-body" scroll-x >
+    <view 
+      wx:key="title" 
+      wx:for="{{ tabs }}"
+      class="tab {{ item.id == active ? 'tab-active' : '' }}"
+    >
+      <view class="tab-bkg"></view>
+      <view class="tab-bkg__c"></view>
+      <text class="tab-title">{{ item.title }}</text>
+    </view>
+  </scroll-view>
+</view>
