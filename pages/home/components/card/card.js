@@ -6,14 +6,7 @@ Component({
   properties: {
     info: {
       type: Object,
-      value: {
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        tag: '培训',
-        tagType: 0,
-        title: '春风伏笔——公益书法行动',
-        loc: '永定区文化馆',
-        date: '2023.06.21'
-      }
+      value: {}
     }
   },
 
@@ -28,6 +21,7 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    // TODO 增加转跳
+    // TODO 增加标签区分
   }
 })
