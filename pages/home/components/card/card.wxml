@@ -1,0 +1,20 @@
+<!--pages/home/components/card/card.wxml-->
+<view class="body">
+  <view class="cover">
+    <t-image src="{{ info.cover }}" shape="round" />
+  </view>
+
+  <view class="content">
+    <view class="top">
+      <view class="tag">{{ info.tag }}</view>
+      <view class="title">
+        <text>{{ info.title }}</text>
+      </view>
+    </view>
+
+    <view class="info">
+      <view class="loc">{{ info.loc }}</view>
+      <view class="date">{{ info.date }}</view>
+    </view>
+  </view>
+</view>
