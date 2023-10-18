@@ -1,0 +1,12 @@
+<!--pages/home/components/cover/cover.wxml-->
+<view class="body">
+  <view class="name">
+    <text>{{ info.name }}</text>
+    <t-image wx:if="{{ isInit }}" class="name-bkg" src="{{ imgs.nameBkg }}" />
+  </view>
+
+  <view class="bkg">
+    <t-image class="bkg-img" shape="round" src="{{ info.cover }}" />
+    <t-image wx:if="{{ isInit }}" class="bkg-border" src="{{ imgs.border }}" />
+  </view>
+</view>

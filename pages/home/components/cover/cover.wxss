@@ -1,0 +1,64 @@
+/* pages/home/components/cover/cover.wxss */
+.body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.name {
+  position: absolute;
+  z-index: 2;
+}
+
+.bkg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.bkg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.bkg-border {
+  position: absolute;
+  top: 1.7%;
+  left: 1.7%;
+  width: 96.6%;
+  height: 96.6%;
+  z-index: 2;
+}
+
+.name {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 80rpx;
+  bottom: 34rpx;
+}
+
+.name text {
+  position: absolute;
+  z-index: 4;
+  line-height: 80rpx;
+  width: 100%;
+  text-align: center;
+  color: #FBEEC7;
+}
+
+.name-bkg {
+  width: 60%;
+  height: 80rpx;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  z-index: 3;
+}

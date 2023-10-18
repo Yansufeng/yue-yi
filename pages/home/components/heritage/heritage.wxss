@@ -84,3 +84,38 @@
   position: relative;
 }
 
+.content {
+  height: 92vw;
+  display: flex;
+  padding-top: 7vw;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.cover {
+  width: 64vw;
+  height: 85vw;
+  flex-shrink: 0;
+}
+
+.left {
+  position: absolute;
+  height: 78.4vw;
+  width: 59vw;
+  left: -44vw;
+  top: 10.5vw;
+}
+
+.now {
+  position: absolute;
+  right: 18vw;
+}
+
+.right {
+  position: absolute;
+  height: 78.4vw;
+  width: 59vw;
+  right: -44vw;
+  top: 10.5vw;
+}
+

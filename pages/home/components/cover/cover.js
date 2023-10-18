@@ -1,4 +1,4 @@
-// pages/home/components/heritage/heritage.js
+// pages/home/components/cover/cover.js
 const app = getApp()
 
 Component({
@@ -6,7 +6,13 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    info: {
+      type: Object,
+      value: {
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/heritage.png',
+        name: '张家界泼水龙'
+      }
+    }
   },
 
   /**
@@ -14,13 +20,11 @@ Component({
    */
   data: {
     isInit: false,
-    active: '0',
-    tabs: [],
-    list: [],
     imgs: {
-      border: 'heritage-border.png'
+      border: 'heritage-border.png',
+      nameBkg: 'heritage-name-bkg.png'
     }
-  },  
+  },
   
   /**
    * 生命周期
@@ -36,36 +40,11 @@ Component({
    */
   methods: {
     init() {
-      this.getTabs()
-      this.getList()
       this.initImgs()
       this.setData({
         isInit: true
       })
     },
-
-    getTabs() {
-      const tabs = [
-        {
-          id: '0',
-          title: '非遗项目',
-          code: '0'
-        },
-        {
-          id: '1',
-          title: '非遗传承人',
-          code: '0'
-        },
-        {
-          id: '2',
-          title: '非遗起源地',
-          code: '0'
-        }
-      ]
-      this.setData({tabs})
-    },
-  
-    getList() {},
 
     initImgs() {
       const base = app.globalData.globalImgUrl + '/home/'
