@@ -6,7 +6,8 @@
         wx:for="{{ tabsL }}" 
         wx:key="pagePath"
         class="btn {{ item.id == active ? 'active' : '' }}"
-        bindtap="onTap({{ item.id }})"
+        data-id="{{ item.id }}"
+        bindtap="onTap"
       >
         <view class="icon">
           <t-icon name="{{ item.icon }}" color="{{ item.id == active ? '#B01F1A' : 'rgba(0, 0, 0, 0.6)' }}" size="40rpx"/>
@@ -20,12 +21,14 @@
         wx:for="{{ tabsR }}" 
         wx:key="pagePath"
         class="btn {{ item.id == active ? 'active' : '' }}"
-        bindtap="onTap({{ item.id }})"
+        data-id="{{ item.id }}"
+        bindtap="onTap"
       >        
         <view class="icon">
           <t-icon name="{{ item.icon }}" color="{{ item.id == active ? '#B01F1A' : 'rgba(0, 0, 0, 0.6)' }}" size="40rpx"/>
         </view>
-        <text>{{ item.text }}</text></view>
+        <text>{{ item.text }}</text>
+      </view>
     </view>
   </view>
   <view class="qr">

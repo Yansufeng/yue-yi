@@ -18,7 +18,7 @@
   position: absolute;
   top: -4.8vw;
   width: 100vw;
-  z-index: 51;
+  /* z-index: 51; */
 }
 
 .qr-body {
@@ -55,7 +55,9 @@
 
 .btns-i {
   width: 36.9vw;
-  justify-content: space-between;
+  justify-content: space-between;    
+  position: relative;
+  z-index: 52;
 }
 
 .btn {

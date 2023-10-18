@@ -3,5 +3,6 @@
   "projectname": "yue-yi",
   "setting": {
     "compileHotReLoad": true
-  }
+  },
+  "libVersion": "3.1.3"
 }

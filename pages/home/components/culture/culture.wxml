@@ -10,7 +10,7 @@
   </view>
 </view>
 
-<view class="tabs">
+<view wx:if="{{ isInit }}" class="tabs">
   <scroll-view class="scroll-body" scroll-x >
     <view 
       wx:key="title" 
@@ -24,7 +24,7 @@
   </scroll-view>
 </view>
 
-<view class="content">
+<view wx:if="{{ isInit }}" class="content">
   <view class="card-body" wx:for="{{ list }}" wx:key="title">
     <card info="{{item}}" />
   </view>

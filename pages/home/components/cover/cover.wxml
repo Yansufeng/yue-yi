@@ -1,7 +1,7 @@
 <!--pages/home/components/cover/cover.wxml-->
 <view class="body">
   <view class="name">
-    <text>{{ info.name }}</text>
+    <text class="name-txt">{{ info.name }}</text>
     <t-image wx:if="{{ isInit }}" class="name-bkg" src="{{ imgs.nameBkg }}" />
   </view>
 

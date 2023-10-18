@@ -45,7 +45,7 @@
   bottom: 34rpx;
 }
 
-.name text {
+.name-txt {
   position: absolute;
   z-index: 4;
   line-height: 80rpx;
