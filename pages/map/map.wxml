@@ -1,2 +1,43 @@
 <!--pages/map/map.wxml-->
-<text>pages/map/map.wxml</text>
+<view class="body">
+  <view class="tabs">
+    <view 
+      class="tab {{ index == activeTab ? 'active' : '' }}"
+      wx:for="{{ tabs }}"
+      wx:key="code"
+      data-index="{{ index }}"
+      bindtap="onTab"
+    >{{ item.title }}</view>
+  </view>
+
+  <view class="map-body">
+    <map 
+      class="map" 
+      longitude="110.534846" 
+      latitude="29.119177" 
+      scale="8"
+    />
+  </view>
+
+  <view class="content">
+    <view class="subtabs">
+      <view 
+        class="{{ activeSubtab == 0 ? 'subtab' : 'subtab-2'}}" 
+        wx:for="{{ subtabs }}" 
+        wx:key="code"
+        data-index="{{ index }}"
+        bindtap="onSubtab"
+      >
+        {{ item.title }}
+      </view>
+      <view class="bkg">
+        <view class="top bkg-i"></view>
+        <view class="btn bkg-i"></view>
+      </view>
+    </view>
+
+    <view class="cards">
+      <cards cards="{{ cards }}"/>
+    </view>
+  </view>
+</view>

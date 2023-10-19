@@ -1,0 +1,45 @@
+/* pages/map/components/cards/cards.wxss */
+.card {
+  width: 91vw;
+  height: 30vw;
+  border-radius: 20rpx;
+  box-shadow: 1px 4px 8px 1px rgba(155, 116, 55, 0.08);
+  margin: 3.2vw auto;
+  display: flex;
+  padding: 3vw;
+  box-sizing: border-box;
+}
+
+.cover {
+  width: 32vw;
+  height: 24vw;
+}
+
+.content {
+  width: 53vw;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.time {
+  font-size: 28rpx;
+  font-weight: 300;
+}
+
+.dis {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.dis-icon {
+  margin-right: 4px;
+}

@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#FCF5E7",
+  "navigationBarTitleText": "文化地图",
+  "usingComponents": {
+    "cards": "./components/cards/cards"
+  }
 }

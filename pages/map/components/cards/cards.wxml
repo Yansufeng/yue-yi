@@ -1,0 +1,27 @@
+<!--pages/map/components/cards/cards.wxml-->
+<view class="body">
+  <view 
+    class="card"
+    wx:for="{{ cards }}"
+    wx:key="id"
+  >
+    <t-image class="cover" src="{{ item.cover }}" shape="round" />
+
+    <view class="content">
+      <view class="title">
+        <text>{{ item.title }}</text>
+      </view>
+
+      <view class="time">
+        <text>{{ item.time }}</text>
+      </view>
+
+      <view class="dis">
+        <t-icon class="dis-icon" name="arrow-right-up-circle" color="#D0A669" />
+        <text>距我：</text>
+        <text>{{ item.dis }}</text>
+        <text>km</text>
+      </view>
+    </view>
+  </view>
+</view>
