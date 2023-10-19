@@ -1,1 +1,16 @@
 /* pages/resource/resource.wxss */
+.body {
+  background-color: #FCF5E7;
+  min-height: 100vh;
+  padding: 4.5vw;
+  padding-bottom: 27vw;
+}
+
+.search {
+  margin-bottom: 7.5vw;
+}
+
+.card-body {
+  height: 45.8vw;
+  margin-bottom: 3.7vw;
+}

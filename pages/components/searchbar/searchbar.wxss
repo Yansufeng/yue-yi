@@ -1,1 +1,4 @@
 /* pages/components/searchbar/searchbar.wxss */
+.searchbar {
+  --td-search-bg-color: #FFF;
+}

@@ -5,14 +5,47 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    cards: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.getCards()
+  },
 
+  /**
+   * 获取列表
+   */
+  getCards() {
+    const cards = [
+      {
+        id: 0,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/cover.png',
+        title: '艺术图书',
+        nav: 'nav2艺术图书'
+      },
+      {
+        id: 1,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/cover.png',
+        title: '艺术图书',
+        nav: 'nav2艺术图书'
+      },
+      {
+        id: 2,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/cover.png',
+        title: '艺术图书',
+        nav: 'nav2艺术图书'
+      },
+      {
+        id: 3,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/cover.png',
+        title: '艺术图书',
+        nav: 'nav2艺术图书'
+      }
+    ]
+    this.setData({ cards })
   },
 
   /**

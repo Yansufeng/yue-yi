@@ -1,0 +1,5 @@
+<!--pages/resource/components/card/card.wxml-->
+<view class="card-body" bindtap="onTap">
+  <t-image class="cover" src="{{ info.cover }}" />
+  <text class="title">{{ info.title }}</text>
+</view>
