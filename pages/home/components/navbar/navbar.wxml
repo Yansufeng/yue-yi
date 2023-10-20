@@ -1,6 +1,12 @@
 <!--pages/home/components/navbar/navbar.wxml-->
 <view class="body" wx:if="{{ isInit }}">
-  <view class="card" wx:key="title" wx:for="{{ list }}">
+  <view 
+    class="card" 
+    wx:key="title" 
+    wx:for="{{ list }}"
+    data-i="{{ index }}"
+    bindtap="onTap"
+  >
     <t-image class="img" src="{{ item.cover }}" />
     <view>
       <text>{{item.title}}</text>

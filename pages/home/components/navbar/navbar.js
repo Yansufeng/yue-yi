@@ -14,7 +14,7 @@ Component({
    */
   data: {
     isInit: false,
-    basePath: 'pages/column/',
+    basePath: '/pages/column/',
     list: [
       {
         cover: 'book.png',
@@ -84,6 +84,14 @@ Component({
       this.setData({list})
       this.setData({
         isInit: true
+      })
+    },
+    onTap(e) {
+      const i = e.currentTarget.dataset.i
+      const path = this.data.list[i].path
+      console.log(path)
+      wx.navigateTo({
+        url: path,
       })
     }
   }
