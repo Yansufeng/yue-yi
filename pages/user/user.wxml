@@ -1,2 +1,44 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class="body">
+  <view class="info-body">
+    <view class="info">
+      <t-image class="avatar" shape="circle" src="{{ info.avatar }}" />
+
+      <view class="content">
+        <view class="name">{{ info.name }}</view>
+        <view class="check">
+          <text>已连续签到 {{ info.check }} 天</text>
+        </view>
+      </view>
+
+      <view class="check-btn">签到</view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="btns">
+      <view 
+        class="btn"
+        wx:for="{{ btns }}"
+        wx:key="id"
+      >
+        <t-image class="btn-icon" src="{{ item.icon }}" />
+        <view class="btn-title">
+          <text>{{ item.title }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="navs">
+    <view 
+      class="nav"
+      wx:for="{{ navs }}"
+      wx:key="id"  
+    >
+      <t-icon name="{{ item.icon }}" color="#D0A669" size="44rpx" />
+      <text class="nav-title">{{ item.title }}</text>
+      <t-icon name="chevron-right" color="rgba(0, 0, 0, 0.4)" size="44rpx" />
+    </view>
+  </view>
+</view>
