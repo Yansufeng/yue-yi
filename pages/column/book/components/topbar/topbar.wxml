@@ -1,0 +1,15 @@
+<!--pages/column/book/components/topbar/topbar.wxml-->
+<view 
+  class="body"
+  style="margin-top: {{ deviceInfo.top }}px; line-height: {{ deviceInfo.height }}px;"  
+>
+  <t-icon name="chevron-left" size="60rpx"/>
+  <view class="search-body">
+    <t-search 
+      class="search" 
+      shape="round" 
+      style="--td-search-height: {{ deviceInfo.height }}px;"
+      placeholder="搜索"
+    />
+  </view>
+</view>
