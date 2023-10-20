@@ -6,7 +6,7 @@
 
   <view class="more">
     <text>更多</text>
-    <t-icon class="right" name="chevron-right" color="#9B7437" size="32rpx" />
+    <t-icon class="icon-right" name="chevron-right" color="#9B7437" size="32rpx" />
   </view>
 </view>
 
