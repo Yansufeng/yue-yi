@@ -35,7 +35,7 @@
 	<view class="nav">
     <navbar />
   </view>
-	<view class="map">
+	<view class="map" bindtap="onMap">
     <t-image wx:if="{{ isInit }}" src="{{ imgs.map }}" mode="aspectFit" />
   </view>
 	<view class="heritage item">
