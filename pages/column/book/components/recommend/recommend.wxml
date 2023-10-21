@@ -1,0 +1,26 @@
+<!--pages/column/book/components/recommend/recommend.wxml-->
+<view class="body">
+  <view class="header">
+    <t-icon name="book-open" color="#9B7437" size="48rpx"/>
+    <view class="title">
+      <text class="title-content">好书推荐</text>
+      <view class="line"></view>
+    </view>
+  </view>
+
+  <view class="content">
+    <view class="books">
+      <t-image 
+        class="book"
+        wx:for="{{ books }}"
+        wx:key="id"
+        src="{{ item.cover }}"
+      />
+    </view>
+
+    <view class="desk">
+      <view class="desk-top"></view>
+      <view class="desk-front"></view>
+    </view>
+  </view>
+</view>

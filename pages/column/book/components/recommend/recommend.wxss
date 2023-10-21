@@ -1,0 +1,60 @@
+/* pages/column/book/components/recommend/recommend.wxss */
+.body {
+  padding: 0 5vw;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8vw;
+}
+
+.title {
+  font-size: 42rpx;
+  font-weight: 600;
+  margin-left: 20rpx;
+  position: relative;
+  padding: 0 10rpx;
+}
+
+.title-content {
+  position: relative;
+  z-index: 2;
+}
+
+.line {
+  height: 20rpx;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(208, 166, 105, 0.6);
+  border-radius: 20rpx;
+  bottom: 1rpx;
+  left: 0;
+  z-index: 1;
+}
+
+.books {
+  padding: 0 8.5vw;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.book {
+  width: 30vw;
+  height: 44vw;
+}
+
+.desk-top {
+  margin-top: -1vw;
+  border-bottom: 2.6vw solid #F4EBD9;
+  border-left: 2.6vw solid transparent;
+  border-right: 2.6vw solid transparent;
+}
+
+.desk-front {
+  height: 3.7vw;
+  background-color: #FFF;
+  box-shadow: 0 20rpx 24rpx -4rpx rgba(155, 116, 55, 0.2);
+}
+
