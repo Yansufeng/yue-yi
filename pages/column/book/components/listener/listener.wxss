@@ -1,0 +1,65 @@
+/* pages/column/book/components/listener/listener.wxss */
+.body {
+  padding-left: 5vw;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8vw;
+}
+
+.title {
+  font-size: 42rpx;
+  font-weight: 600;
+  margin-left: 20rpx;
+  position: relative;
+  padding: 0 10rpx;
+}
+
+.title-content {
+  position: relative;
+  z-index: 2;
+}
+
+.line {
+  height: 20rpx;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(208, 166, 105, 0.6);
+  border-radius: 20rpx;
+  bottom: 1rpx;
+  left: 0;
+  z-index: 1;
+}
+
+.navs {
+  white-space: nowrap;
+  margin-left: -5vw;
+  width: 100vw;
+}
+
+.nav {
+  position: relative;
+  margin-right: 3.7vw;
+  display: inline-block;
+}
+
+.nav:first-child {
+  margin-left: 5vw;
+}
+
+.nav-cover {
+  width: 32vw;
+  height: 24vw;
+}
+
+.nav-title {
+  position: absolute;
+  bottom: 1.6vw;
+  left: 1.6vw;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.26);
+  padding: 1.6vw;
+  border-radius: 10rpx;
+}

@@ -1,0 +1,29 @@
+<!--pages/column/book/components/listener/listener.wxml-->
+<view class="body">
+  <view class="header">
+    <t-icon name="earphone" color="#9B7437" size="48rpx"/>
+    <view class="title">
+      <text class="title-content">数字听书</text>
+      <view class="line"></view>
+    </view>
+  </view>
+
+  <scroll-view class="navs" scroll-x>
+    <view 
+      class="nav"
+      wx:for="{{ navs }}"
+      wx:key="id"
+    >
+      <t-image 
+        class="nav-cover"
+        src="{{ item.cover }}" 
+        shape="round" 
+        mode="aspectFill"
+      />
+
+      <view class="nav-title">
+        <text>{{ item.title }}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
