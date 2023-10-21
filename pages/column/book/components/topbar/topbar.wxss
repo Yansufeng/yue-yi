@@ -1,10 +1,15 @@
 /* pages/column/book/components/topbar/topbar.wxss */
 .body {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .search-body {
   width: 50vw;
   margin-left: 20rpx;
+  --td-search-bg-color: rgba(255, 255, 255, 0.3);
 }
 
