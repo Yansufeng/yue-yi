@@ -27,6 +27,7 @@
   margin-right: 3.7vw;
   width: 39vw;
   font-size: 28rpx;
+  font-weight: 600;
 }
 
 .show:first-child {
