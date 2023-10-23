@@ -38,6 +38,10 @@ Component({
         left: windowW - capsule.right
       }
       this.setData({deviceInfo})
+    },
+    
+    goBack() {
+      wx.navigateBack()
     }
   }
 })

@@ -3,7 +3,7 @@
   class="body"
   style="margin-top: {{ deviceInfo.top }}px; line-height: {{ deviceInfo.height }}px;"  
 >
-  <t-icon name="chevron-left" size="60rpx"/>
+  <t-icon name="chevron-left" size="60rpx" bindtap="goBack"/>
   <view class="search-body">
     <t-search 
       class="search" 
