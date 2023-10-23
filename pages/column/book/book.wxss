@@ -1,1 +1,18 @@
 /* pages/column/book/book.wxss */
+.cover {
+  width: 100vw;
+  height: 75vw;
+}
+
+.content {
+  min-height: calc(100vh - 75vw + 40rpx);
+  background-color: #F8F4E6;
+  border-radius: 40rpx 0 0 0;
+  margin-top: -40rpx;
+  position: relative;
+  padding-top: 40rpx;
+}
+
+.listener {
+  margin-top: 12vw;
+}

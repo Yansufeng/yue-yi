@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "topbar": "./components/topbar/topbar",
+    "recommend": "./components/recommend/recommend",
+    "listener": "./components/listener/listener",
+    "reader": "./components/reader/reader"
+  }
 }

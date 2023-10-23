@@ -1,0 +1,58 @@
+/* pages/column/book/components/reader/reader.wxss */
+.header {
+  padding: 5vw;
+}
+
+.tabs {
+  white-space: nowrap;
+}
+
+.tab {
+  display: inline-block;
+  margin-right: 5vw;
+  height: 9vw;
+  position: relative;
+  font-weight: 300;
+}
+
+.tab:first-child {
+  margin-left: 5vw;
+}
+
+.active {
+  color: #9B7437;
+  font-weight: 500;
+}
+
+.line {
+  width: 4.8vw;
+  height: 10rpx;
+  background-color: rgba(208, 166, 105, 0.6);
+  border-radius: 10rpx;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 2.4vw);
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5vw;
+}
+
+.book {
+  margin-bottom: 5.3vw;
+  font-weight: 600;
+}
+
+.cover {
+  width: 28vw;
+  height: 40vw;
+  margin-bottom: 3.2vw;
+  box-shadow: 0 30rpx 15rpx -20rpx rgba(155, 116, 55, 0.3);
+}
+
+.book-mid {
+  margin: 0 3vw;
+}
+

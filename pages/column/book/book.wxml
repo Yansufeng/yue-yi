@@ -1,2 +1,23 @@
 <!--pages/column/book/book.wxml-->
-<text>pages/column/book/book.wxml</text>
+<topbar />
+
+<view class="body">
+  <t-image class="cover" src="{{cover}}" />
+
+  <view class="content">
+    <!-- 好书推荐 -->
+    <view class="recommend">
+      <recommend books="{{ recommends }}" />
+    </view>
+
+    <!-- 数字听书 -->
+    <view class="listener">
+      <listener navs="{{ listeners }}"/>
+    </view>
+
+    <!-- 图书分类 -->
+    <view class="reader">
+      <reader tabs="{{ readers }}"/>
+    </view>
+  </view>
+</view>

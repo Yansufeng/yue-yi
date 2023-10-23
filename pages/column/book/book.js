@@ -5,14 +5,96 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    cover: '',
+    recommends: [],
+    listeners: [],
+    readers: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.getCover()
+    this.getRecommends()
+    this.getListeners()
+    this.getReaders()
+  },
 
+  getCover() {
+    const cover = 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/bkg.png'
+    this.setData({cover})
+  },
+
+  getRecommends() {
+    const recommends = [
+      {
+        id: 0,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png'
+      },
+      {
+        id: 1,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png'
+      }
+    ]
+    this.setData({recommends})
+  },
+
+  getListeners(){
+    const listeners = [
+      {
+        id: 0,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
+        title: '红色纪实'
+      },
+      {
+        id: 1,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
+        title: '红色纪实'
+      },
+      {
+        id: 2,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
+        title: '红色纪实'
+      },
+      {
+        id: 3,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
+        title: '红色纪实'
+      },
+    ]
+    this.setData({listeners})
+  },
+
+  getReaders() {
+    const readers = [
+      {
+        code: 0,
+        title: '畅销图书'
+      },
+      {
+        code: 1,
+        title: '畅销图书'
+      },
+      {
+        code: 2,
+        title: '畅销图书'
+      },
+      {
+        code: 3,
+        title: '畅销图书'
+      },
+      {
+        code: 4,
+        title: '畅销图书'
+      },
+      {
+        code: 5,
+        title: '畅销图书'
+      },
+    ]
+
+    this.setData({readers})
   },
 
   /**

@@ -1,0 +1,39 @@
+<!--pages/column/book/components/reader/reader.wxml-->
+<view class="body">
+  <view class="header">
+    <!-- <t-icon name="book-open" color="#9B7437" size="48rpx"/>
+    <view class="title">
+      <text class="title-content"></text>
+      <view class="line"></view>
+    </view> -->
+  </view>
+
+  <view class="content">
+    <scroll-view class="tabs" scroll-x>
+      <view 
+        class="tab {{ index == active ? 'active' : ''}}"
+        wx:for="{{ tabs }}"  
+        wx:key="code"
+        data-i="{{ index }}"
+        bindtap="onTab"
+      >
+        <text>{{ item.title }}</text>
+        <view wx:if="{{ index == active }}" class="line"></view>
+      </view>
+    </scroll-view>
+
+    <view class="books">
+      <view
+        class="book {{ index % 3 == 1 ? 'book-mid' : '' }}"
+        wx:for="{{ books }}"
+        wx:key="id"
+      >
+        <t-image 
+          class="cover" 
+          src="{{ item.cover }}" 
+        />
+        <view class="name">{{ item.name }}</view>
+      </view>
+    </view>
+  </view>
+</view>
