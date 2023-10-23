@@ -62,4 +62,5 @@
   background-color: rgba(0, 0, 0, 0.26);
   padding: 1.6vw;
   border-radius: 10rpx;
+  font-size: 28rpx;
 }
