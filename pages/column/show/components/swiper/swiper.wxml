@@ -1,0 +1,6 @@
+<!--pages/column/show/components/swiper/swiper.wxml-->
+<t-swiper
+  autoplay
+  list="{{ swiperList }}"
+  navigation="{{ { type: 'dots-bar' } }}"
+/>
