@@ -1,0 +1,21 @@
+<!--pages/column/show/components/local/local.wxml-->
+<view class="header">
+  <text>线下展览</text>
+  <view class="more">
+    <text>更多</text>
+    <t-icon name="chevron-right" color="#9B7437"/>
+  </view>
+</view>
+
+<scroll-view class="shows" scroll-x>
+    <view 
+      class="show"
+      wx:for="{{ shows }}"
+      wx:key="id"
+    >
+      <t-image class="cover" src="{{ item.cover }}" shape="round" />
+      <view class="title">
+        <text>{{ item.title }}</text>
+      </view>
+    </view>
+  </scroll-view>

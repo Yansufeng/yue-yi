@@ -1,0 +1,44 @@
+/* pages/column/show/components/local/local.wxss */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 40rpx;
+  font-weight: 600;
+  margin-bottom: 5.3vw;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  color: #9B7437;
+  font-size: 28rpx;
+  font-weight: 300;
+}
+
+.shows {
+  white-space: nowrap;
+  width: 100vw;
+  margin-left: -4vw;
+}
+
+.show {
+  display: inline-block;
+  margin-right: 3.7vw;
+  width: 39vw;
+  font-size: 28rpx;
+}
+
+.show:first-child {
+  margin-left: 4vw;
+}
+
+.title {
+  white-space: initial;
+}
+
+.cover {
+  width: 39vw;
+  height: 29vw;
+  margin-bottom: 2.9vw;
+}
