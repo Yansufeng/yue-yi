@@ -1,1 +1,46 @@
 /* pages/column/show/show.wxss */
+.search-body {
+  padding: 2vw 4.3vw;
+  background-color: #FCF5E7;
+  --td-search-bg-color: #FFF;
+}
+
+.search {
+  height: 10vw;
+}
+
+.content {
+  padding: 4vw;
+}
+
+.swiper {
+  height: 37vw;
+}
+
+.navs {
+  margin-top: 7.5vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #9B7437;
+  font-weight: 300;
+}
+
+.nav-icon {
+  width: 12.8vw;
+  height: 12.8vw;
+  margin-bottom: 20rpx;
+}
+
+.local {
+  margin-top: 6.4vw;
+}
+
+.info {
+  margin-top: 6.4vw;
+}

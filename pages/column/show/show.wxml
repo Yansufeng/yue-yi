@@ -1,2 +1,31 @@
 <!--pages/column/show/show.wxml-->
-<text>pages/column/show/show.wxml</text>
+<view class="search-body">
+  <t-search class="search" shape="round" placeholder="搜索"/>
+</view>
+
+<view class="content">
+  <view class="swiper">
+    <swiper swiperList="{{swiper}}"/>
+  </view>
+
+  <view class="navs">
+    <view 
+      class="nav"
+      wx:for="{{ navs }}"
+      wx:key="id"
+    >
+      <t-image class="nav-icon" src="{{ item.cover }}" />
+      <view>{{ item.name }}</view>
+    </view>
+  </view>
+
+  <!-- 线下展览 -->
+  <view class="local">
+    <local />
+  </view>
+
+  <!-- 展览资讯 -->
+  <view class="info">
+    <info />
+  </view>
+</view>

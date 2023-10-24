@@ -1,0 +1,18 @@
+<!--pages/column/show/components/info/info.wxml-->
+<view class="header">
+  <text>展览资讯</text>
+</view>
+
+<view class="cards">
+  <view 
+    class="card"
+    wx:for="{{ info }}"
+    wx:key="id"
+  >
+    <t-image class="cover" src="{{ item.cover }}" shape="round" />
+    <view class="info">
+      <view class="title">{{ item.title }}</view>
+      <view class="time">{{ item.time }}</view>
+    </view>
+  </view>
+</view>

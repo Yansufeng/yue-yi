@@ -1,0 +1,36 @@
+/* pages/column/show/components/info/info.wxss */
+.header {
+  font-size: 40rpx;
+  font-weight: 600;
+  margin-bottom: 5.3vw;
+}
+
+.cover {
+  width: 32vw;
+  height: 24.5vw;
+}
+
+.card {
+  margin-bottom: 3.2vw;
+  padding: 2.6vw;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20rpx;
+  box-shadow: 2rpx 10rpx 20rpx 2rpx rgba(155, 116, 55, 0.08);
+}
+
+.info {
+  width: 51vw;
+  position: relative;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.time {
+  position: absolute;
+  bottom: 0;
+  right: 2.6vw;
+  font-size: 28rpx;
+}

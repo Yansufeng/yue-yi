@@ -1,3 +1,10 @@
 {
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#FCF5E7",
+  "navigationBarTitleText": "文化展览",
+  "usingComponents": {
+    "t-search": "tdesign-miniprogram/search/search",
+    "swiper": "./components/swiper/swiper",
+    "local": "./components/local/local",
+    "info": "./components/info/info"
+  }
 }
