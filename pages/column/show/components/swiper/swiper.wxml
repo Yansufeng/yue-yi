@@ -3,4 +3,5 @@
   autoplay
   list="{{ swiperList }}"
   navigation="{{ { type: 'dots-bar' } }}"
+  height="37vw"
 />
