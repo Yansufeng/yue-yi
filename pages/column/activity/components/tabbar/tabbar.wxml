@@ -1,0 +1,13 @@
+<!--pages/column/activity/components/tabbar/tabbar.wxml-->
+<scroll-view class="body" scroll-x>
+  <view 
+    class="tab {{ index == active ? 'active' : ''}}"
+    wx:for="{{tabs}}"
+    wx:key="id"
+    data-i="{{ index }}"
+    bindtap="onTab"
+  >
+    <text>{{ item.name }}</text>
+        <view wx:if="{{ index == active }}" class="line"></view>
+  </view>
+</scroll-view>
