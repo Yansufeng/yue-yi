@@ -1,2 +1,12 @@
 <!--pages/column/activity/activity.wxml-->
-<text>pages/column/activity/activity.wxml</text>
+<searchbar />
+<!-- 获取tab栏组件修改 -->
+<tabbar tabs="{{ tabs }}" bind:tabEvent="tabChange" />
+
+<view class="cards">
+  <view
+    class="card"
+    wx:for="{{ shows }}"
+    wx:key="id"
+  ></view>
+</view>

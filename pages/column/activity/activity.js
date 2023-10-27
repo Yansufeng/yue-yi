@@ -5,14 +5,87 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    tabs: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.getTabs()
+  },
 
+  getTabs() {
+    const tabs = [
+      {
+        id: 0,
+        code: '',
+        name: '全部'
+      },
+      {
+        id: 1,
+        code: '',
+        name: '演出'
+      },
+      {
+        id: 2,
+        code: '',
+        name: '演出'
+      },
+      {
+        id: 3,
+        code: '',
+        name: '演出'
+      },
+      {
+        id: 4,
+        code: '',
+        name: '演出'
+      },
+      {
+        id: 5,
+        code: '',
+        name: '演出'
+      },
+      {
+        id: 6,
+        code: '',
+        name: '演出'
+      },
+      {
+        id: 7,
+        code: '',
+        name: '演出'
+      },
+    ]
+    this.setData({tabs})
+  },
+
+  getShows() {
+    const shows = [
+      {
+        id: 0,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
+        title: '体验余音绕梁的声乐之美讲座',
+        date: '2023.06.10',
+        time: '09:00-10:00',
+        loc: '张家界市永定区文化馆',
+        status: 0
+      },
+      {
+        id: 0,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
+        title: '体验余音绕梁的声乐之美讲座',
+        date: '2023.06.10',
+        time: '09:00-10:00',
+        loc: '张家界市永定区文化馆',
+        status: 0
+      }
+    ]
+  },
+
+  tabChange(e) {
+    console.log(e)
   },
 
   /**

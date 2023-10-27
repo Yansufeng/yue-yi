@@ -1,1 +1,6 @@
 /* pages/column/activity/activity.wxss */
+
+.card {
+  border-radius: 20rpx;
+  box-shadow: 2rpx 10rpx 20rpx 2rpx rgba(155, 116, 55, 0.08);
+}
