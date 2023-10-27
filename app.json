@@ -1,5 +1,6 @@
 {
   "pages":[
+    
     "pages/home/home",
     "pages/map/map",
     "pages/resource/resource",
@@ -16,7 +17,7 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#FCF5E7",
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
@@ -44,6 +45,5 @@
     "t-icon": "tdesign-miniprogram/icon/icon",
     "t-image": "tdesign-miniprogram/image/image"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
