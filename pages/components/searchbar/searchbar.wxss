@@ -1,4 +1,10 @@
 /* pages/components/searchbar/searchbar.wxss */
-.searchbar {
+.search-body {
+  padding: 2vw 4.3vw;
+  background-color: #FCF5E7;
   --td-search-bg-color: #FFF;
+}
+
+.search {
+  height: 10vw;
 }

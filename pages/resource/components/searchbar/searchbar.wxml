@@ -1,0 +1,4 @@
+<!--pages/components/searchbar/searchbar.wxml-->
+<view>
+  <t-search class="searchbar" placeholder="搜索" shape="round" />
+</view>
