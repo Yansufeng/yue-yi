@@ -1,9 +1,12 @@
 <!--pages/heritage/main.wxml-->
 <searchbar />
+<t-image class="bkg-main" wx:if="{{ isInit }}" src="{{ imgs.bkg }}" />
 <view class="body">
   <tabbar tabs="{{ tabs }}" bind:tabEvent="tabChange"/>
-  <proj wx:if="{{ active == 0 }}" />
-  <people wx:if="{{ active == 1 }}" />
-  <news wx:if="{{ active == 2 }}" />
-  <files wx:if="{{ active == 3 }}" />
+  <view class="content">
+    <proj wx:if="{{ active == 0 }}" />
+    <people wx:if="{{ active == 1 }}" />
+    <news wx:if="{{ active == 2 }}" />
+    <files wx:if="{{ active == 3 }}" />
+  </view>
 </view>

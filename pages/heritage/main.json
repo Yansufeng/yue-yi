@@ -3,6 +3,7 @@
   "usingComponents": {
     "searchbar": "/pages/components/searchbar/searchbar",
     "tabbar": "/pages/components/tabbar/tabbar",
+    
     "proj": "./components/proj/proj",
     "people": "./components/people/people",
     "news": "./components/news/news",

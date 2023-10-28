@@ -1,11 +1,17 @@
 // pages/heritage/main.js
+import { initImgs } from "../../utils/init";
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    isInit: false,
     active: 0,
+    imgs: {
+      bkg: 'bkg-main.png'
+    },
     tabs: []
   },
 
@@ -14,6 +20,10 @@ Page({
    */
   onLoad(options) {
     this.getTabs()
+    initImgs('/heritage/', this)
+    this.setData({
+      isInit: true
+    })
   },
 
   getTabs() {
