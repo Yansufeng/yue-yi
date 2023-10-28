@@ -1,1 +1,5 @@
 /* pages/heritage/main.wxss */
+.body {
+  background: linear-gradient(#FCF5E7, #FFF);
+  min-height: calc(100vh - 14vw);
+}

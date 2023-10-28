@@ -1,2 +1,9 @@
 <!--pages/heritage/main.wxml-->
-<text>pages/heritage/main.wxml</text>
+<searchbar />
+<view class="body">
+  <tabbar tabs="{{ tabs }}" bind:tabEvent="tabChange"/>
+  <proj wx:if="{{ active == 0 }}" />
+  <people wx:if="{{ active == 1 }}" />
+  <news wx:if="{{ active == 2 }}" />
+  <files wx:if="{{ active == 3 }}" />
+</view>

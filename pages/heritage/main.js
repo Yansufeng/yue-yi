@@ -5,14 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    active: 0,
+    tabs: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.getTabs()
+  },
 
+  getTabs() {
+    const tabs = [
+      {
+        id: 0,
+        name: '非遗项目'
+      },
+      {
+        id: 1,
+        name: '非遗传承人'
+      },
+      {
+        id: 2,
+        name: '非遗动态'
+      },
+      {
+        id: 3,
+        name: '非遗文件'
+      }
+    ]
+    this.setData({tabs})
+  },
+
+  tabChange(e) {
+    const active = e.detail
+    this.setData({active})
   },
 
   /**
