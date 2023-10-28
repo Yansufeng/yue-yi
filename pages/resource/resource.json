@@ -2,7 +2,7 @@
   "navigationBarBackgroundColor": "#FCF5E7",
   "navigationBarTitleText": "资源推荐",
   "usingComponents": {
-    "searchbar": "/pages/components/searchbar/searchbar",
+    "searchbar": "./components/searchbar/searchbar",
     "card": "./components/card/card"
   }
 }
