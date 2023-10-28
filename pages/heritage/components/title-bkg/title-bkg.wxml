@@ -1,0 +1,5 @@
+<!--pages/heritage/components/title-bkg/title-bkg.wxml-->
+<view class="title">
+  <text>{{ title }}</text>
+  <t-image wx:if="{{ isInit }}" class="bkg" src="{{ imgs.bkg }}" />
+</view>

@@ -1,0 +1,14 @@
+<!--pages/heritage/components/h-tabbar/h-tabbar.wxml-->
+<scroll-view class="scroll-body" scroll-x >
+  <view 
+    wx:key="title" 
+    wx:for="{{ tabs }}"
+    class="tab {{ item.id == active ? 'tab-active' : '' }}"
+    data-i="{{ index }}"
+    bind:tap="onTap"
+  >
+    <view class="tab-bkg"></view>
+    <view class="tab-bkg__c"></view>
+    <text class="tab-title">{{ item.name }}</text>
+  </view>
+</scroll-view>
