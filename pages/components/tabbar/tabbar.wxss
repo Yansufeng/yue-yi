@@ -1,68 +1,29 @@
-/* pages/components/tabbar/tabbar.wxss */
-.flex {
-  display: flex;
-}
-
+/* pages/column/activity/components/tabbar/tabbar.wxss */
 .body {
-  height: 24vw;
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: #FFF;
-  z-index: 50;
-  box-shadow: 0 -1px 2rpx rgba(0, 0, 0, 0.04);
+  white-space: nowrap;
 }
 
-.qr {
-  position: absolute;
-  top: -4.8vw;
-  width: 100vw;
-  z-index: 51;
-}
-
-.qr-body {
-  width: 19.5vw;
-  height: 19.5vw;
-  background: #FFF;
-  margin: 0 auto;
-  border-radius: 19.5vw;
-  /* position: absolute;
-  top: -4.8vw; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 -1px 2rpx rgba(0, 0, 0, 0.04);
-}
-
-.qr-btn {
-  height: 14.7vw;
-  width: 14.7vw;
-  border-radius: 100%;
-  background: #B01F1A;
-  box-shadow: 0 3px 8px 0 rgba(176, 31, 26, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btns {
-  justify-content: space-between;
-  padding: 2.1vw;
-  font-size: 24rpx;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.btns-i {
-  width: 36.9vw;
-  justify-content: space-between;
-}
-
-.btn {
-  width: 17.4vw;
+.tab {
+  display: inline-block;
+  padding: 0 4.2vw;
+  padding-top: 3.2vw;
   text-align: center;
+  height: 9vw;
+  position: relative;
+  font-weight: 300;
 }
 
-.btns .active {
-  color: #B01F1A;
+.active {
+  color: #9B7437;
+  font-weight: 500;
+}
+
+.line {
+  width: 4.8vw;
+  height: 10rpx;
+  background-color: rgba(208, 166, 105, 0.6);
+  border-radius: 10rpx;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 2.4vw);
 }
