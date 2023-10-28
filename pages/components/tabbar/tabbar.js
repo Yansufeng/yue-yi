@@ -6,7 +6,8 @@ Component({
    */
   properties: {
     tabs: {
-      type: Array
+      type: Array,
+      value: []
     }
   },
 
