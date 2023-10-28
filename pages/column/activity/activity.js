@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    tabs: []
+    tabs: [],
+    shows: []
   },
 
   /**
@@ -13,6 +14,7 @@ Page({
    */
   onLoad(options) {
     this.getTabs()
+    this.getShows()
   },
 
   getTabs() {
@@ -73,15 +75,25 @@ Page({
         status: 0
       },
       {
-        id: 0,
+        id: 1,
         cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
         title: '体验余音绕梁的声乐之美讲座',
         date: '2023.06.10',
         time: '09:00-10:00',
         loc: '张家界市永定区文化馆',
-        status: 0
+        status: 1
+      },
+      {
+        id: 2,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
+        title: '体验余音绕梁的声乐之美讲座',
+        date: '2023.06.10',
+        time: '09:00-10:00',
+        loc: '张家界市永定区文化馆',
+        status: 2
       }
     ]
+    this.setData({shows})
   },
 
   tabChange(e) {
