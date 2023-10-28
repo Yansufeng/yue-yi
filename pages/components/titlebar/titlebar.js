@@ -29,7 +29,11 @@ Component({
    */
   methods: {
     onMore() {
-      console.log(this.data.path)
+      const path = this.data.path
+      if(path == '' || path == 'TODO') return
+      wx.navigateTo({
+        url: path,
+      })
     }
   }
 })

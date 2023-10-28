@@ -1,5 +1,5 @@
 <!--pages/home/components/heritage/heritage.wxml-->
-<view class="top">
+<!-- <view class="top">
   <view class="title">
     <text>非遗中心</text>
   </view>
@@ -8,7 +8,8 @@
     <text>更多</text>
     <t-icon class="icon-right" name="chevron-right" color="#9B7437" size="32rpx" />
   </view>
-</view>
+</view> -->
+<titlebar title="非遗中心" path="/pages/heritage/main" />
 
 <view class="tabs">
   <scroll-view class="scroll-body" scroll-x >
