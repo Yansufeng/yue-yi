@@ -1,0 +1,37 @@
+/* pages/column/media/components/courses/courses.wxss */
+.content {
+  padding: 5vw 4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 43vw;
+  height: 44vw;
+  border-radius: 20rpx;
+  box-shadow: 2rpx 10rpx 20rpx 2rpx rgba(155, 116, 55, 0.08);
+  overflow: hidden;
+  margin-bottom: 3.2vw;
+}
+
+.cover {
+  width: 43vw;
+  height: 24.5vw;
+}
+
+.info {
+  padding: 2.6vw;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 24.5vw);
+  box-sizing: border-box;
+  justify-content: space-between;
+  font-size: 28rpx;
+  font-weight: 300;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: 600;
+}

@@ -1,0 +1,24 @@
+/* pages/components/titlebar/titlebar.wxss */
+.top {
+  width: 91vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.more {
+  display: flex;
+  color: #9B7437;
+  font-size: 28rpx;
+  line-height: 48rpx;
+}
+
+.more .right {
+  display: flex ;
+  align-items: center;
+}
