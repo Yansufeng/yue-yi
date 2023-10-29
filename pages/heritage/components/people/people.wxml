@@ -6,3 +6,24 @@
 <view class="tabs">
   <h-tabbar tabs="{{ tabs }}" />
 </view>
+
+<view class="cards">
+  <view 
+    class="card"
+    wx:for="{{ people }}"
+    wx:key="id"
+  >
+    <t-image class="avatar" src="{{ item.avatar }}" />
+    <view class="info">
+      <view class="name">
+        <text>{{ item.name }}</text>
+      </view>
+      <view>
+        <text class="tag">{{ item.tag }}</text>
+      </view>
+      <view class="des">
+        <text>{{ item.des }}</text>
+      </view>
+    </view>
+  </view>
+</view>
