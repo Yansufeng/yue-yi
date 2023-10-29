@@ -4,6 +4,13 @@
 <view class="body">
   <tabbar tabs="{{ tabs }}" bind:tabEvent="tabChange"/>
   <view class="content">
+    <t-swiper
+      autoplay
+      list="{{ swiperList }}"
+      navigation="{{ { type: 'dots-bar' } }}"
+      height="37vw"
+    />
+    
     <proj wx:if="{{ active == 0 }}" />
     <people wx:if="{{ active == 1 }}" />
     <news wx:if="{{ active == 2 }}" />

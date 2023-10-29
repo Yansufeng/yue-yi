@@ -12,7 +12,8 @@ Page({
     imgs: {
       bkg: 'bkg-main.png'
     },
-    tabs: []
+    tabs: [],
+    swiperList: []
   },
 
   /**
@@ -20,7 +21,9 @@ Page({
    */
   onLoad(options) {
     this.getTabs()
+    this.getSwiperList()
     initImgs('/heritage/', this)
+
     this.setData({
       isInit: true
     })
@@ -46,6 +49,14 @@ Page({
       }
     ]
     this.setData({tabs})
+  },
+
+  getSwiperList() {
+    const swiperList = [
+      "https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png",
+      "https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png"
+    ]
+    this.setData({swiperList})
   },
 
   tabChange(e) {

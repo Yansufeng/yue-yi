@@ -12,14 +12,14 @@ Component({
    * 组件的初始数据
    */
   data: {
-    swiperList: [],
+    // swiperList: [],
     tabs: [],
     projs: []
   },
 
   lifetimes: {
     attached() {
-      this.getSwiperList()
+      // this.getSwiperList()
       this.getTabs()
       this.getProjs()
     }

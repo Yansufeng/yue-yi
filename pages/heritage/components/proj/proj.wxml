@@ -1,10 +1,10 @@
 <!--pages/heritage/components/proj/proj.wxml-->
-<t-swiper
+<!-- <t-swiper
   autoplay
   list="{{ swiperList }}"
   navigation="{{ { type: 'dots-bar' } }}"
   height="37vw"
-/>
+/> -->
 
 <view class="title">
   <title title="非遗项目" />
