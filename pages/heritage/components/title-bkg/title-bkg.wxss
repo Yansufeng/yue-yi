@@ -3,7 +3,7 @@
   font-size: 36rpx;
   font-weight: 600;
   position: relative;
-  display: flex;
+  display: inherit;
 }
 
 
@@ -12,4 +12,5 @@
   height: 7.5vw;
   position: absolute;
   bottom: -14rpx;
+  left: calc(50% - 9.6vw);
 }
