@@ -1,2 +1,4 @@
 <!--pages/heritage/components/news/news.wxml-->
-<text>pages/heritage/components/news/news.wxml</text>
+<view class="title">
+  <title title="非遗动态" />
+</view>

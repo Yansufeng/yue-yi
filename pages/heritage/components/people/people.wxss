@@ -1,1 +1,9 @@
 /* pages/heritage/components/people/people.wxss */
+.title {
+  margin-top: 8vw;
+}
+
+.tabs {
+  margin-top: 3.7vw;
+  margin-bottom: 7vw;
+}

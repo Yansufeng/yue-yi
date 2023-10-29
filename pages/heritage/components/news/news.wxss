@@ -1,1 +1,5 @@
 /* pages/heritage/components/news/news.wxss */
+.title {
+  margin-top: 8vw;
+  margin-bottom: 3.7vw;
+}

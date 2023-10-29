@@ -1,2 +1,8 @@
 <!--pages/heritage/components/people/people.wxml-->
-<text>pages/heritage/components/people/people.wxml</text>
+<view class="title">
+  <title title="非遗传承人" />
+</view>
+
+<view class="tabs">
+  <h-tabbar tabs="{{ tabs }}" />
+</view>
