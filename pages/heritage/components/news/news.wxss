@@ -3,3 +3,37 @@
   margin-top: 8vw;
   margin-bottom: 3.7vw;
 }
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  height: 30vw;
+  background-color: #FFF;
+  padding: 2.6vw;
+  box-sizing: border-box;
+  margin-bottom: 3.2vw;
+  border-radius: 20rpx;
+  box-shadow: 2rpx 10rpx 20rpx 2rpx rgba(155, 116, 55, 0.08);
+}
+
+.cover {
+  width: 35%;
+  height: 100%;
+}
+
+.info {
+  width: 62%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-title {
+  font-weight: 600;
+}
+
+.date {
+  font-size: 28rpx;
+  font-weight: 300;
+  text-align: right;
+}
