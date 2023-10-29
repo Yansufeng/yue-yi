@@ -3,3 +3,18 @@
   margin-top: 8vw;
   margin-bottom: 3.7vw;
 }
+
+.files {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cover-mid {
+  margin: 0 4vw;
+}
+
+.cover {
+  margin-bottom: 4vw;
+}
+
+

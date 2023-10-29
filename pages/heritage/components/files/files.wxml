@@ -2,3 +2,19 @@
 <view class="title">
   <title title="非遗文件" />
 </view>
+
+<view class="files">
+  <view 
+    class="file"
+    wx:for="{{ files }}"
+    wx:key="id"
+  >
+    <t-image 
+      class="cover {{ index % 3 == 1 ? 'cover-mid' : ''}}" 
+      src="{{ item.cover }}" 
+      shape="round" 
+      width="28vw"
+      height="41vw"
+    />
+  </view>
+</view>
