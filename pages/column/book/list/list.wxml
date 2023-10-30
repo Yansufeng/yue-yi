@@ -1,2 +1,33 @@
 <!--pages/column/book/list/list.wxml-->
-<text>pages/column/book/list/list.wxml</text>
+<searchbar />
+
+<tabbar tabs="{{ tabs }}" />
+
+<view class="books">
+  <view 
+    class="book"
+    wx:for="{{ books }}"
+    wx:key="id"
+  >
+    <t-image 
+      src="{{ item.cover }}" 
+      width="25.6vw"
+      height="36.5vw"
+    />
+
+    <view class="content">
+      <view class="title">{{ item.title }}</view>
+
+      <view class="info">
+        <view class="author">
+          <text>作者：</text>
+          <text>{{ item.author }}</text>
+        </view>
+
+        <view>
+          <text class="tag">{{ item.tag }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

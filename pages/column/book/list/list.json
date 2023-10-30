@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "书目列表",
+  "usingComponents": {
+    "searchbar": "/pages/components/searchbar/searchbar",
+    "tabbar": "/pages/components/tabbar/tabbar"
+  }
 }

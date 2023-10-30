@@ -5,14 +5,62 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    tabs: [],
+    books: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.getTabs()
+    this.getBooks()
+  },
 
+  getTabs() {
+    const tabs = [
+      {
+        id: 0,
+        name: '全部'
+      },
+      {
+        id: 1,
+        name: '小说传记'
+      },
+      {
+        id: 2,
+        name: '小说传记'
+      },
+      {
+        id: 3,
+        name: '小说传记'
+      },
+      {
+        id: 4,
+        name: '小说传记'
+      },
+    ]
+    this.setData({tabs})
+  },
+
+  getBooks() {
+    const books = [
+      {
+        id: 0,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
+        title: '无用之美',
+        author: '林白',
+        tag: '小说传记'
+      },
+      {
+        id: 1,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
+        title: '无用之美',
+        author: '林白',
+        tag: '小说传记'
+      },
+    ]
+    this.setData({ books })
   },
 
   /**
