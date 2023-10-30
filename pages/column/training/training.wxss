@@ -1,4 +1,8 @@
 /* pages/column/training/training.wxss */
+page {
+  padding-bottom: 10vw;
+}
+
 .cardList{
   margin:5.3vw 4.2vw;
   box-shadow: 0.2vw 1vw 2.1vw 1vw rgba(155, 116, 55, 0.08);
