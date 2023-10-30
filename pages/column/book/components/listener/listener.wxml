@@ -13,6 +13,8 @@
       class="nav"
       wx:for="{{ navs }}"
       wx:key="id"
+      data-i="{{ index }}"
+      bind:tap="toList"
     >
       <t-image 
         class="nav-cover"

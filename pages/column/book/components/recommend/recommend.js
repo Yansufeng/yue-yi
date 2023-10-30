@@ -21,6 +21,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    toDetail(e) {
+      const index = e.currentTarget.dataset.i
+      
+      wx.navigateTo({
+        url: '/pages/column/book/detail/detail',
+      })
+    },
   }
 })

@@ -21,6 +21,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    toList(e) {
+      const i = e.currentTarget.dataset.i
+      wx.navigateTo({
+        url: '/pages/column/book/list/listL',
+      })
+    }
   }
 })

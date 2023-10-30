@@ -1,4 +1,4 @@
-// pages/column/book/list/list.js
+// pages/column/book/list/listL.js
 Page({
 
   /**
@@ -67,7 +67,7 @@ Page({
     const index = e.currentTarget.dataset.i
     
     wx.navigateTo({
-      url: '/pages/column/book/detail/detail',
+      url: '/pages/column/book/detail/detailL',
     })
   },
 

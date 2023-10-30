@@ -1,0 +1,38 @@
+/* pages/column/book/detail/detailL.wxss */
+.body {
+  padding: 0 4vw;
+  min-height: 100vh;
+  background: linear-gradient(#FCF5E7, #FFF);
+  padding-bottom: 30vw;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 84vw;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.cover {
+  box-shadow: 0 30rpx 20rpx -20rpx rgba(155, 116, 55, 0.3);
+}
+
+.des-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  margin-bottom: 4vw;
+}
+
+.des-txt {
+  font-weight: 300;
+  text-indent: 2em;
+}
+
+.line {
+  margin-top: 10vw;
+  margin-bottom: 8vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

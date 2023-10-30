@@ -9,11 +9,13 @@
   </view>
 
   <view class="content">
-    <view class="books">
+    <view class="books" >
       <t-image 
         class="book"
         wx:for="{{ books }}"
         wx:key="id"
+        data-i="{{ index }}"
+        bind:tap="toDetail"
         src="{{ item.cover }}"
       />
     </view>

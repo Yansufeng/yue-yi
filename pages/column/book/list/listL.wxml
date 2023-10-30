@@ -1,4 +1,4 @@
-<!--pages/column/book/list/list.wxml-->
+<!--pages/column/book/list/listL.wxml-->
 <searchbar />
 
 <tabbar tabs="{{ tabs }}" />

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "听书详情",
+  "usingComponents": {
+    "comment": "./components/comment/comment",
+    "actionbar": "./components/actionbar/actionbar"
+  }
+}

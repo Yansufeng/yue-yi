@@ -8,5 +8,5 @@
     <t-icon name="star-filled" size="6.4vw" color="rgba(0, 0, 0, 0.26)" />
     <view class="name">收藏</view>
   </view>
-  <view class="read">开始阅读</view>
+  <view class="read">{{ label }}</view>
 </view>

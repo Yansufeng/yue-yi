@@ -8,7 +8,9 @@
 
     "pages/column/book/book",
     "pages/column/book/list/list",
+    "pages/column/book/list/listL",
     "pages/column/book/detail/detail",
+    "pages/column/book/detail/detailL",
     "pages/column/show/show",
     "pages/column/activity/activity",
     "pages/column/training/training",

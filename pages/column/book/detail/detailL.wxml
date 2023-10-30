@@ -1,4 +1,4 @@
-<!--pages/column/book/detail/detail.wxml-->
+<!--pages/column/book/detail/detailL.wxml-->
 <view class="body">
   <view class="info">
     <t-image 
@@ -20,4 +20,4 @@
   <comment />
 </view>
 
-<actionbar label="开始阅读" />
+<actionbar label="开始听书" />

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "听书列表",
+  "usingComponents": {
+    "searchbar": "/pages/components/searchbar/searchbar",
+    "tabbar": "/pages/components/tabbar/tabbar"
+  }
+}
