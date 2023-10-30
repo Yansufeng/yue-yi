@@ -27,6 +27,7 @@
         class="book {{ index % 3 == 1 ? 'book-mid' : '' }}"
         wx:for="{{ books }}"
         wx:key="id"
+        bind:tap="toDetail"
       >
         <t-image 
           class="cover" 

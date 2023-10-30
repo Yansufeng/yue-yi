@@ -63,6 +63,12 @@ Component({
       this.setData({active})
     },
 
+    toDetail() {
+      wx.navigateTo({
+        url: '/pages/column/book/detail/detail',
+      })
+    },
+
     toMore() {
       wx.navigateTo({
         url: '/pages/column/book/list/list',
