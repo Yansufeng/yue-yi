@@ -1,2 +1,23 @@
 <!--pages/column/book/detail/detail.wxml-->
-<text>pages/column/book/detail/detail.wxml</text>
+<view class="body">
+  <view class="info">
+    <t-image 
+      class="cover"
+      src="{{ info.cover }}" 
+      width="38vw"
+      height="54vw"
+    />
+    <view class="title">{{ info.title }}</view>
+  </view>
+
+  <view class="des">
+    <view class="des-title">内容简介</view>
+    <view class="des-txt">{{ info.des }}</view>
+  </view>
+
+  <view class="line"></view>
+
+  <comment />
+</view>
+
+<actionbar />
