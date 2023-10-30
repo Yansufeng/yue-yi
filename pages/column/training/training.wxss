@@ -1,1 +1,55 @@
 /* pages/column/training/training.wxss */
+.cardList{
+  margin:5.3vw 4.2vw;
+  box-shadow: 0.2vw 1vw 2.1vw 1vw rgba(155, 116, 55, 0.08);
+  border-radius: 2.1vw;
+}
+.card{
+  width: 91.4vw;
+  height: 32.5vw;
+  display: flex;
+}
+.card-left{
+  padding: 2.6vw 3.2vw;
+}
+.card-left-img{
+  width: 35vw;
+  height: 26.1vw;
+  border-radius:1.6vw !important;
+}
+.card-right{
+  padding: 2.6vw 0;
+}
+.card-right-title{
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.73vw;
+  line-height: 5.86vw;
+  color: #000000;
+}
+.card-right-time{
+  padding-top: 1.6vw;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2vw;
+  line-height: 5.33vw;
+  color: rgba(0, 0, 0, 0.6);
+}
+.btn-end{
+margin-top: 8px;  
+width: 36px;
+height: 20px;
+border: 1px solid rgba(0, 0, 0, 0.26);
+border-radius: 20px;
+/* 手机端-中等/辅助 */
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+padding: 0px 8px;
+color: rgba(0, 0, 0, 0.26);
+}

@@ -1,2 +1,24 @@
 <!--pages/column/training/training.wxml-->
-<text>pages/column/training/training.wxml</text>
+<searchbar />
+<view class='cardList' wx:for="{{tranningList}}" wx:key='id'>
+  <view class='card'>
+  <view class="card-left">   
+    <t-image 
+        class="card-left-img"
+        src="{{item.img }}" 
+        shape="round" 
+        mode="aspectFill"    
+      />
+</view>
+<view class="card-right">
+  <view class='card-right-title'>{{item.name}}</view>
+  <view class="card-right-time">报名时间：{{item.time}}</view>
+
+  <view wx:if="{{item.isExpired}}">
+  <view class='btn-end'>已结束</view>
+  </view>
+</view>
+  </view>
+</view>
+
+
