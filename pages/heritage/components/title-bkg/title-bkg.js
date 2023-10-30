@@ -7,7 +7,6 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    isInit: false,
     title: {
       type: String,
       value: ''
@@ -18,6 +17,7 @@ Component({
    * 组件的初始数据
    */
   data: {
+    isInit: false,
     imgs: {
       bkg: "bkg-title.png"
     }
