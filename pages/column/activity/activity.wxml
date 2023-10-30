@@ -8,5 +8,26 @@
     class="card"
     wx:for="{{ shows }}"
     wx:key="id"
-  ></view>
+  >
+    <t-image 
+      class="cover" 
+      src="{{ item.cover }}"
+      mode="aspectFill"
+    />
+    <view class="content">
+      <view class="title">{{ item.title }}</view>
+      <view class="date">
+        <text>活动时间：</text>
+        <text>{{ item.date }} </text>
+        <text> {{ item.time }}</text>
+      </view>
+      <view class="loc">
+        <text>活动地点：</text>
+        <text>{{ item.loc }}</text>
+      </view>
+      <view class="status">
+        <!-- TODO -->
+      </view>
+    </view>
+  </view>
 </view>

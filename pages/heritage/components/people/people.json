@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "title": "../title-bkg/title-bkg",
+    "h-tabbar": "../h-tabbar/h-tabbar"
+  }
+}

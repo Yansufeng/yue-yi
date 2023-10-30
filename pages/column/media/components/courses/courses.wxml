@@ -1,0 +1,26 @@
+<!--pages/column/media/components/courses/courses.wxml-->
+<titlebar title="线上课程" path="TODO"/>
+<view class="content">
+  <view 
+    class="card"
+    wx:for="{{ courses }}"
+    wx:key="id"
+  >
+    <t-image 
+      class="cover"
+      mode="aspectFill"
+      src="{{ item.cover }}"
+    />
+
+    <view class="info">
+      <view class="title">
+        <text>{{ item.title }}</text>
+      </view>
+
+      <view class="teacher">
+        <text>主讲：</text>
+        <text>{{ item.teacher }}</text>
+      </view>
+    </view>
+  </view>
+</view>

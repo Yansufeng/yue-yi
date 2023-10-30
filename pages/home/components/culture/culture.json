@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
+    "titlebar": "/pages/components/titlebar/titlebar",
     "card": "../card/card"
   }
 }

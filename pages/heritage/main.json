@@ -1,3 +1,15 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "非遗中心",
+  "usingComponents": {
+    "t-swiper": "tdesign-miniprogram/swiper/swiper",
+    "t-swiper-nav": "tdesign-miniprogram/swiper-nav/swiper-nav",
+    
+    "searchbar": "/pages/components/searchbar/searchbar",
+    "tabbar": "/pages/components/tabbar/tabbar",
+    
+    "proj": "./components/proj/proj",
+    "people": "./components/people/people",
+    "news": "./components/news/news",
+    "files": "./components/files/files"
+  }
 }

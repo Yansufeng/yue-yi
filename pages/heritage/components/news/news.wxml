@@ -1,0 +1,20 @@
+<!--pages/heritage/components/news/news.wxml-->
+<view class="title">
+  <title title="非遗动态" />
+</view>
+
+<view class="cards">
+  <view 
+    class="card"
+    wx:for="{{ news }}"
+    wx:key="id"
+  >
+    <t-image class="cover" src="{{ item.cover }}" shape="round" />
+    <view class="info">
+      <view class="info-title">
+        <text>{{ item.title }}</text>
+      </view>
+      <view class="date">{{ item.date }}</view>
+    </view>
+  </view>
+</view>

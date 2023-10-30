@@ -1,38 +1,26 @@
-<!--pages/components/tabbar/tabbar.wxml-->
-<view class="body">
-  <view class="btns flex">
-    <view class="btns-i flex">
-      <view 
-        wx:for="{{ tabsL }}" 
-        wx:key="pagePath"
-        class="btn {{ item.id == active ? 'active' : '' }}"
-        bindtap="onTap({{ item.id }})"
-      >
-        <view class="icon">
-          <t-icon name="{{ item.icon }}" color="{{ item.id == active ? '#B01F1A' : 'rgba(0, 0, 0, 0.6)' }}" size="40rpx"/>
-        </view>
-        <text>{{ item.text }}</text>
-      </view>
-    </view>
-
-    <view class="btns-i flex">
-      <view 
-        wx:for="{{ tabsR }}" 
-        wx:key="pagePath"
-        class="btn {{ item.id == active ? 'active' : '' }}"
-        bindtap="onTap({{ item.id }})"
-      >        
-        <view class="icon">
-          <t-icon name="{{ item.icon }}" color="{{ item.id == active ? '#B01F1A' : 'rgba(0, 0, 0, 0.6)' }}" size="40rpx"/>
-        </view>
-        <text>{{ item.text }}</text></view>
-    </view>
+<!--pages/column/activity/components/tabbar/tabbar.wxml-->
+<scroll-view wx:if="{{ tabs.length > 4 }}" class="body" scroll-x>
+  <view 
+    class="tab {{ index == active ? 'active' : ''}}"
+    wx:for="{{ tabs }}"
+    wx:key="id"
+    data-i="{{ index }}"
+    bindtap="onTab"
+  >
+    <text>{{ item.name }}</text>
+        <view wx:if="{{ index == active }}" class="line"></view>
   </view>
-  <view class="qr">
-    <view class="qr-body">
-      <view class="qr-btn">
-        <t-icon name="qrcode" color="#FFF" size="54rpx"/>
-      </view>
-    </view>
+</scroll-view>
+
+<view class="flex-body" wx:else>
+  <view 
+    class="tab {{ index == active ? 'active' : ''}}"
+    wx:for="{{ tabs }}"
+    wx:key="id"
+    data-i="{{ index }}"
+    bindtap="onTab"
+  >
+    <text>{{ item.name }}</text>
+        <view wx:if="{{ index == active }}" class="line"></view>
   </view>
 </view>

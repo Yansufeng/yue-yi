@@ -1,0 +1,23 @@
+<!--pages/column/media/components/teachers/teachers.wxml-->
+<scroll-view class="body" scroll-x>
+  <view 
+    class="teacher {{ index == active ? 'active' : ''}}"
+    wx:for="{{ teachers }}"
+    wx:key="id"
+    data-i="{{ index }}"
+    bindtap="onTab"
+  >
+    <t-image 
+      class="avatar" 
+      shape="circle"
+      src="{{ item.avatar }}"
+    />
+    <view class="name">
+      <text>{{ item.name }}</text>
+    </view>
+    <t-image 
+      class="bkg"
+      src="{{ imgs.bkg }}"
+    />
+  </view>
+</scroll-view>

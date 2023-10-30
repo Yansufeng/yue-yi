@@ -2,6 +2,6 @@
   "navigationBarTitleText": "公益活动",
   "usingComponents": {
     "searchbar": "/pages/components/searchbar/searchbar",
-    "tabbar": "./components/tabbar/tabbar"
+    "tabbar": "/pages/components/tabbar/tabbar"
   }
 }

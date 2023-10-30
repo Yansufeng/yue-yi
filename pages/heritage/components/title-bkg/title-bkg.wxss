@@ -1,0 +1,16 @@
+/* pages/heritage/components/title-bkg/title-bkg.wxss */
+.title {
+  font-size: 36rpx;
+  font-weight: 600;
+  position: relative;
+  display: inherit;
+}
+
+
+.bkg {
+  width: 19.2vw;
+  height: 7.5vw;
+  position: absolute;
+  bottom: -14rpx;
+  left: calc(50% - 9.6vw);
+}

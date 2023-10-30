@@ -1,4 +1,4 @@
-// pages/column/activity/components/tabbar/tabbar.js
+// pages/heritage/components/h-tabbar/h-tabbar.js
 Component({
 
   /**
@@ -22,11 +22,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onTab(e) {
-      const i = e.currentTarget.dataset.i
-      const active = i
-      this.setData({active})
-      this.triggerEvent('tabEvent', i)  // 父组件传值
+    onTap(e) {
+      const active = e.currentTarget.dataset.i
+      this.setData({ active })
+      this.triggerEvent('tabEvent', active)  // 父组件传值
     }
   }
 })

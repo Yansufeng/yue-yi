@@ -1,18 +1,67 @@
 // pages/heritage/main.js
+import { initImgs } from "../../utils/init";
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    isInit: false,
+    active: 0,
+    imgs: {
+      bkg: 'bkg-main.png'
+    },
+    tabs: [],
+    swiperList: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.getTabs()
+    this.getSwiperList()
+    initImgs('/heritage/', this)
 
+    this.setData({
+      isInit: true
+    })
+  },
+
+  getTabs() {
+    const tabs = [
+      {
+        id: 0,
+        name: '非遗项目'
+      },
+      {
+        id: 1,
+        name: '非遗传承人'
+      },
+      {
+        id: 2,
+        name: '非遗动态'
+      },
+      {
+        id: 3,
+        name: '非遗文件'
+      }
+    ]
+    this.setData({tabs})
+  },
+
+  getSwiperList() {
+    const swiperList = [
+      "https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png",
+      "https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png"
+    ]
+    this.setData({swiperList})
+  },
+
+  tabChange(e) {
+    const active = e.detail
+    this.setData({active})
   },
 
   /**

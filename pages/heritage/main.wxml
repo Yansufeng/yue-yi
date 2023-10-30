@@ -1,2 +1,19 @@
 <!--pages/heritage/main.wxml-->
-<text>pages/heritage/main.wxml</text>
+<searchbar />
+<t-image class="bkg-main" wx:if="{{ isInit }}" src="{{ imgs.bkg }}" />
+<view class="body">
+  <tabbar tabs="{{ tabs }}" bind:tabEvent="tabChange"/>
+  <view class="content">
+    <t-swiper
+      autoplay
+      list="{{ swiperList }}"
+      navigation="{{ { type: 'dots-bar' } }}"
+      height="37vw"
+    />
+    
+    <proj wx:if="{{ active == 0 }}" />
+    <people wx:if="{{ active == 1 }}" />
+    <news wx:if="{{ active == 2 }}" />
+    <files wx:if="{{ active == 3 }}" />
+  </view>
+</view>

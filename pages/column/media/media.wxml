@@ -1,2 +1,23 @@
 <!--pages/column/media/media.wxml-->
-<text>pages/column/media/media.wxml</text>
+<searchbar />
+
+<view class="cover-body">
+  <t-image 
+    class="cover"
+    wx:if="{{ isInit }}" 
+    src="{{ imgs.cover }}"
+    shape="round"
+  />
+</view>
+
+<view class="content">
+  <tabbar tabs="{{ tabs }}" />
+
+  <view class="teachers">
+    <teachers class="teacher" teachers="{{ teachers }}"/>
+  </view>
+
+  <view class="courses">
+    <courses courses="{{ courses }}"/>
+  </view>
+</view>

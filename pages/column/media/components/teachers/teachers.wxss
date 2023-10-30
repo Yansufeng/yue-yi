@@ -1,0 +1,38 @@
+/* pages/column/media/components/teachers/teachers.wxss */
+.body {
+  white-space: nowrap;
+}
+
+.teacher {
+  display: inline-block;
+  width: 24.5vw;
+  height: 31.4vw;
+  position: relative;
+  margin-right: 4vw;
+}
+
+.teacher:first-child {
+  margin-left: 4vw;
+}
+
+.avatar {
+  width: 12.8vw;
+  height: 12.8vw;
+  position: absolute;
+  left: 5.85vw;
+  top: 5vw;
+}
+
+.name {
+  font-weight: 600;
+  color: #9B7437;
+  text-align: center;
+  position: absolute;
+  top: 20vw;
+  width: 100%;
+}
+
+.bkg {
+  width: 24.5vw;
+  height: 31.4vw;
+}

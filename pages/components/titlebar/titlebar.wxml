@@ -1,0 +1,11 @@
+<!--pages/components/titlebar/titlebar.wxml-->
+<view class="top">
+  <view class="title">
+    <text>{{ title }}</text>
+  </view>
+
+  <view class="more" wx:if="{{ path != '' }}" bind:tap="onMore">
+    <text>更多</text>
+    <t-icon class="right" name="chevron-right" color="#9B7437" size="32rpx" />
+  </view>
+</view>

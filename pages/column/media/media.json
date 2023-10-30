@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "视听集市",
+  "usingComponents": {
+    "searchbar": "/pages/components/searchbar/searchbar",
+    "tabbar": "/pages/components/tabbar/tabbar",
+    "teachers": "./components/teachers/teachers",
+    "courses": "./components/courses/courses"
+  }
 }

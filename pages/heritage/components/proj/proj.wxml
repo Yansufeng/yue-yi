@@ -1,0 +1,44 @@
+<!--pages/heritage/components/proj/proj.wxml-->
+<!-- <t-swiper
+  autoplay
+  list="{{ swiperList }}"
+  navigation="{{ { type: 'dots-bar' } }}"
+  height="37vw"
+/> -->
+
+<view class="title">
+  <title title="非遗项目" />
+</view>
+
+<view class="tabs">
+  <h-tabbar tabs="{{ tabs }}" />
+</view>
+
+<view class="content">
+  <view 
+    class="card"
+    wx:for="{{ projs }}"
+    wx:key="id"
+  >
+    <t-image 
+      class="cover" 
+      src="{{ item.cover }}" 
+      shape="round"
+      width="32vw"
+      height="24.5vw"
+    />
+    <view class="info">
+      <view class="info-title">
+        <text>{{ item.title }}</text>
+      </view>
+      
+      <view>
+        <text class="info-tag">{{ item.type }}</text>
+      </view>
+      
+      <view class="info-des">
+        <text>{{ item.des }}</text>
+      </view>
+    </view>
+  </view>
+</view>
