@@ -10,6 +10,7 @@
     wx:key="id"
   >
     <t-image 
+      class="cover"
       src="{{ item.cover }}" 
       width="25.6vw"
       height="36.5vw"
