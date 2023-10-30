@@ -61,6 +61,12 @@ Component({
       const i = e.currentTarget.dataset.i
       const active = i
       this.setData({active})
+    },
+
+    toMore() {
+      wx.navigateTo({
+        url: '/pages/column/book/list/list',
+      })
     }
   }
 })

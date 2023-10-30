@@ -56,3 +56,11 @@
   margin: 0 3vw;
 }
 
+.more {
+  display: flex;
+  justify-content: center;
+  color: #9B7437;
+  padding-bottom: 10vw;
+  align-items: center;
+}
+

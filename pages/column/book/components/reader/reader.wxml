@@ -35,5 +35,10 @@
         <view class="name">{{ item.name }}</view>
       </view>
     </view>
+
+    <view class="more" bind:tap="toMore">
+      <text>查看更多</text>
+      <t-icon name="chevron-down" color="#9B7437" size="40rpx"/>
+    </view>
   </view>
 </view>
