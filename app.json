@@ -13,7 +13,9 @@
     "pages/column/media/media",
     "pages/column/local/local",
     "pages/column/celebrity/celebrity",
-    "pages/column/volunteer/volunteer"
+    "pages/column/volunteer/volunteer",
+
+    "pages/heritage/main"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -45,5 +47,6 @@
     "t-icon": "tdesign-miniprogram/icon/icon",
     "t-image": "tdesign-miniprogram/image/image"
   },
+  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

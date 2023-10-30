@@ -1,14 +1,5 @@
 {
   "dependencies": {
     "tdesign-miniprogram": "^1.2.3"
-  },
-  "name": "yue-yi",
-  "version": "1.0.0",
-  "main": ".eslintrc.js",
-  "devDependencies": {},
-  "scripts": {
-  },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }
