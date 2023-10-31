@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "展品详情",
+  "usingComponents": {
+    "comment": "/pages/components/comment/comment"
+  }
+}

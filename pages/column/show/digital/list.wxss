@@ -1,0 +1,23 @@
+/* pages/column/show/digital/list.wxss */
+.cards {
+  padding: 4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10vw;
+}
+
+.card {
+  /* height: 40vw; */
+  border-radius: 20rpx;
+  overflow: hidden;
+  margin-bottom: 3.7vw;
+  box-shadow: 2rpx 10rpx 20rpx 2rpx rgba(155, 116, 55, 0.08);
+}
+
+.name {
+  padding: 20rpx;
+  padding-bottom: 28rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+}
