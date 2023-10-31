@@ -1,0 +1,58 @@
+/* pages/column/book/detail/components/comment/comment.wxss */
+.title {
+  font-size: 36rpx;
+  font-weight: 600;
+  margin-bottom: 5.3vw;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5vw;
+}
+
+.info {
+  width: 60vw;
+  font-size: 28rpx;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+}
+
+.like-count {
+  margin-left: 10rpx;
+}
+
+.commit {
+  padding: 2.6vw;
+  background-color: #F8F8F8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10rpx;
+  --td-input-bg-color: #F8F8F8;
+  --td-font-size-m: 28rpx;
+  --td-input-vertical-padding: 0;
+}
+
+.commit-btn {
+  width: 22vw;
+  height: 10vw;
+  line-height: 10vw;
+  text-align: center;
+  background-color: #D0A669;
+  border-radius: 10rpx;
+  color: #FFF;
+}
+
