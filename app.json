@@ -12,6 +12,8 @@
     "pages/column/book/detail/detail",
     "pages/column/book/detail/detailL",
     "pages/column/show/show",
+    "pages/column/show/digital/list",
+    "pages/column/show/digital/detail",
     "pages/column/activity/activity",
     "pages/column/training/training",
     "pages/column/media/media",
