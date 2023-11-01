@@ -1,0 +1,38 @@
+/* pages/column/book/detail/components/actionbar/actionbar.wxss */
+.body {
+  height: 18vw;
+  width: 100vw;
+  background-color: #FFF;
+  position: fixed;
+  padding-bottom: 8vw;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 -4rpx 8rpx rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.action {
+  height: 12vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.read {
+  height: 12vw;
+  width: 45vw;
+  line-height: 12vw;
+  text-align: center;
+  color: #FFF;
+  font-weight: 600;
+  border-radius: 12vw;
+  background-color: #B01F1A;
+}
+
+.name {
+  font-size: 28rpx;
+}
+
