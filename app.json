@@ -19,6 +19,7 @@
     "pages/column/activity/activity",
     "pages/column/activity/detail/detail",
     "pages/column/training/training",
+    "pages/column/training/detail/detail",
     "pages/column/media/media",
     "pages/column/local/local",
     "pages/column/celebrity/celebrity",
