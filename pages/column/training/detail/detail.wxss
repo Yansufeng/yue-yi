@@ -1,4 +1,4 @@
-/* pages/column/activity/detail/detail.wxss */
+/* pages/column/training/detail/detail.wxss */
 .cover {
   position: absolute;
   z-index: -1;
@@ -7,19 +7,21 @@
 }
 
 .body {
-  padding: 0 4vw;
+  margin-top: 33vw;
+  padding: 4vw;
   padding-bottom: 30vw;
+  border-radius: 4vw;
+  background-color: #FFF;
 }
 
 .card {
   width: 92vw;
-  margin: 0 auto;
-  margin-top: 50vw;
-  background-color: #FFF;
-  border-radius: 20rpx;
-  padding: 4vw;
+  margin-bottom: 4vw;
+  /* background-color: #FFF; */
+  /* border-radius: 20rpx; */
+  padding: 0 4vw;
   box-sizing: border-box;
-  box-shadow: 2rpx 10rpx 20rpx 2rpx rgba(155, 116, 55, 0.08);
+  /* box-shadow: 2rpx 10rpx 20rpx 2rpx rgba(155, 116, 55, 0.08); */
 }
 
 .name {
@@ -41,7 +43,7 @@
 }
 
 .detail {
-  padding: 8vw 0;
+  padding-bottom: 8vw;
 }
 
 .title {
@@ -59,3 +61,4 @@
   margin-bottom: 8vw;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
