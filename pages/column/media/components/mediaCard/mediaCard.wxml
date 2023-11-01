@@ -1,0 +1,16 @@
+<!--pages/column/media/components/mediaCard/mediaCard.wxml-->
+<view class="body">
+  <t-image 
+    src="{{ info.cover }}" 
+    width="43vw"
+    height="24vw"
+    mode="aspectFill"
+  />
+  <view class="info">
+    <view class="name">{{ info.name }}</view>
+    <view class="teacher">
+      <text>主讲：</text>
+      <text>{{ info.teacher }}</text>
+    </view>
+  </view>
+</view>
