@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "titlebar": "/pages/components/titlebar/titlebar",
+    
+    "mediaCard": "../../../components/mediaCard/mediaCard"
+  }
+}

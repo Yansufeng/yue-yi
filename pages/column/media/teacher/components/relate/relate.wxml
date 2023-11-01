@@ -1,0 +1,13 @@
+<!--pages/column/media/teacher/components/relate/relate.wxml-->
+<titlebar title="相关课程" path="TODO" />
+
+<view class="cards">
+  <view 
+    class="card"
+    wx:for="{{ courses }}"
+    wx:key="id"
+  >
+    <mediaCard info="{{ item }}" />
+  </view>
+</view>
+
