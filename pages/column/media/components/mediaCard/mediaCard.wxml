@@ -1,11 +1,12 @@
 <!--pages/column/media/components/mediaCard/mediaCard.wxml-->
-<view class="body">
+<view class="body" bind:tap="toDetail">
   <t-image 
     src="{{ info.cover }}" 
     width="43vw"
     height="24vw"
     mode="aspectFill"
   />
+  <t-icon class="icon" name="play-circle-filled" color="#FFF" size="40rpx" />
   <view class="info">
     <view class="name">{{ info.name }}</view>
     <view class="teacher">
