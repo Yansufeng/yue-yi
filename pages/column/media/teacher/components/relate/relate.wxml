@@ -1,5 +1,5 @@
 <!--pages/column/media/teacher/components/relate/relate.wxml-->
-<titlebar title="相关课程" path="TODO" />
+<titlebar title="相关课程" path="/pages/column/media/course/list" />
 
 <view class="cards">
   <view 
