@@ -43,6 +43,14 @@ Component({
         imgs[key] = base + imgs[key]
       }
       this.setData({imgs})
+    },
+
+    toDetail(e) {
+      const i = e.currentTarget.dataset.i
+      
+      wx.navigateTo({
+        url: '/pages/column/media/teacher/detail',
+      })
     }
   }
 })
