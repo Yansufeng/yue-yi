@@ -14,6 +14,8 @@
     "pages/column/show/show",
     "pages/column/show/digital/list",
     "pages/column/show/digital/detail",
+    "pages/column/show/local/list",
+    "pages/column/show/local/detail",
     "pages/column/activity/activity",
     "pages/column/training/training",
     "pages/column/media/media",
