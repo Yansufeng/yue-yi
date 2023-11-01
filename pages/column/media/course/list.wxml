@@ -1,0 +1,14 @@
+<!--pages/column/media/course/list.wxml-->
+<searchbar />
+
+<tabbar tabs="{{ tabs }}" />
+
+<view class="cards">
+  <view 
+    class="card"
+    wx:for="{{ courses }}"
+    wx:key="id"
+  >
+    <mediaCard info="{{ item }}" />
+  </view>
+</view>

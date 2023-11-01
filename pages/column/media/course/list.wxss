@@ -1,0 +1,8 @@
+/* pages/column/media/course/list.wxss */
+.cards {
+  padding: 4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10vw;
+}
