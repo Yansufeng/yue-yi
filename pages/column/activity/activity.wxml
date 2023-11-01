@@ -8,6 +8,8 @@
     class="card"
     wx:for="{{ shows }}"
     wx:key="id"
+    data-i="{{ index }}"
+    bind:tap="toDetail"
   >
     <t-image 
       class="cover" 
