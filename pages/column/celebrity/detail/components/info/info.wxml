@@ -1,0 +1,20 @@
+<!--pages/column/celebrity/detail/components/info/info.wxml-->
+<t-image 
+  src="{{ info.cover }}" 
+  width="100vw"
+  height="56vw"
+  mode="aspectFill"
+/>
+
+<view class="body">
+  <t-image 
+    class="bkg"
+    src="{{ imgs.bkg }}" 
+    width="92vw"
+    height="114vw"  
+  />
+  <scroll-view class="content" scroll-y>
+    <text>{{ info.content }}</text>
+  </scroll-view>
+  <view class="mask"></view>
+</view>
