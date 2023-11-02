@@ -1,2 +1,59 @@
 <!--pages/column/media/course/detail.wxml-->
-<text>pages/column/media/course/detail.wxml</text>
+<t-image 
+  src="{{ info.cover }}" 
+  width="100vw"
+  height="56vw"
+  mode="aspectFill"
+/>
+
+<t-icon class="icon" name="play-circle-filled" color="#FFF" size="80rpx" />
+
+<view class="content">
+  <view class="info">
+    <view class="name">{{ info.name }}</view>
+    <view class="info-content">
+      <view class="date">
+        <text>发布时间：</text>
+        <text>{{ info.date }}</text>
+      </view>
+
+      <view class="actions">
+        <view class="btn">
+          <t-icon 
+            name="thumb-up-2" 
+            size="40rpx" 
+            color="{{ isLiked ? '#D0A669' : 'rgba(0, 0, 0, 0.4)' }}" 
+          />
+          <text>{{ info.like }}</text>
+        </view>
+
+        <view class="btn">
+          
+          <t-icon 
+            name="star-filled" 
+            size="40rpx" 
+            color="{{ isLiked ? '#D0A669' : 'rgba(0, 0, 0, 0.4)' }}" 
+          />
+          <text>{{ info.star }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="detail">
+    <view class="detail-title">培训详情</view>
+    <view class="detail-txt">{{ info.content }}</view>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="recommend">
+    <recommend />
+  </view>
+
+  <view class="comment">
+    <comment />
+  </view>
+</view>

@@ -1,1 +1,62 @@
 /* pages/column/media/course/detail.wxss */
+.icon {
+  position: absolute;
+  top: calc(23vw - 40rpx);
+  left: calc(50vw - 40rpx);
+}
+
+.content {
+  padding: 5vw 4vw;
+  padding-bottom: 10vw;
+}
+
+.name {
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  font-size: 28rpx;
+}
+
+.actions {
+  display: flex;
+}
+
+.btn {
+  height: 17vw;
+  width: 13vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 28rpx;
+  font-weight: 300;
+}
+
+.line {
+  margin-top: 2vw;
+  margin-bottom: 8vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.detail-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  margin-bottom: 4vw;
+}
+
+.detail-txt {
+  font-weight: 300;
+  text-indent: 2em;
+}
+
+.recommend {
+  margin-bottom: 4vw;
+}
