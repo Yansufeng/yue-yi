@@ -1,0 +1,19 @@
+<!--pages/column/celebrity/detail/components/story/story.wxml-->
+<view class="body">
+  <view class="cards">
+    <view
+      class="card"
+      wx:for="{{ stories }}"
+      wx:key="id"
+    >
+      <t-image 
+        src="{{ item.cover }}"
+        width="41vw"
+        height="28vw"
+        mode="aspectFill"
+      />
+
+      <view class="name">{{ item.name }}</view>
+    </view>
+  </view>
+</view>
