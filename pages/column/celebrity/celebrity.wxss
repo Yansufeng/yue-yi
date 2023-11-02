@@ -1,1 +1,42 @@
 /* pages/column/celebrity/celebrity.wxss */
+.bkg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.body {
+  min-height: calc(100vh - 14vw);
+  background: linear-gradient(#FCF5E7, #FFF);
+  padding: 8vw 11vw;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  z-index: 5;
+  width: 35.2vw;
+  height: 44.8vw;
+  margin-bottom: 3vw;
+}
+
+.avatar {
+  position: absolute;
+  left: 8.8vw;
+  top: 8vw;
+}
+
+.name {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 1vw;
+  color: #9B7437;
+  font-weight: 600;
+}
