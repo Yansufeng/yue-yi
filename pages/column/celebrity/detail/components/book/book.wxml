@@ -1,0 +1,19 @@
+<!--pages/column/celebrity/detail/components/book/book.wxml-->
+<view class="body">
+  <view class="cards">
+    <view
+      class="card {{ index % 3 == 1 ? 'mid' : ''}}"
+      wx:for="{{ books }}"
+      wx:key="id"
+    >
+      <t-image 
+        src="{{ item.cover }}"
+        width="28vw"
+        height="49vw"
+        mode="aspectFill"
+      />
+
+      <view class="name">{{ item.name }}</view>
+    </view>
+  </view>
+</view>
