@@ -1,0 +1,8 @@
+/* pages/column/local/detail/detail.wxss */
+page{
+  padding-bottom: 10vw;
+}
+.bkg{
+  width: 100vw;
+  height: 56.26vw;
+}

@@ -54,7 +54,6 @@ getList(){
   ]
   const now = Date.now();
   const newlist=list.map((item)=>{
-    console.log(item)
     item.isExpired = now > +new Date(item.time.replace(/\./g, '/'));
     return item;
   })

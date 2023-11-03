@@ -1,0 +1,41 @@
+/* pages/column/activity/components/tabbar/tabbar.wxss */
+.body {
+  white-space: nowrap;
+}
+
+.tab {
+  display: inline-block;
+  padding: 0 4.2vw;
+  padding-top: 3.2vw;
+  text-align: center;
+  height: 9vw;
+  position: relative;
+  font-weight: 300;
+}
+
+.active {
+  color: #9B7437;
+  font-weight: 500;
+}
+
+.line {
+  width: 4.8vw;
+  height: 10rpx;
+  background-color: rgba(208, 166, 105, 0.6);
+  border-radius: 10rpx;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 2.4vw);
+}
+
+.flex-body {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FCF5E7;
+}
+
+.flex-body .tab {
+  display: block;
+  padding: 0;
+  padding-top: 3.2vw;
+}

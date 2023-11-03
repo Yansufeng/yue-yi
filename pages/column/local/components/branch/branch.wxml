@@ -1,0 +1,11 @@
+<!--pages/column/local/components/branch/branch.wxml-->
+<view class="branchBox"> 
+  <view class="containerBox" >
+  <view  wx:for="{{branches}}" wx:key="id" class="content {{ index % 3 == 1 ? 'content-mid' : '' }}" bind:tap="toDetail">
+    <t-image class="cover" src="{{item.cover}}" data-index="{{item.id}}"/>
+    <view class="title">
+      {{item.title}}
+    </view>
+  </view>
+  </view>
+</view>

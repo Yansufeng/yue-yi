@@ -1,0 +1,7 @@
+<!--pages/column/local/detail/detail.wxml-->
+<t-image class="bkg" src="{{imgs.bkg}}">
+</t-image>
+<card/>
+<intro/>
+<root servelist="{{serveList}}"/>
+<team teamlist="{{teamList}}"/>

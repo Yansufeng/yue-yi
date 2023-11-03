@@ -1,11 +1,9 @@
 {
-  "pages":[
-    
+  "pages": [
     "pages/home/home",
     "pages/map/map",
     "pages/resource/resource",
     "pages/user/user",
-
     "pages/column/book/book",
     "pages/column/book/list/list",
     "pages/column/book/list/listL",
@@ -18,33 +16,35 @@
     "pages/column/local/local",
     "pages/column/celebrity/celebrity",
     "pages/column/volunteer/volunteer",
-
-    "pages/heritage/main"
+    "pages/heritage/main",
+    "pages/column/local/detail/detail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FCF5E7",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "custom": true,
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "首页"
-    }, 
-    {
-      "pagePath": "pages/map/map",
-      "text": "文化地图"
-    }, 
-    {
-      "pagePath": "pages/resource/resource",
-      "text": "资源推荐"
-    }, 
-    {
-      "pagePath": "pages/user/user",
-      "text": "我的"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "文化地图"
+      },
+      {
+        "pagePath": "pages/resource/resource",
+        "text": "资源推荐"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
   },
   "usingComponents": {
     "topbar": "/pages/components/topbar/topbar",

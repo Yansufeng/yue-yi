@@ -1,0 +1,77 @@
+/* pages/column/local/components/intro/intro.wxss */
+.intro{
+  background: linear-gradient(#FCF5E7, #FFF);
+}
+.coverBox{
+  padding-top:3.7vw ;
+}
+.coverBox .cover{
+  width: 100vw;
+  height: 56vw;
+}
+.introBox{
+  width: 91.8vw;
+  padding:5.3vw 4.2vw;
+}
+.title{
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.content{
+  padding-top: 4vw;
+}
+.content view{
+max-height:25.5vw;
+overflow: hidden;
+font-weight: 300;
+font-size: 26rpx;
+text-indent: 2em;
+line-height: 1.6;
+display: -webkit-box;
+-webkit-line-clamp: 5; 
+-webkit-box-orient: vertical;
+transition: all 0.5s linear;
+}
+.content view.active{
+  overflow:auto;
+  max-height:40vw;
+  -webkit-line-clamp:unset; 
+}
+.more{
+  width: 23.5vw;
+  height: 7.46vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8vw auto;
+}
+
+.more text{
+  color:#9B7437;
+  font-size:27rpx
+  
+}/* Divider 分割线 */
+.line{
+  width: 91.4vw;
+  border-bottom:1rpx solid #E7E7E7;
+}
+.bottomBox{
+  margin:5vw 4.26vw  0
+}
+.settingCover{
+  margin:4.26vw  0 6vw;
+  width: 91.4vw;
+  height: 48.5vw;
+} 
+.bottomBox .connectContent{
+  padding-top: 6vw;
+}
+.connectContent view{
+  display: flex;
+  padding-bottom: 3.2vw;
+}
+.connectContent view text{
+  font-size: 30rpx;
+  padding-left: 2.13vw;
+
+}

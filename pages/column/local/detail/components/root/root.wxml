@@ -1,0 +1,45 @@
+<!--pages/column/local/detail/components/root/root.wxml-->
+<view class="root-container">
+  <view class="header">
+  <view class="title">
+    基层服务点
+  </view>
+    <view class="more" bindtap="toMore">
+      <text>更多</text>
+      <t-icon class="icon-right" name="chevron-right" color="#9B7437" size="32rpx" />
+    </view>
+  </view>
+  <view class="body">
+  <view wx:for="{{servelist}}" wx:key="id" class="card">
+    <view class="cover">
+    <t-image src="{{item.img}}"/>
+    </view>
+    <view class="content">
+      <view class="title">{{item.title}}</view>
+      <view class="text">联系人：{{item.name}}</view>
+      <view class="text">联系方式：{{item.tel}}</view>
+      <view class="text">地址：{{item.address}}</view>
+    </view>
+  </view>
+  </view>
+  <t-popup visible="{{visible}}" bind:visible-change="onVisibleChange" placement="bottom">
+  <view class="poupBox">
+  <view class="close">
+    <t-icon name="close" size="32rpx"  bind:click="close" />
+  </view>
+    <view class="body">
+      <view wx:for="{{servelist}}" wx:key="id" class="card">
+          <view class="cover">
+          <t-image src="{{item.img}}"/>
+          </view>
+      <view class="content">
+          <view class="title">{{item.title}}</view>
+          <view class="text">联系人：{{item.name}}</view>
+          <view class="text">联系方式：{{item.tel}}</view>
+          <view class="text">地址：{{item.address}}</view>
+      </view>
+    </view>
+    </view>
+  </view>
+  </t-popup>
+</view>
