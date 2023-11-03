@@ -26,6 +26,7 @@
     "pages/column/media/course/detail",
     "pages/column/local/local",
     "pages/column/celebrity/celebrity",
+    "pages/column/celebrity/detail/detail",
     "pages/column/volunteer/volunteer",
 
     "pages/heritage/main"
