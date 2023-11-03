@@ -7,7 +7,8 @@ Page({
    */
   data: {
     imgs: {
-      bkg: 'main-bkg.png'
+      bkg: 'main-bkg.png',
+      cardBkg: 'card-bkg.png'
     },
     celebrities: []
   },

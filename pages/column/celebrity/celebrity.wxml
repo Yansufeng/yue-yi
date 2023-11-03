@@ -17,11 +17,11 @@
       data-i="{{ index }}"
       bind:tap="toDetail"
     >
-      <!-- <t-image 
-        src="{{ imgs.card-bkg }}"
+      <t-image 
+        src="{{ imgs.cardBkg }}"
         width="35.2vw"
         height="44.8vw"
-       /> -->
+       />
       <t-image 
         class="avatar" 
         src="{{ item.avatar }}" 
