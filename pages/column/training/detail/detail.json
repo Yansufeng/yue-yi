@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "培训详情",
+  "usingComponents": {
+    "comment": "/pages/components/comment/comment",
+    "actionbar": "/pages/components/actionbar/actionbar"
+  }
+}

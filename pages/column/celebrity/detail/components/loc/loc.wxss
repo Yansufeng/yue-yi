@@ -1,0 +1,63 @@
+/* pages/column/celebrity/detail/components/loc/loc.wxss */
+.body {
+  position: relative;
+  min-height: calc(100vh - 90vw);
+  background: linear-gradient(#FCF5E7, #FFF);
+  padding: 4vw;
+  padding-bottom: 10vw;
+}
+
+.bkg {
+  position: absolute;
+  top: 4vw;
+  z-index: 1;
+}
+
+.card {
+  height: 114vw;
+  position: relative;
+  z-index: 2;
+  padding: 8vw;
+  box-sizing: border-box;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4vw;
+}
+
+.name {
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.full-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #D0A669;
+  font-size: 28rpx;
+}
+
+.info-body {
+  margin-bottom: 5vw;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 300;
+  margin-bottom: 12rpx;
+}
+
+.icon {
+  margin-right: 0.5em;
+}
+
+.content {
+  font-weight: 300;
+  text-indent: 2em;
+}

@@ -1,0 +1,44 @@
+<!--pages/column/training/detail/detail.wxml-->
+<t-image 
+  class="cover"
+  src="{{ info.cover }}" 
+  width="100vw"
+  height="42vw"
+  mode="aspectFill"
+/>
+
+<view class="body">
+  <view class="card">
+    <view class="name">{{ info.name }}</view>
+    <view class="info">
+      <t-icon class="icon" name="alarm" color="#D0A669" />
+      <text>报名时间：</text>
+      <text>{{ info.signInTime }}</text>
+    </view>
+    <view class="info">
+      <t-icon class="icon" name="alarm" color="#D0A669" />
+      <text>培训时间：</text>
+      <text>{{ info.trainingTime }}</text>
+    </view>
+    <view class="info">
+      <t-icon class="icon" name="map-information-1" color="#D0A669" />
+      <text>培训地点：</text>
+      <text>{{ info.loc }}</text>
+    </view>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="detail">
+    <view class="title">培训详情</view>
+    <view class="content">
+      <text>{{ info.content }}</text>
+    </view>
+  </view>
+
+  <view class="line"></view>
+
+  <comment />
+</view>
+
+<actionbar label="参与报名" />

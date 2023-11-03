@@ -1,0 +1,45 @@
+<!--pages/column/media/teacher/detail.wxml-->
+<view class="info">
+  <t-image 
+    wx:if="{{ isInit }}"
+    class="cover"
+    src="{{ imgs.cover }}" 
+    width="100vw"
+    height="48vw"
+  />
+
+  <view class="avatar-body">
+    <t-image 
+      class="avatar"
+      src="{{ info.avatar }}" 
+      width="19vw"
+      height="19vw"
+      shape="circle"
+    />
+  </view>
+
+  <view class="name">{{ info.name }}</view>
+
+  <view>
+    <text class="tag">{{ info.tag }}</text>
+  </view>
+</view>
+
+<view class="body">
+  <view class="detail">
+    <view class="title">师资详情</view>
+    <view class="content">
+      <text>{{ info.content }}</text>
+    </view>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="relate">
+    <relate />
+  </view>
+
+  <view class="comment">
+    <comment />
+  </view>
+</view>

@@ -1,0 +1,6 @@
+/* pages/column/media/components/recommend/recommend.wxss */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vw;
+}

@@ -1,2 +1,34 @@
 <!--pages/column/celebrity/celebrity.wxml-->
-<text>pages/column/celebrity/celebrity.wxml</text>
+<searchbar />
+
+<t-image 
+  class="bkg"
+  src="{{ imgs.bkg }}" 
+  width="100vw"
+  height="100vh"
+/>
+
+<view class="body">
+  <view class="cards">
+    <view 
+      class="card"
+      wx:for="{{ celebrities }}" 
+      wx:key="id"
+      data-i="{{ index }}"
+      bind:tap="toDetail"
+    >
+      <t-image 
+        src="{{ imgs.cardBkg }}"
+        width="35.2vw"
+        height="44.8vw"
+       />
+      <t-image 
+        class="avatar" 
+        src="{{ item.avatar }}" 
+        width="17.6vw"
+        height="17.6vw"
+      />
+      <view class="name">{{ item.name }}</view>
+    </view>
+  </view>
+</view>

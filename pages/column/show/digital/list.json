@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "数字展品",
+  "usingComponents": {
+    "searchbar": "/pages/components/searchbar/searchbar",
+    "tabbar": "/pages/components/tabbar/tabbar"
+  }
+}

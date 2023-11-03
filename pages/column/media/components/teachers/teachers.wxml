@@ -5,7 +5,7 @@
     wx:for="{{ teachers }}"
     wx:key="id"
     data-i="{{ index }}"
-    bindtap="onTab"
+    bind:tap="toDetail"
   >
     <t-image 
       class="avatar" 

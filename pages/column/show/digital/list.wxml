@@ -1,0 +1,22 @@
+<!--pages/column/show/digital/list.wxml-->
+<searchbar />
+
+<tabbar tabs="{{ tabs }}" />
+
+<view class="cards">
+  <view 
+    class="card"
+    wx:for="{{ exhibits }}"
+    wx:key="id"
+    data-i="{{ index }}"
+    bind:tap="toDetail"
+  >
+    <t-image 
+      src="{{ item.cover }}" 
+      width="43vw"
+      height="28vw"
+      mode="aspectFill"
+    />
+    <view class="name">{{ item.name }}</view>
+  </view>
+</view>

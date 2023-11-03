@@ -1,0 +1,42 @@
+<!--pages/column/activity/detail/detail.wxml-->
+<t-image 
+  class="cover"
+  src="{{ info.cover }}" 
+  width="100vw"
+  height="56vw"
+  mode="aspectFill"
+/>
+
+<view class="body">
+  <view class="card">
+    <view class="name">{{ info.name }}</view>
+    <view class="info">
+      <t-icon class="icon" name="alarm" color="#D0A669" />
+      <text>活动时间：</text>
+      <text>{{ info.date }}</text>
+    </view>
+    <view class="info">
+      <t-icon class="icon" name="call" color="#D0A669" />
+      <text>联系电话：</text>
+      <text>{{ info.tel }}</text>
+    </view>
+    <view class="info">
+      <t-icon class="icon" name="map-information-1" color="#D0A669" />
+      <text>活动地点：</text>
+      <text>{{ info.loc }}</text>
+    </view>
+  </view>
+
+  <view class="detail">
+    <view class="title">活动详情</view>
+    <view class="content">
+      <text>{{ info.content }}</text>
+    </view>
+  </view>
+
+  <view class="line"></view>
+
+  <comment />
+</view>
+
+<actionbar label="参与报名" />

@@ -1,6 +1,6 @@
 /* pages/components/titlebar/titlebar.wxss */
 .top {
-  width: 91vw;
+  width: 92vw;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

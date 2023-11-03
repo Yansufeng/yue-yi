@@ -46,10 +46,19 @@ Page({
         id: 2,
         cover: base + 'exhibits.png',
         name: '数字展品',
-        path: ''
+        path: '/pages/column/show/digital/list'
       },
     ]
     this.setData({ navs })
+  },
+
+  toDigitalList(e) {
+    const i = e.currentTarget.dataset.i
+    const path = this.data.navs[i].path 
+
+    wx.navigateTo({
+      url: path,
+    })
   },
 
   /**

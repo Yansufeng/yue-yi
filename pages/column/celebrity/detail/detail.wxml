@@ -1,0 +1,17 @@
+<!--pages/column/celebrity/detail/detail.wxml-->
+<searchbar />
+
+<view class="tabs">
+  <view 
+    class="tab {{ active == index ? 'tab-active' : '' }}"
+    wx:for="{{ tabs }}"
+    wx:key="item"
+    data-i="{{ index }}"
+    bind:tap="onTab"
+  >{{ item }}</view>
+</view>
+
+<info wx:if="{{ active == 0 }}" />
+<story wx:if="{{ active == 1 }}" />
+<book wx:if="{{ active == 2 }}" />
+<loc wx:if="{{ active == 3 }}" />

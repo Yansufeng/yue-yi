@@ -1,0 +1,20 @@
+/* pages/column/celebrity/detail/detail.wxss */
+.tabs {
+  display: flex;
+}
+
+.tab {
+  width: 25vw;
+  height: 12vw;
+  line-height: 12vw;
+  text-align: center;
+  border-top: 4px solid #B01F1A;
+  border-bottom: 4px solid #B01F1A;
+  font-weight: 300;
+}
+
+.tab-active {
+  background-color: #B01F1A ;
+  color: #FFF;
+  font-weight: 600;
+}

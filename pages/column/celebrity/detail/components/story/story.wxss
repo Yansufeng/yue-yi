@@ -1,0 +1,22 @@
+/* pages/column/celebrity/detail/components/story/story.wxss */
+.body {
+  min-height: calc(100vh - 34vw);
+  background: linear-gradient(#FCF5E7, #FFF);
+  padding: 4vw;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin-bottom: 3vw;
+}
+
+.name {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20rpx;
+}

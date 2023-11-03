@@ -1,0 +1,61 @@
+/* pages/column/activity/detail/detail.wxss */
+.cover {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.body {
+  padding: 0 4vw;
+  padding-bottom: 30vw;
+}
+
+.card {
+  width: 92vw;
+  margin: 0 auto;
+  margin-top: 50vw;
+  background-color: #FFF;
+  border-radius: 20rpx;
+  padding: 4vw;
+  box-sizing: border-box;
+  box-shadow: 2rpx 10rpx 20rpx 2rpx rgba(155, 116, 55, 0.08);
+}
+
+.name {
+  font-size: 32rpx;
+  font-weight: 600;
+  margin-bottom: 4vw;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 300;
+  margin-bottom: 12rpx;
+}
+
+.icon {
+  margin-right: 0.5em;
+}
+
+.detail {
+  padding: 8vw 0;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: 600;
+  margin-bottom: 4vw;
+}
+
+.content {
+  font-weight: 300;
+  text-indent: 2em;
+}
+
+.line {
+  margin-bottom: 8vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

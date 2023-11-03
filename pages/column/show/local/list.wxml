@@ -1,0 +1,35 @@
+<!--pages/column/show/local/list.wxml-->
+<searchbar />
+
+<view class="shows">
+  <view 
+    class="show"
+    wx:for="{{ shows }}"
+    wx:key="id"  
+    data-i="{{ index }}"
+    bind:tap="toDetail"
+  >
+    <t-image 
+      src="{{ item.cover }}" 
+      width="34vw"
+      height="26vw"
+      shape="round"
+      mode="aspectFill"
+    />
+    <view class="content">
+      <view class="title">{{ item.title }}</view>
+
+      <view class="info-body">
+        <view class="date info">
+          <t-icon class="info-icon" name="alarm" color="#D0A669" />
+          <text>{{ item.date }}</text>
+        </view>
+
+        <view class="date info">
+          <t-icon class="info-icon" name="city-ancient-1" color="#D0A669" />
+          <text>{{ item.loc }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

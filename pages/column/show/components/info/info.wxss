@@ -1,6 +1,6 @@
 /* pages/column/show/components/info/info.wxss */
 .header {
-  font-size: 40rpx;
+  font-size: 36rpx;
   font-weight: 600;
   margin-bottom: 5.3vw;
 }

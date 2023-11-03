@@ -1,0 +1,12 @@
+<!--pages/column/media/components/recommend/recommend.wxml-->
+<titlebar title="视频推荐" path="/pages/column/media/course/list" />
+
+<view class="cards">
+  <view 
+    class="card"
+    wx:for="{{ courses }}"
+    wx:key="id"
+  >
+    <mediaCard info="{{ item }}" />
+  </view>
+</view>

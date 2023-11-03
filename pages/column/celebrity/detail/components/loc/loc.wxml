@@ -1,0 +1,47 @@
+<!--pages/column/celebrity/detail/components/loc/loc.wxml-->
+<t-image 
+  src="{{ loc.cover }}" 
+  width="100vw"
+  height="56vw"
+  mode="aspectFill"
+/>
+
+<view wx:if="{{ isInit }}" class="body">
+  <t-image 
+    class="bkg"
+    src="{{ imgs.bkg }}" 
+    width="92vw"
+    height="114vw"  
+  />
+
+  <view class="card">
+    <view class="top">
+      <view class="name">{{ loc.name }}</view>
+      <view class="full-view">
+        <t-image 
+          src="{{ imgs.fullView }}"
+          width="6vw"
+          height="6vw"
+        />
+        <view class="label">查看全景</view>
+      </view>
+    </view>
+
+    <view class="info-body">
+      <view class="info">
+        <t-icon class="icon" name="alarm" color="#D0A669" />
+        <text>开放时间：</text>
+        <text>{{ loc.time }}</text>
+      </view>
+      <view class="info">
+        <t-icon class="icon" name="map-information-1" color="#D0A669" />
+        <text>{{ loc.loc }}</text>
+      </view>
+    </view>
+
+    <scroll-view class="content" scroll-y>
+      <text>{{ loc.content }}</text>
+    </scroll-view>
+  </view>
+  
+</view>

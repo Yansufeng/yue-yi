@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "师资介绍",
+  "usingComponents": {
+    "comment": "/pages/components/comment/comment",
+
+    "relate": "./components/relate/relate"
+  }
+}

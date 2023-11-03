@@ -13,6 +13,8 @@
       class="nav"
       wx:for="{{ navs }}"
       wx:key="id"
+      data-i="{{ index }}"
+      bind:tap="toDigitalList"
     >
       <t-image class="nav-icon" src="{{ item.cover }}" />
       <view>{{ item.name }}</view>

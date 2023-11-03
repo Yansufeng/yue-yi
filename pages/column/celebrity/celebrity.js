@@ -1,18 +1,72 @@
 // pages/column/celebrity/celebrity.js
+import { initImgs } from '../../../utils/init'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    imgs: {
+      bkg: 'main-bkg.png',
+      cardBkg: 'card-bkg.png'
+    },
+    celebrities: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    initImgs('/column/celebrity/', this)
+    this.getCelebrities()
+  },
 
+  getCelebrities() {
+    const celebrities = [
+      {
+        id: 0,
+        avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
+        name: '张苏苏'
+      },
+      {
+        id: 1,
+        avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
+        name: '张苏苏'
+      },
+      {
+        id: 2,
+        avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
+        name: '张苏苏'
+      },
+      {
+        id: 3,
+        avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
+        name: '张苏苏'
+      },
+      {
+        id: 4,
+        avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
+        name: '张苏苏'
+      },
+      {
+        id: 5,
+        avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
+        name: '张苏苏'
+      },
+      {
+        id: 6,
+        avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
+        name: '张苏苏'
+      },
+    ]
+    this.setData({celebrities})
+  },
+
+  toDetail(e) {
+    const i = e.currentTarget.dataset.i 
+    wx.navigateTo({
+      url: './detail/detail',
+    })
   },
 
   /**

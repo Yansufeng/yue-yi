@@ -1,0 +1,32 @@
+/* pages/column/media/components/mediaCard/mediaCard.wxss */
+.body {
+  position: relative;
+  height: 44vw;
+  width: 43vw;
+  overflow: hidden;
+  border-radius: 20rpx;
+  box-shadow: 2rpx 10rpx 20rpx 2rpx rgba(155, 116, 55, 0.08);
+  margin-bottom: 3vw;
+}
+
+.icon {
+  position: absolute;
+  top: 16vw;
+  right: 3vw;
+}
+
+.info {
+  height: 20vw;
+  padding: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 28rpx;
+  font-weight: 300;
+}
+
+.name {
+  font-size: 32rpx;
+  font-weight: 600;
+}

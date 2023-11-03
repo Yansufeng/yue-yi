@@ -1,0 +1,67 @@
+/* pages/column/media/teacher/detail.wxss */
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.info {
+  text-align: center;
+  height: 48vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-body {
+  height: 23vw;
+}
+
+.avatar {
+  border: 1px solid #FBEEC7;
+}
+
+.name {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #9B7437;
+}
+
+.tag {
+  font-size: 28rpx;
+  background-color: rgba(208, 166, 105, 0.4);
+  padding: 0 30rpx;
+  line-height: 50rpx;
+  border-radius: 50rpx;
+  color: #9B7437;
+  margin-top: 10rpx;
+}
+
+.body {
+  padding: 4vw;
+  padding-bottom: 10vw;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: 600;
+  margin: 4vw 0;
+}
+
+.content {
+  font-weight: 300;
+  text-indent: 2em;
+}
+
+.line {
+  margin-top: 4vw;
+  margin-bottom: 8vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.relate {
+  margin-bottom: 8vw;
+}
+
