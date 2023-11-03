@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "文化名人",
+  "usingComponents": {
+    "searchbar": "/pages/components/searchbar/searchbar",
+
+    "info": "./components/info/info",
+    "story": "./components/story/story",
+    "book": "./components/book/book",
+    "loc": "./components/loc/loc"
+  }
+}
