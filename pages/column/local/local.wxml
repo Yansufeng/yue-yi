@@ -1,2 +1,8 @@
 <!--pages/column/local/local.wxml-->
-<text>pages/column/local/local.wxml</text>
+<searchbar />
+<!-- 获取tab栏组件修改 -->
+<tabbar tabs="{{ tabs }}" bind:tabEvent="tabChange" />
+<intro  wx:if="{{active==0}}"/>
+<branch wx:if="{{active==1}}"/>
+<nav wx:if="{{active==2}}" />
+<organization wx:if="{{active==3}}" />

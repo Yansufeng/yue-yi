@@ -1,0 +1,11 @@
+{ "navigationBarTitleText": "分馆详情",
+  "usingComponents": {
+    "t-image": "tdesign-miniprogram/image/image",
+    "card":"./components/card/card",
+    "intro":"./components/intro/intro",
+    "root":"./components/root/root",
+    "team":"./components/team/team",
+    "t-action-sheet": "tdesign-miniprogram/action-sheet/action-sheet"
+
+  }
+}

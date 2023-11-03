@@ -5,16 +5,46 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    active:0,
+    tabs: [],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.getTabs()
+  },
+  getTabs() {
+    const tabs = [
+      {
+        id: 0,
+        code: '',
+        name: '简介'
+      },
+      {
+        id: 1,
+        code: '',
+        name: '所辖分馆'
+      },
+      {
+        id: 2,
+        code: '',
+        name: '全景导航'
+      },
+      {
+        id: 3,
+        code: '',
+        name: '群文社团'
+      },    
+    ]
+    this.setData({tabs})
+  },
+  tabChange(e){
+    const active = e.detail
+    this.setData({active})
 
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

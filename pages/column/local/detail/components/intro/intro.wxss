@@ -1,0 +1,28 @@
+/* pages/column/local/detail/components/intro/intro.wxss */
+.container{
+  display: flex;
+  flex-direction:column;
+  padding:7vw 5.3vw;
+  box-sizing:border-box;
+  width:100vw;
+}
+.container .header{
+  font-weight:600;
+  font-size: 40rpx;
+  line-height:40rpx;
+}
+.container .body{
+  padding-top:4.26vw;
+  text-indent:2em;
+  font-size: 30rpx;
+  line-height:48rpx;
+  font-weight:350
+}
+.line{
+  /* Divider 分割线 */
+
+  margin-top:8vw;
+
+/* Gray 中性/Gray3 */
+border-bottom: 2rpx solid #E7E7E7;
+}

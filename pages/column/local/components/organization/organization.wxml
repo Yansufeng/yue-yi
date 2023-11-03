@@ -1,0 +1,30 @@
+<!--pages/column/local/components/organization/organization.wxml-->
+<view class="container">
+  <view class="header">
+   <view class="bkg">
+   <t-image src="{{imgs.bkg}}"></t-image>
+   </view>
+   <view class="options">
+    <t-image src=" {{imgs.create}}"></t-image>
+    <t-image src="{{imgs.join}}"></t-image>
+   </view>
+  </view>
+  <view class="body">
+  <view class="title">
+  社团资讯
+  </view>
+  <view class="card" wx:for="{{news}}" wx:key="id">
+    <view class="cover">
+    <t-image src="{{item.img}}" shape="round"></t-image>
+    </view>   
+    <view class="content">
+    <view class="content-title">
+    {{item.title}}
+    </view>
+    <view class="time">
+      {{item.dateTime}}
+    </view>
+    </view>
+  </view>
+  </view>
+</view>

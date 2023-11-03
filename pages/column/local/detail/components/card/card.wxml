@@ -1,0 +1,21 @@
+<!--pages/column/local/detail/components/card/card.wxml-->
+<view class="cardBox">
+  <view class="card-header">
+  天门山镇分馆
+  </view>
+  <view class="card-body">
+  <view class="item"> 
+    <t-icon name="alarm" color="#9B7437" size="30rpx" />
+   <text> 开放时间：周一至周五09:00-17:00</text>
+  </view>
+  <view class="item">
+    <t-icon name="call" color="#9B7437" size="30rpx"/>
+   <text> 联系电话：(0744)8596681  杨起</text>
+  </view>
+  <view class="item">
+    <t-icon name="map-location" color="#9B7437" size="30rpx"/>
+   <text> 详细地址：湖南省张家界市永定区天门路</text>
+  </view>
+  <view class="navigatorButton">导航</view>
+  </view>
+</view>

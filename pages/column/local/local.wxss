@@ -1,1 +1,9 @@
 /* pages/column/local/local.wxss */
+page{
+
+  padding-bottom: 10vw;
+}
+
+
+
+
