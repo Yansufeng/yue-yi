@@ -1,0 +1,9 @@
+<!--pages/qr/qr.wxml-->
+<t-image 
+  wx:if="{{ isInit }}" 
+  class="cover"
+  src="{{ imgs.bkgTop }}" 
+  width="100vw"
+  height="58vw"
+/>
+

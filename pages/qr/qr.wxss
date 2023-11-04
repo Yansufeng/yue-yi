@@ -1,0 +1,13 @@
+/* pages/qr/qr.wxss */
+page {
+  background: linear-gradient(#FCF5E7, #FFF);
+}
+
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
