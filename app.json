@@ -5,6 +5,7 @@
     "pages/map/map",
     "pages/resource/resource",
     "pages/user/user",
+    "pages/qr/qr",
 
     "pages/column/book/book",
     "pages/column/book/list/list",
@@ -54,7 +55,12 @@
     {
       "pagePath": "pages/user/user",
       "text": "我的"
-    }]
+    },
+    {
+      "pagePath": "pages/qr/qr",
+      "text": "二维码核销"
+    }
+  ]
   },
   "usingComponents": {
     "topbar": "/pages/components/topbar/topbar",
