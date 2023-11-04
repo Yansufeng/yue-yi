@@ -8,6 +8,7 @@ Page({
    */
   data: {
     isInit: false,
+    active: 0,
     imgs: {
       bkgTop: 'bkg-top.png',
       bkgTab: 'bkg-tab.png',
@@ -16,6 +17,12 @@ Page({
       iconLoc: 'icon-loc.png',
       iconTicket: 'icon-ticket.png'
     }
+  },
+
+  onTab(e) {
+    const active = e.currentTarget.dataset.i
+    console.log(active)
+    this.setData({active})
   },
 
   /**

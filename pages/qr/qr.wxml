@@ -7,3 +7,60 @@
   height="58vw"
 />
 
+<view class="tabs">
+  <t-image 
+    class="bkg-tabs"
+    src="{{ imgs.bkgTab }}"             
+    width="44vw"
+    height="10vw"
+  />
+
+  <t-image 
+    class="active-{{ active == 0 ? 'left' : 'right' }}"
+    src="{{ imgs.bkgActive }}"
+    width="22.5vw"
+    height="10vw"
+  />
+
+  <view 
+    class="tab {{ active == 0 ? 'active' : '' }}"
+    data-i="0"
+    bind:tap="onTab"
+  >场馆预约</view>
+  <view 
+    class="tab {{ active == 1 ? 'active' : '' }}"
+    data-i="1"
+    bind:tap="onTab"
+  >剧场订票</view>
+</view>
+
+<view class="qr">
+  <t-image 
+    src="{{ imgs.bkgQr }}"
+    width="67vw"
+    height="67vw"
+  />
+</view>
+<view class="txt">核销二维码</view>
+
+<view class="line"></view>
+
+<view class="btns">
+  <view class="btn">
+    <t-image 
+      src="{{ imgs.iconLoc }}"
+      width="16vw"
+      height="16vw"
+    />
+    <view class="label">预约场馆记录</view>
+  </view>
+
+  <view class="btn">
+    <t-image 
+      src="{{ imgs.iconTicket }}"
+      width="16vw"
+      height="16vw"
+    />
+    <view class="label">预约场馆记录</view>
+  </view>
+</view>

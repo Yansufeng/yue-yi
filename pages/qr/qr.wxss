@@ -3,11 +3,80 @@ page {
   background: linear-gradient(#FCF5E7, #FFF);
 }
 
-
 .cover {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: -1;
 }
 
+.tabs {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5vw;
+  width: 44vw;
+  display: flex;
+  justify-content: space-around;
+  line-height: 10vw;
+  color: #9B7437;
+}
+
+.bkg-tabs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.active-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.active-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.tabs .active {
+  color: #FFF;
+}
+
+.qr {
+  width: 67vw;
+  height: 67vw;
+  margin: 8vw auto;
+}
+
+.txt {
+  text-align: center;
+  margin-top: 4vw;
+  color: #9B7437;
+}
+
+.line {
+  margin: 0 4vw;
+  margin-top: 10vw;
+  margin-bottom: 8vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  margin-top: 4vw;
+  color: #9B7437;
+}
