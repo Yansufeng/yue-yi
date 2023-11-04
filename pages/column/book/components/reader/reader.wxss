@@ -1,6 +1,33 @@
 /* pages/column/book/components/reader/reader.wxss */
 .header {
-  padding: 5vw;
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8vw;
+}
+
+.title {
+  font-size: 42rpx;
+  font-weight: 600;
+  margin-left: 20rpx;
+  position: relative;
+  padding: 0 10rpx;
+}
+
+.title-content {
+  position: relative;
+  z-index: 2;
+}
+
+.title-line {
+  height: 20rpx;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(208, 166, 105, 0.6);
+  border-radius: 20rpx;
+  bottom: 1rpx;
+  left: 0;
+  z-index: 1;
 }
 
 .tabs {

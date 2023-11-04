@@ -15,4 +15,5 @@
 
 .listener {
   margin-top: 12vw;
+  margin-bottom: 8vw;
 }

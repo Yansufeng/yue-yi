@@ -1,11 +1,11 @@
 <!--pages/column/book/components/reader/reader.wxml-->
 <view class="body">
   <view class="header">
-    <!-- <t-icon name="book-open" color="#9B7437" size="48rpx"/>
+    <t-icon name="tag" color="#9B7437" size="48rpx"/>
     <view class="title">
-      <text class="title-content"></text>
-      <view class="line"></view>
-    </view> -->
+      <text class="title-content">热门标签</text>
+      <view class="title-line"></view>
+    </view>
   </view>
 
   <view class="content">
