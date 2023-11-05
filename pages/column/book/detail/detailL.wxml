@@ -10,14 +10,29 @@
     <view class="title">{{ info.title }}</view>
   </view>
 
-  <view class="des">
-    <view class="des-title">内容简介</view>
-    <view class="des-txt">{{ info.des }}</view>
+  <view class="tabs">
+    <view 
+      class="tab {{ active == 0 ? 'active' : '' }}"
+      data-i="0"
+      bindtap="onTab"
+    >
+      <text>内容简介</text>
+      <view wx:if="{{ active == 0 }}" class="tab-line"></view>
+    </view>
+
+    <view 
+      class="tab {{ active == 1 ? 'active' : '' }}"
+      data-i="1"
+      bindtap="onTab"
+    >
+      <text>章节</text>
+      <view wx:if="{{ active == 1 }}" class="tab-line"></view>
+    </view>
   </view>
 
-  <view class="line"></view>
-
-  <comment />
+  <des wx:if="{{ active == 0 }}" des="{{ info.des }}" />
+  
+  <chapter wx:if="{{ active == 1}}" />
 </view>
 
 <actionbar label="开始听书" />

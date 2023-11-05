@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    active: 1,
     info: {}
   },
 
@@ -23,6 +24,11 @@ Page({
       des: '这是一个后真相时代，我们对于何为真实的判断暧昧晦暗。现代社会庞大的信息数据网络，除了如同迷魂阵令人难辨真假，也如同牢笼将我们封锁其中。回顾来路，20世纪的变革既漫长又短暂，一方面，科学的迅速发展建立起现代人膨胀的...'
     }
     this.setData({info})
+  },
+
+  onTab(e) {
+    const active = e.currentTarget.dataset.i 
+    this.setData({active})
   },
 
   /**

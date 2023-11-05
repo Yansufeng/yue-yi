@@ -2,6 +2,9 @@
   "navigationBarTitleText": "听书详情",
   "usingComponents": {
     "comment": "/pages/components/comment/comment",
-    "actionbar": "/pages/components/actionbar/actionbar"
+    "actionbar": "/pages/components/actionbar/actionbar",
+
+    "des": "./components/des/des",
+    "chapter": "./components/chapter/chapter"
   }
 }

@@ -1,0 +1,17 @@
+<!--pages/column/book/detail/components/chapter/chapter.wxml-->
+<view class="play-all">
+  <t-icon name="play" color="#D0A669" size="48rpx" />
+  <text>播放全部</text>
+</view>
+
+<view class="list">
+  <view 
+    class="chapter"
+    wx:for="{{ list }}"
+    wx:key="id"
+  >
+    <view class="name">{{ item.name }}</view>
+    <t-icon name="play-circle" color="#D0A669" size="40rpx" />
+  </view>
+</view>
+
