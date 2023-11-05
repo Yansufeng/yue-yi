@@ -2,6 +2,12 @@
 
 .scroll-body {
   white-space: nowrap;
+  width: 100vw;
+  margin-left: -4vw;
+}
+
+.tab:first-child {
+  margin-left: 4vw;
 }
 
 .tab {
