@@ -26,6 +26,7 @@
 
 .tabs {
   margin-top: 28rpx;
+  margin-left: 4vw;
 }
 
 .scroll-body {

@@ -48,17 +48,17 @@ Component({
       const tabs = [
         {
           id: '0',
-          title: '非遗项目',
+          name: '非遗项目',
           code: '0'
         },
         {
           id: '1',
-          title: '非遗传承人',
+          name: '非遗传承人',
           code: '0'
         },
         {
           id: '2',
-          title: '非遗起源地',
+          name: '非遗起源地',
           code: '0'
         }
       ]

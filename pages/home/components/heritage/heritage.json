@@ -2,6 +2,8 @@
   "component": true,
   "usingComponents": {
     "titlebar": "/pages/components/titlebar/titlebar",
-    "cover": "../cover/cover"
+
+    "cover": "../cover/cover",
+    "tabbar": "/pages/heritage/components/h-tabbar/h-tabbar"
   }
 }

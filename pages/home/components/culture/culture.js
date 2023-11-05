@@ -42,47 +42,47 @@ Component({
       const tabs = [
         {
           id: '0',
-          title: '全部',
+          name: '全部',
           code: '0'
         },
         {
           id: '1',
-          title: '通知',
+          name: '通知',
           code: '0'
         },
         {
           id: '2',
-          title: '活动',
+          name: '活动',
           code: '0'
         },
         {
           id: '3',
-          title: '演出',
+          name: '演出',
           code: '0'
         },
         {
           id: '4',
-          title: '培训',
+          name: '培训',
           code: '0'
         },
         {
-          id: '1',
-          title: '通2',
+          id: '5',
+          name: '通2',
           code: '0'
         },
         {
-          id: '2',
-          title: '活2',
+          id: '6',
+          name: '活2',
           code: '0'
         },
         {
-          id: '3',
-          title: '演2',
+          id: '7',
+          name: '演2',
           code: '0'
         },
         {
-          id: '4',
-          title: '培2',
+          id: '8',
+          name: '培2',
           code: '0'
         }
       ]

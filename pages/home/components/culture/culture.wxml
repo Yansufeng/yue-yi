@@ -1,19 +1,9 @@
 <!--pages/home/components/culture/culture.wxml-->
-<!-- <view class="top">
-  <view class="title">
-    <text>文化热点</text>
-  </view>
-
-  <view class="more">
-    <text>更多</text>
-    <t-icon class="right" name="chevron-right" color="#9B7437" size="32rpx" />
-  </view>
-</view> -->
-
 <titlebar title="文化热点" path="TODO" />
 
 <view wx:if="{{ isInit }}" class="tabs">
-  <scroll-view class="scroll-body" scroll-x >
+  <tabbar tabs="{{ tabs }}" />
+  <!-- <scroll-view class="scroll-body" scroll-x >
     <view 
       wx:key="title" 
       wx:for="{{ tabs }}"
@@ -23,7 +13,7 @@
       <view class="tab-bkg__c"></view>
       <text class="tab-title">{{ item.title }}</text>
     </view>
-  </scroll-view>
+  </scroll-view> -->
 </view>
 
 <view wx:if="{{ isInit }}" class="content">

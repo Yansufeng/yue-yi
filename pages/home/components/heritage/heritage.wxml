@@ -1,28 +1,8 @@
 <!--pages/home/components/heritage/heritage.wxml-->
-<!-- <view class="top">
-  <view class="title">
-    <text>非遗中心</text>
-  </view>
-
-  <view class="more">
-    <text>更多</text>
-    <t-icon class="icon-right" name="chevron-right" color="#9B7437" size="32rpx" />
-  </view>
-</view> -->
 <titlebar title="非遗中心" path="/pages/heritage/main" />
 
 <view class="tabs">
-  <scroll-view class="scroll-body" scroll-x >
-    <view 
-      wx:key="title" 
-      wx:for="{{ tabs }}"
-      class="tab {{ item.id == active ? 'tab-active' : '' }}"
-    >
-      <view class="tab-bkg"></view>
-      <view class="tab-bkg__c"></view>
-      <text class="tab-title">{{ item.title }}</text>
-    </view>
-  </scroll-view>
+  <tabbar tabs="{{ tabs }}" />
 </view>
 
 <view class="content">
