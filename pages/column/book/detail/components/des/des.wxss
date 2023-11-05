@@ -1,0 +1,11 @@
+/* pages/column/book/detail/components/des/des.wxss */
+.des-txt {
+  font-weight: 300;
+  text-indent: 2em;
+}
+
+.line {
+  margin-top: 10vw;
+  margin-bottom: 8vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

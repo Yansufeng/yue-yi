@@ -1,0 +1,8 @@
+<!--pages/column/book/detail/components/des/des.wxml-->
+<view class="des">
+    <view class="des-txt">{{ des }}</view>
+  </view>
+
+  <view class="line"></view>
+
+  <comment />
