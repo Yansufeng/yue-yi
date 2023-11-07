@@ -2,10 +2,10 @@
 <titlebar title="非遗中心" path="/pages/heritage/main" />
 
 <view class="tabs">
-  <tabbar tabs="{{ tabs }}" />
+  <tabbar tabs="{{ tabs }}" bind:tabEvent="onTab" />
 </view>
 
-<view class="content">
+<!-- <view class="content">
   <view class="cover left">
     <cover />
   </view>
@@ -17,5 +17,19 @@
   <view class="cover right">
     <cover />
   </view>
-</view>
+</view> -->
 
+<t-swiper
+  class="content"
+  height="92vw"
+  current="{{ current }}"
+  autoplay
+  bindchange="onChange"
+  navigation="{{ { type: 'dots-bar' } }}"
+  image-props="{{ { shape: 'round' } }}"
+  list="{{ list }}"    
+  previousMargin="{{ margin }}"
+  nextMargin="{{ margin }}"
+  t-class-image="cover"
+  t-class-nav="nav"
+/>

@@ -19,7 +19,7 @@
   height: 17.6vw;
   display: inline-block;
   position: relative;
-  margin-left: 3.73vw;
+  margin-right: 3.73vw;
 }
 
 .btn:first-child {

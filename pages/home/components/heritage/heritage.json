@@ -1,6 +1,9 @@
 {
   "component": true,
   "usingComponents": {
+    "t-swiper": "tdesign-miniprogram/swiper/swiper",
+    "t-swiper-nav": "tdesign-miniprogram/swiper-nav/swiper-nav",
+
     "titlebar": "/pages/components/titlebar/titlebar",
 
     "cover": "../cover/cover",

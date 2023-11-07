@@ -16,19 +16,19 @@ Component({
     isInit: false,
     btns: [
       {
-        bkg: 'serve_reserve.png',
-        icon: 'city-ancient-1',
+        bkg: 'reserve.png',
+        // icon: 'city-ancient-1',
         title: '场馆预约'
       },
       {
-        bkg: 'serve_reserve.png',
-        icon: 'city-ancient-1',
-        title: '场馆预约2'
+        bkg: 'ticket.png',
+        // icon: 'city-ancient-1',
+        title: '剧场订票'
       },
       {
-        bkg: 'serve_reserve.png',
-        icon: 'city-ancient-1',
-        title: '场馆预约3'
+        bkg: 'tradition.png',
+        // icon: 'city-ancient-1',
+        title: '传承经典'
       }
     ]
   },
@@ -45,7 +45,7 @@ Component({
   methods: {
     init() {
       const btns = this.data.btns
-      const base = app.globalData.globalImgUrl + '/home/'
+      const base = app.globalData.globalImgUrl + '/home/serve/'
       btns.map(btn => btn.bkg = base + btn.bkg)
       this.setData({btns})
       this.setData({

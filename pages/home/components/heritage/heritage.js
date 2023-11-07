@@ -14,9 +14,11 @@ Component({
    */
   data: {
     isInit: false,
-    active: '0',
+    active: 0,
     tabs: [],
     list: [],
+    current: 1,
+    margin: '',
     imgs: {
       border: 'heritage-border.png'
     }
@@ -39,6 +41,7 @@ Component({
       this.getTabs()
       this.getList()
       this.initImgs()
+      this.getMargin()
       this.setData({
         isInit: true
       })
@@ -56,16 +59,52 @@ Component({
           name: '非遗传承人',
           code: '0'
         },
-        {
-          id: '2',
-          name: '非遗起源地',
-          code: '0'
-        }
+        // {
+        //   id: '2',
+        //   name: '非遗起源地',
+        //   code: '0'
+        // }
       ]
       this.setData({tabs})
     },
   
-    getList() {},
+    getList() {
+      const base = app.globalData.globalImgUrl + '/home/heritage/'
+      const list = []
+
+      for(let i = 0; i < 6; i++) {
+        list.push(base + i + '.png')
+      }
+
+      this.setData({list})
+    },
+
+    getPList() {
+      const base = app.globalData.globalImgUrl + '/home/heritage/'
+      const list = []
+
+      for(let i = 0; i < 4; i++) {
+        list.push(base + 'p' + i + '.png')
+      }
+
+      this.setData({list})
+    },
+
+    getMargin() {
+      const windowW = wx.getSystemInfoSync().windowWidth
+      const margin = windowW * 0.16 + 'px'
+      this.setData({margin})
+    },
+
+    onChange() {
+
+    },
+
+    onTab(e) {
+      const active = e.detail
+      if(active == 0) this.getList()
+      else this.getPList()
+    },
 
     initImgs() {
       const base = app.globalData.globalImgUrl + '/home/'
