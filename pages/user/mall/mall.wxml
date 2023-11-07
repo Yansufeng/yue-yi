@@ -1,0 +1,57 @@
+<!--pages/user/mall/mall.wxml-->
+<view class="mall-container">
+  <view class="header" >
+    <view class="bkg">
+      <t-image src="{{imgs.bkg}}"></t-image>
+    </view>  
+    <view class="score">
+    <t-image src="{{imgs.coins}}"></t-image>
+    <view class="des"><text>我的积分:</text><text class="number">  {{score}}</text></view> 
+    </view>
+    <view class="history" bindtap="toHistory">
+    兑换记录
+    </view>
+  </view>
+  <view class="body">
+  <tabbar tabs="{{ tabs }}" bind:tabEvent="tabChange" />
+  <view class="goods-container" >
+  <view class="goodsBox  {{index%2==0? 'first':'second'}}" wx:for="{{goodsList}}" wx:key="id">  
+    <t-image class="cover" src="{{item.img}}"></t-image>
+    <view class="goodsinfo">
+    <view class="goodsname">{{item.name}}</view>
+    <view class="goodsScore">
+    <view class="score"><text class="number">{{item.score}}  </text> <text> 积分</text></view>
+    <view class="changeBtn" bindtap="change" data-score="{{item.score}}" data-img="{{item.img}}" data-name="{{item.name}}" >兑换</view>
+    </view>
+    </view>
+  </view>
+  </view>
+</view>
+</view>
+
+<t-popup visible="{{visible}}" bind:visible-change="onVisibleChange" placement="center">
+  <view class="errorblock" wx:if="{{sucess==false}}">
+  <view>
+    <t-icon name="error-circle" size="50" color="#D0A669"/>
+    <view class="erroInfo">兑换失败</view>
+    <view class="Tips">您的积分不足，快去积累更多积分吧</view>
+  </view>
+  </view>
+  <view wx:else class="sucessblock">
+  <view class="success">
+  <view >
+   <t-image class="goodsImg" src="{{goodsImg}}">
+   </t-image>
+  </view>
+  <view class="goodsname">{{goodsName}}</view>
+  <view class="scoreCost">
+    <t-image class="coins" src="{{imgs.coins}}"></t-image>
+    <view class="scoreCost-des">
+    消耗 {{goodsScore}} 积分</view>
+  </view>
+  <view class="tips">可凭借兑换记录到现场联系工作人员进行兑换。</view>
+  <view class="option" bindtap="confirmChange">确认兑换</view>
+  </view> 
+  </view>
+  <t-icon t-class="close-btn" name="close-circle" size="32" color="#fff" bind:tap="onClose" />
+</t-popup>

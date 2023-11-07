@@ -1,0 +1,45 @@
+/* pages/user/mall/exchange/exchange.wxss */
+.header{
+  width: 100vw;
+  height: 40vw;
+  position: relative;
+}
+.cover{
+  width: 100vw;
+  height: 40vw;
+}
+.tips{
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+}
+.tips .text{
+  margin-top:1.06vw;
+  color: #fff;
+} 
+.option {
+  display: flex;
+  margin: 10.67vw 16vw
+}
+.historyBtn{
+  width: 30.93vw;
+  height: 9.06vw;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  border: 2rpx solid #D0A669;
+  border-radius: 40rpx;
+  text-align: center;
+  color: #D0A669;
+  margin-right: 6.4vw;
+}
+.exchangeBtn{
+  width: 30.93vw;
+  height: 9.06vw;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #D0A669;
+}

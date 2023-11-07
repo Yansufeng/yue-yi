@@ -1,0 +1,60 @@
+/* pages/user/mall/history/history.wxss */
+page{
+  padding-bottom: 10vw;
+}
+.body{
+  margin: 3.74vw 4.26vw  0 4.26vw;
+}
+.body .card{
+  display: flex;
+  padding: 2.67vw 3.2vw;
+  background: #FFFFFF;
+  box-shadow: 2rpx 8rpx 16rpx 2rpx rgba(155, 116, 55, 0.08);
+  border-radius: 16rpx;
+  margin-bottom: 2.67vw;
+  height: 32.53vw;
+  align-items: center;
+}
+.body .card:last-child {
+  margin-bottom: 0;
+}
+.body .card .cover{
+  margin-right: 2.67vw;
+}
+.body .card .cover image{
+  width: 34.67vw;
+  height: 21.73vw;
+}
+.body .card .content .name{
+  font-size: 34rpx;
+  font-weight: 600;
+  line-height: 34rpx;
+}
+.body .card .content .score{
+  margin: 2.67vw 0;
+  font-size: 24rpx;
+  font-weight: 300;
+  line-height: 48rpx;
+}
+.body .card .content .status{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.body .card .content .status .unuse{
+  width: 13.86vw;
+  background-color: #D0A669;
+  color: #fff;
+  font-size: 24rpx;
+  line-height: 52rpx;
+  text-align: center;
+  border-radius: 40rpx;
+}
+.body .card .content .status .used{
+  width: 13.86vw;
+  background-color: #F3F3F3;
+  font-size: 24rpx;
+  line-height: 52rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  color: rgba(0, 0, 0, 0.4);
+}

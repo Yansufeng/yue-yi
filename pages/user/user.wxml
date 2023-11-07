@@ -35,6 +35,8 @@
       class="nav"
       wx:for="{{ navs }}"
       wx:key="id"  
+      bindtap="toDetail"
+      data-path="{{item.path}}"
     >
       <t-icon name="{{ item.icon }}" color="#D0A669" size="44rpx" />
       <text class="nav-title">{{ item.title }}</text>

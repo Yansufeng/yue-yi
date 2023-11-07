@@ -78,7 +78,7 @@ Page({
         id: 1,
         icon: 'store',
         title: '积分商城',
-        path: ''
+        path: '/pages/user/mall/mall'
       },
       {
         id: 2,
@@ -95,7 +95,14 @@ Page({
     ]
     this.setData({navs})
   },
-
+  toDetail(e){
+    const path=e.currentTarget.dataset.path
+    if(path.length >0){
+      wx.navigateTo({
+        url: path,
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

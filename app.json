@@ -27,7 +27,10 @@
     "pages/column/celebrity/detail/detail",
     "pages/column/volunteer/volunteer",
     "pages/heritage/main",
-    "pages/column/local/detail/detail"
+    "pages/column/local/detail/detail",
+    "pages/user/mall/mall",
+    "pages/user/mall/exchange/exchange",
+    "pages/user/mall/history/history"
   ],
   "window": {
     "backgroundTextStyle": "light",

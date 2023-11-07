@@ -1,0 +1,21 @@
+<!--pages/user/mall/history/history.wxml-->
+<view class="historyBox">
+<view class="header">
+<tabbar tabs="{{tabs}}"></tabbar>
+</view>
+<view class="body">
+  <view class="card" wx:for="{{goods}}" wx:key="id">
+    <view class="cover">
+      <t-image src="{{item.img}}"></t-image>
+    </view>
+    <view class="content">
+    <view class="name">{{item.name}}</view>
+    <view class="score">消耗 {{item.score}} 积分</view>
+    <view class="status">
+      <view class="unuse" wx:if="{{item.isExchange==false}}">待兑换</view>
+      <view class="used" wx:else="">已使用</view>
+    </view>
+    </view>
+  </view>
+</view>
+</view>
