@@ -1,0 +1,207 @@
+/* pages/user/mall/mall.wxss */
+page{
+  background-color: #fcf5e7;
+}
+.mall-container .header{
+  position: relative;
+  z-index: -10;
+} 
+.mall-container .bkg image{
+  height: 22.93vw;
+  width: 100vw;
+}
+.mall-container .header .score {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33vw;
+  height: .06vw;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.mall-container .header .score .des{
+  font-size: 29rpx;
+  line-height: 29rpx;
+  width: 26.67vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mall-container .header .number{
+
+  font-size: 52rpx;
+  font-weight: 600;
+}
+.mall-container .score image{
+  width: 5.3vw;
+  height: 5.3vw;
+}
+.mall-container .header .history{
+  bottom: 1.86vw;
+  right: 1.26vw;
+  position: absolute;
+  width: 27.03vw;
+  height:8vw ;
+  text-align: center;
+  color: #9B7437;
+  font-size: 28rpx;
+  line-height: 50rpx;
+} 
+.mall-container .body{
+  padding-bottom: 10vw;
+  background-color: #fff;
+  border-radius: 40rpx 40rpx 0rpx 0rpx;
+
+}
+.goods-container{
+  padding:6.67vw  4.26vw 0 4.26vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.goodsBox{  
+  width: 44.26vw;
+  height: 47.63vw;
+  box-shadow: 2rpx 8rpx 16rpx 2rpx rgba(155, 116, 55, 0.08);
+  margin-bottom: 2.93vw;
+  border-radius: 16rpx;
+}
+.goods-container .first{
+  margin-right:2.93vw ;
+}
+.goodsBox .cover{
+  width: 44.26vw;
+  height: 26.67vw;
+}
+.goodsinfo{
+  margin:2.67vw 1.6vw 0 1.6vw;
+}
+.goodsinfo .goodsname{
+  font-size: 29rpx;
+  font-weight: 600;
+}
+.goodsScore{
+  display: flex;
+  padding-top: 2.13vw;
+  justify-content: space-between;
+}
+.goodsScore .score{
+display: flex;
+align-items: center;
+}
+.score .number{
+  margin-right: 1.06vw;
+  color: #D0A669;
+  font-family: 'D-DIN';
+  font-size: 36rpx;
+  line-height: 36rpx;
+  font-weight: 600;
+}/* 300 */
+.score text:last-child{
+  font-size: 24rpx;
+  font-weight: 300;
+  line-height: 52rpx;
+}
+.goodsScore .changeBtn{
+  width: 11.73vw;
+  height: 6.4vw;
+  background: #D0A669;
+  border-radius: 5.33vw;  
+  font-size: 24rpx;
+  line-height: 48rpx;
+  text-align: center;
+  color: #FFFFFF;
+}
+.errorblock{
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  width: 64vw;
+  background: linear-gradient(180.29deg, #FCF5E7 0.25%, #FFFFFF 21.39%);
+  border-radius: 20rpx;
+  height: 50vw;
+}
+.sucessblock{
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  width: 70vw;
+  background: linear-gradient(180.29deg, #FCF5E7 0.25%, #FFFFFF 21.39%);
+  border-radius: 20rpx;
+}
+.erroInfo{
+  margin-top: 2.13vw;
+  text-align: center;
+  font-size: 32rpx;
+  color: #D0A669;
+}
+.Tips{
+  margin-top:2.67vw;
+  text-align: center;
+  font-size: 24rpx;
+  font-weight: 300;
+}
+.close-btn {
+  position: absolute;
+  left: 50%;
+  margin-left: -32rpx;
+  bottom: calc(-1 * (48rpx + 64rpx));
+}
+.success{  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.success .goodsImg{
+  margin-top: 4.26vw;
+  width: 26.06vw;
+  height: 18.94vw;  
+}
+.success .goodsname{
+  margin: 2.13vw 0 4.26vw 0;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.success .coins{
+  margin-right: 1.06vw;
+  width: 4.8vw;
+  height: 4.8vw;
+}
+.success .scoreCost{
+  display: flex;
+  margin-bottom: 2.13vw;
+  align-items: center;
+}
+.success .scoreCost .scoreCost-des{
+  font-weight: 300;
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+.success  .tips{
+  margin-top: 1.04vw;
+}
+.tips{
+  font-size: 24rpx;
+  font-weight: 300;
+}
+.option{
+margin-top: 8vw;
+margin-bottom: 6.93vw;
+background: #D0A669;
+border-radius: 60rpx;
+color: #fff;
+/* 签到 */
+text-align: center;
+width: 30.93vw;
+height: 9.06vw;
+font-size: 28rpx;
+line-height: 56rpx;
+}
+
+
+
+

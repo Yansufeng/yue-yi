@@ -1,0 +1,14 @@
+<!--pages/user/mall/exchange/exchange.wxml-->
+<view class="sucessBox">
+  <view class="header">
+  <t-image class="cover" src="{{imgs.exchangeCover}}"></t-image> 
+  <view class="tips">
+    <t-icon name="check-circle" size="70" color="#fff"/>
+    <view class="text">兑换成功</view>
+  </view>
+  </view>
+  <view class="option">
+    <view class="historyBtn" bindtap="goHistory">查看记录</view>
+    <view class="exchangeBtn" bindtap="goExchange">继续兑换</view>
+  </view>
+</view>

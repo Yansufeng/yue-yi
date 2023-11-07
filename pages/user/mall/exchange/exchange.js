@@ -1,49 +1,31 @@
-// pages/column/local/local.js
+// pages/user/mall/exchange/exchange.js
+import {initImgs} from '../../../../utils/init'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    active:0,
-    tabs: [],
+    imgs:{
+      exchangeCover:"exchange-bkg.png"
+    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.getTabs()
+    initImgs('/user/mall/',this)
   },
-  getTabs() {
-    const tabs = [
-      {
-        id: 0,
-        code: '',
-        name: '简介'
-      },
-      {
-        id: 1,
-        code: '',
-        name: '所辖分馆'
-      },
-      {
-        id: 2,
-        code: '',
-        name: '全景导航'
-      },
-      {
-        id: 3,
-        code: '',
-        name: '群文社团'
-      },    
-    ]
-    this.setData({tabs})
+  goHistory(){
+    wx.navigateTo({
+      url: '/pages/user/mall/history/history',
+    })
   },
-  tabChange(e){
-    const active = e.detail
-    this.setData({active})
-
+  goExchange(){
+    wx.navigateTo({
+      url: '/pages/user/mall/mall',
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

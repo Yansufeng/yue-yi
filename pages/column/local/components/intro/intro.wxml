@@ -1,0 +1,47 @@
+<!--pages/column/local/components/intro/intro.wxml-->
+<view class="intro">
+<view class="coverBox">
+  <t-image wx:if="{{ isInit }}" class="cover" src="{{ imgs.bkg }}" />
+</view>
+<view class="introBox">
+<view class="title">
+总管简介
+</view>
+<view class="content">
+  <view class="{{moreActive? 'active' : ''}}">
+  张家界市永定区文化馆，国家一级文化馆，座落于张家界市西溪坪办事处区治大院内，馆舍近5000平方米，其中剧场面积4500平方米。现有干部职工12人，工作职能设三部（基层部、活动部、培训部）一室（办公室）。工作职责:策划、组织、开展各类群众文化活动及文化赛事；挖掘、整理、收集各类非物质文化遗产项目档案；开展各类文化艺术辅导培
+</view>
+</view>
+<view class="more" bind:tap="toMore">
+      <text>查看更多</text>
+      <t-icon name="{{moreActive? 'chevron-up':'chevron-down'}} " color="#9B7437" size="40rpx"/>
+</view>
+<view class="line">
+</view>
+</view>
+<view class='bottomBox'>
+  <view class="title">
+  机构设置
+  </view>
+<t-image class='settingCover' src='{{imgs.setting}}' wx:if="{{ isInit }}"/>
+<view class='connectBox'>
+  <view class="title">
+  联系我们
+  </view>
+  <view class="connectContent">
+  <view>
+    <t-icon name="alarm" color="#9B7437" size="40rpx"/>
+    <text>开放时间：周一至周五 09:00-17:00</text>
+  </view> 
+  <view>
+    <t-icon name="call" color="#9B7437" size="40rpx"/>
+    <text>服务电话：(0744)8596688</text>
+  </view>   
+  <view>
+    <t-icon name="map-location" color="#9B7437" size="40rpx"/>
+    <text>详细地址：张家界市永定区文化馆</text>
+  </view>  
+  </view>
+</view>
+</view>
+</view>

@@ -1,0 +1,49 @@
+/* pages/column/local/detail/components/card/card.wxss */
+.cardBox{
+  width: 91.46vw;
+  height: 44.8vw;
+   margin: 0 4.26vw; 
+  background-color: #FFF;
+  box-shadow: 0 10rpx 24rpx -4rpx rgba(155, 116, 55, 0.2);
+  border-radius:20rpx ;
+  transform: translateY(-6.26vw);
+}
+.card-header{
+  padding: 4.26vw;
+  width: 82.93vw;
+  height: 6.4vw;
+  font-weight: 600;
+  font-size: 36rpx;
+  line-height: 36rpx;
+}
+.card-body {
+  padding:0 4.26vw;
+  position: relative;
+}
+.card-body .item{  
+  width: 64.36vw;
+  display: flex;
+  align-items: center;
+  padding-bottom:2vw ;
+}
+.card-body .item text{
+  margin-left: 2vw;
+  font-weight: 300;
+  font-size: 26rpx;
+  line-height: 42rpx;
+} 
+.navigatorButton{
+  position: absolute;
+  bottom: 0.2vw;
+  right:  5.92vw;
+  background: rgba(208, 166, 105, 0.4);
+  border-radius: 40rpx;
+  font-size: 24rpx;
+  width: 11.73vw;
+  height: 6.4vw;
+  text-align: center;
+  line-height: 48rpx;
+  color: #9B7437;
+}
+/* Rectangle 2236 */
+

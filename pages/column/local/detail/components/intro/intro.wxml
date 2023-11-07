@@ -1,0 +1,10 @@
+<!--pages/column/local/detail/components/intro/intro.wxml-->
+<view class="container">
+  <view class="header">
+  分馆介绍
+  </view>
+  <view class="body">
+    天门山镇办公楼建筑面积约10000平方米，用于综合文化的场地约400平方米左右。包括培训辅导会议室1间，图书室1间，阅览室1间，办公室1间，用于开展日常文化工作。从业人员共2名，其中专干1名。下辖社区（村）文化服务中心8个，有群众业余文艺团队10支，共计100人.（龙灯、花灯），下辖8个行政村。</view>
+    <view class="line"></view>
+</view>
+

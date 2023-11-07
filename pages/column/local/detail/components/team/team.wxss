@@ -1,0 +1,98 @@
+/* pages/column/local/detail/components/team/team.wxss */
+.team-container{
+  padding :0  4.26vw 4vw;
+  display: flex;
+  flex-direction: column;
+}
+.team-container .header{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.team-container .header .title{
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.team-container .header .more{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 26rpx;
+  color: #9B7347;
+}
+.team-container .body {
+  padding:5.3vw 0 ;
+}
+.team-container .body .card{
+background: #FFFFFF;
+box-shadow: 2rpx 7rpx 16rpx 2rpx rgba(155, 116, 55, 0.08);
+border-radius: 16rpx;
+display: flex;
+margin-bottom:3.2vw;
+}
+.team-container .body .card:last-child{
+  margin-bottom:0
+}
+.team-container .body .card .cover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-container .body .card .cover image{
+  width: 32.26vw;
+  height:24.53vw ;
+  border-radius: 12rpx;
+}
+.team-container .body .card .content{
+ padding:2.67vw;
+}
+.team-container .body .card .content .title{
+  font-size: 32rpx;
+  font-weight: 600;
+  padding-bottom: 3.2vw;
+}
+.team-container .body .card .content .text{
+  font-size: 24rpx;
+  line-height: 48rpx;
+  font-weight: 500;
+}
+.team-container .body .card .content .intro{
+  width: 51.2vw;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.poupBox{
+  padding:4.26vw;
+}
+.poupBox .header{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.poupBox .header .title{
+  font-size: 36rpx;
+  font-weight: 600;
+} 
+.poupBox .icon{
+  position: absolute;
+  right: 0;
+  top:2rpx;
+  color: #9B7347;
+}
+.poupBox .center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5.86vw 0
+}
+.poupBox .center image{
+  width: 60.8vw;
+  height: 45.6vw;
+}
+.poupBox .footer{
+  text-indent: 2em;
+  font-size: 30rpx;
+  line-height: 54rpx;
+}

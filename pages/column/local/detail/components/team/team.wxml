@@ -1,0 +1,43 @@
+<!--pages/column/local/detail/components/team/team.wxml-->
+<view class="team-container">
+<view class="header">
+<view class="title">
+  文化团队
+</view>
+  <view class="more">
+    <text>更多</text>
+    <t-icon class="icon-right" name="chevron-right" color="#9B7437" size="32rpx" />
+  </view>
+</view>
+<view class="body">
+<view wx:for="{{teamlist}}" wx:key="id" class="card" bindtap="showDetail" data-index="{{index}}">
+  <view class="cover">
+  <t-image src="{{item.img}}"/>
+  </view>
+  <view class="content">
+    <view class="title">{{item.title}}</view>
+    <view class="text">联系人：{{item.name}}</view>
+    <view class="text">联系方式：{{item.tel}}</view>
+    <view class="text intro">{{item.content}}</view>
+  </view>
+
+</view>
+</view>
+</view>
+<t-popup visible="{{visible}}" bind:visible-change="onVisibleChange" placement="bottom">
+  <view class="poupBox">
+    <view class="header">
+    <view class="title">
+    {{detailTitle}}
+  </view>
+      <t-icon name="close" size="40rpx"  bind:click="close" class="icon" />  
+    </view>
+    <view class="center">
+    <t-image src="{{detailImg}}">
+    </t-image>
+    </view>
+    <view class="footer">
+   {{detailTitle}},{{detailContent}}
+    </view>
+  </view>
+</t-popup>

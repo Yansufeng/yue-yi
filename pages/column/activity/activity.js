@@ -97,7 +97,6 @@ Page({
   },
 
   tabChange(e) {
-    console.log(e)
   },
 
   toDetail(e) {

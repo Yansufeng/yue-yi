@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "积分商城",
+  "usingComponents": {
+    "tabbar":"/pages/components/tabbar/tabbar",
+    "t-popup": "tdesign-miniprogram/popup/popup",
+    "t-button": "tdesign-miniprogram/button/button"
+  }
+}
