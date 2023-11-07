@@ -33,7 +33,7 @@
   </view>
   <view class="qr">
     <view class="qr-body">
-      <view class="qr-btn">
+      <view class="qr-btn" bind:tap="onQr">
         <t-icon name="qrcode" color="#FFF" size="54rpx"/>
       </view>
     </view>
