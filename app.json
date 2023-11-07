@@ -4,6 +4,7 @@
     "pages/map/map",
     "pages/resource/resource",
     "pages/user/user",
+    "pages/qr/qr",
     "pages/column/book/book",
     "pages/column/book/list/list",
     "pages/column/book/list/listL",
@@ -37,24 +38,27 @@
   },
   "tabBar": {
     "custom": true,
-    "list": [
-      {
-        "pagePath": "pages/home/home",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/map/map",
-        "text": "文化地图"
-      },
-      {
-        "pagePath": "pages/resource/resource",
-        "text": "资源推荐"
-      },
-      {
-        "pagePath": "pages/user/user",
-        "text": "我的"
-      }
-    ]
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页"
+    }, 
+    {
+      "pagePath": "pages/map/map",
+      "text": "文化地图"
+    }, 
+    {
+      "pagePath": "pages/resource/resource",
+      "text": "资源推荐"
+    }, 
+    {
+      "pagePath": "pages/user/user",
+      "text": "我的"
+    },
+    {
+      "pagePath": "pages/qr/qr",
+      "text": "二维码核销"
+    }
+  ]
   },
   "usingComponents": {
     "topbar": "/pages/components/topbar/topbar",

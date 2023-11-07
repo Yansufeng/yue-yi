@@ -84,6 +84,12 @@ Component({
       // this.setData({
       //   active: id
       // })
+    },
+
+    onQr() {
+      wx.switchTab({
+        url: '/pages/qr/qr',
+      })
     }
   }
 })
