@@ -4,7 +4,7 @@ page{
 }
 .mall-container .header{
   position: relative;
-  z-index: -10;
+  /* z-index: -10; */
 } 
 .mall-container .bkg image{
   height: 22.93vw;

@@ -8,8 +8,8 @@
     <t-image src="{{imgs.coins}}"></t-image>
     <view class="des"><text>我的积分:</text><text class="number">  {{score}}</text></view> 
     </view>
-    <view class="history" bindtap="toHistory">
-    兑换记录
+    <view class="history" bind:tap="toHistory">
+      兑换记录
     </view>
   </view>
   <view class="body">
