@@ -2,7 +2,7 @@
 <titlebar title="文化热点" path="TODO" />
 
 <view wx:if="{{ isInit }}" class="tabs">
-  <tabbar tabs="{{ tabs }}" />
+  <tabbar tabs="{{ tabs }}" bind:tabEvent="onTab" />
   <!-- <scroll-view class="scroll-body" scroll-x >
     <view 
       wx:key="title" 

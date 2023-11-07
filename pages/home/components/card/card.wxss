@@ -53,3 +53,28 @@
   width: 100%;
   font-size: 28rpx;
 }
+
+.yy-whrd-tong-zhi {
+  background-color: #529DEF;
+}
+
+.yy-whrd-huo-dong {
+  background-color: #EA894B;
+}
+
+.yy-whrd-yan-chu {
+  background-color: #E75340;
+}
+
+.yy-whrd-pei-xun {
+  background-color: #EBC74A;
+}
+
+.yy-whrd-zhan-lan {
+  background-color: #E8BA71;
+}
+
+.yy-whrd-qi-ta {
+  background-color: #C2C2C2;
+}
+

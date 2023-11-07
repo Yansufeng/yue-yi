@@ -3,12 +3,12 @@
   <view 
     wx:key="title" 
     wx:for="{{ tabs }}"
-    class="tab {{ item.id == active ? 'tab-active' : '' }}"
+    class="tab {{ index == active ? 'tab-active' : '' }}"
     data-i="{{ index }}"
     bind:tap="onTap"
   >
     <view class="tab-bkg"></view>
     <view class="tab-bkg__c"></view>
-    <text class="tab-title">{{ item.name }}</text>
+    <text class="tab-title">{{ item.name || item.title }}</text>
   </view>
 </scroll-view>

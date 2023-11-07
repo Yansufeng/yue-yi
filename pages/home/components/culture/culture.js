@@ -1,4 +1,6 @@
 // pages/home/components/culture/culture.js
+import { getTopicChild, getTopicResource } from '../../../../apis/commonApi'  
+
 Component({
   /**
    * 组件的属性列表
@@ -11,9 +13,11 @@ Component({
    * 组件的初始数据
    */
   data: {
+    code: 'yy-wen-hua-re-dian',
     isInit: false,
-    active: '0',
+    active: 0,
     tabs: [],
+    tabsMap: new Map(),
     list: []
   },
 
@@ -32,91 +36,48 @@ Component({
   methods: {
     init() {
       this.getTabs()
-      this.getList()
       this.setData({
         isInit: true
       })
     },
 
     getTabs() {
-      const tabs = [
-        {
-          id: '0',
-          name: '全部',
-          code: '0'
-        },
-        {
-          id: '1',
-          name: '通知',
-          code: '0'
-        },
-        {
-          id: '2',
-          name: '活动',
-          code: '0'
-        },
-        {
-          id: '3',
-          name: '演出',
-          code: '0'
-        },
-        {
-          id: '4',
-          name: '培训',
-          code: '0'
-        },
-        {
-          id: '5',
-          name: '通2',
-          code: '0'
-        },
-        {
-          id: '6',
-          name: '活2',
-          code: '0'
-        },
-        {
-          id: '7',
-          name: '演2',
-          code: '0'
-        },
-        {
-          id: '8',
-          name: '培2',
-          code: '0'
-        }
-      ]
-      this.setData({tabs})
+      const code = this.data.code
+      getTopicChild(code).then(res => {
+        const tabs = res.data.result
+        tabs.unshift({
+          title: '全部',
+          code: code
+        })
+        this.setData({tabs})
+        this.getList()
+        // const tabsMap = this.data.tabsMap
+        // tabs.forEach(item => {
+        //   tabsMap.set('')
+        // })
+      })
     },
 
     getList() {
-      const list = [
-        {
-          cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-          tag: '培训',
-          tagType: 0,
-          title: '春风伏笔——公益书法行动',
-          loc: '永定区文化馆',
-          date: '2023.06.21'
-        },
-        {
-          cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-          tag: '培训',
-          tagType: 0,
-          title: '春风伏笔——公益书法行动2',
-          loc: '永定区文化馆',
-          date: '2023.06.21'
-        },
-        {
-          cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-          tag: '培训',
-          tagType: 0,
-          title: '春风伏笔——公益书法行动3',
-          loc: '永定区文化馆',
-          date: '2023.06.21'
-        }
-      ]
-      this.setData({list})
-    }
+      const active = this.data.active
+      const code = this.data.tabs[active].code
+      const params = {
+        pageSize: 3
+      }
+      getTopicResource(code, params).then(res => {
+        const list = res.data.result.records
+        list.map(item => {
+          item.date = item.time.split(' ')[0]
+        })
+        this.setData({list})
+        console.log(list)
+      })
+    },
+
+    onTab(e) {
+      const active = e.detail
+      this.setData({active})
+      this.getList()
+    },
   }
 })

@@ -6,7 +6,7 @@
 
   <view class="content">
     <view class="top">
-      <view class="tag">{{ info.tag }}</view>
+      <view class="tag {{ info.topicCode }}">{{ info.topicTitle }}</view>
       <view class="title">
         <text>{{ info.title }}</text>
       </view>
