@@ -1,13 +1,14 @@
 // pages/column/book/components/reader/reader.js
+import { getTopicChildData, getTopicResourceData } from '../../../../../apis/commonApi'
+import { getEllipsis } from '../../../../../utils/string'
+
 Component({
 
   /**
    * 组件的属性列表
    */
   properties: {
-    tabs: {
-      type: Array
-    }
+    
   },
 
   /**
@@ -15,15 +16,14 @@ Component({
    */
   data: {
     active: 0,
+    code: 'yy-hao-shu-tui-jian',
+    tabs: [],
     books: []
   },
 
-  observers: {
-    'tabs': function (tabs) {
-      const len = tabs.length
-      if(len == 0) return // 跳过空数组
-
-      this.getBooks()
+  lifetimes: {
+    attached() {
+      this.getTabs()
     }
   },
 
@@ -31,36 +31,40 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    getTabs() {
+      const code = this.data.code
+      getTopicChildData(code).then(res => {
+        const tabs = res.result
+        tabs.unshift({
+          title: '全部',
+          code: code
+        })
+        this.setData({tabs})
+      }).then(() => {
+        this.getBooks()
+      })
+    },
+
     getBooks() {
-      const books = [
-        {
-          id: 0,
-          cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
-          name: '无用之美'
-        },
-        {
-          id: 1,
-          cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
-          name: '无用之美'
-        },
-        {
-          id: 2,
-          cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
-          name: '无用之美'
-        },
-        {
-          id: 3,
-          cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
-          name: '无用之美'
-        },
-      ]
-      this.setData({books})
+      const active = this.data.active
+      const code = this.data.tabs[active].code
+      const params = {
+        pageSize: 9
+      }
+      getTopicResourceData(code, params).then(res => {
+        const books = res.result.records
+        books.map(item => {
+          item.title = getEllipsis(item.title, 6)
+        })
+        this.setData({books})
+      })
     },
 
     onTab(e) {
       const i = e.currentTarget.dataset.i
       const active = i
       this.setData({active})
+      this.getBooks()
     },
 
     toDetail() {

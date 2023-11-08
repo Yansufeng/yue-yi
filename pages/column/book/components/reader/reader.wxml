@@ -33,7 +33,7 @@
           class="cover" 
           src="{{ item.cover }}" 
         />
-        <view class="name">{{ item.name }}</view>
+        <view class="name">{{ item.title }}</view>
       </view>
     </view>
 
