@@ -3,21 +3,10 @@
 
 <view wx:if="{{ isInit }}" class="tabs">
   <tabbar tabs="{{ tabs }}" bind:tabEvent="onTab" />
-  <!-- <scroll-view class="scroll-body" scroll-x >
-    <view 
-      wx:key="title" 
-      wx:for="{{ tabs }}"
-      class="tab {{ item.id == active ? 'tab-active' : '' }}"
-    >
-      <view class="tab-bkg"></view>
-      <view class="tab-bkg__c"></view>
-      <text class="tab-title">{{ item.title }}</text>
-    </view>
-  </scroll-view> -->
 </view>
 
 <view wx:if="{{ isInit }}" class="content">
   <view class="card-body" wx:for="{{ list }}" wx:key="title">
-    <card info="{{item}}" />
+    <card info="{{ item }}" />
   </view>
 </view>
