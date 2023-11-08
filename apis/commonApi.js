@@ -51,10 +51,16 @@ const getTopicResourceData = function(code, params = {}) {
   return getTopicResource(code, params).then(res => handleResult(res))
 }
 
+const getResourceById = function(id) {
+  const url = `${baseUrl}/party/open/res/${id}`
+  return getAction(url).then(res => handleResult(res))
+}
+
 module.exports = {
   getAction,
   getTopicChild,
   getTopicResource,
   getTopicChildData,
-  getTopicResourceData
+  getTopicResourceData,
+  getResourceById
 }
