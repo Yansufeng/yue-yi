@@ -67,9 +67,10 @@ Component({
       this.getBooks()
     },
 
-    toDetail() {
+    toDetail(e) {
+      const id = e.currentTarget.dataset.id
       wx.navigateTo({
-        url: '/pages/column/book/detail/detail',
+        url: '/pages/column/book/detail/detail?id=' + id,
       })
     },
 
