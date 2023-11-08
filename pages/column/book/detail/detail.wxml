@@ -12,7 +12,7 @@
 
   <view class="des">
     <view class="des-title">内容简介</view>
-    <view class="des-txt">{{ info.des }}</view>
+    <view class="des-txt">{{ info.description }}</view>
   </view>
 
   <view class="line"></view>

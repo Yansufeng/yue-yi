@@ -1,10 +1,13 @@
 // pages/column/book/detail/detail.js
+import { getResourceById } from "../../../../apis/commonApi";
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    id: '',
     info: {}
   },
 
@@ -12,10 +15,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    const id = options.id 
+    this.setData({id})
     this.getInfo()
   },
 
   getInfo() {
+    getResourceById(this.data.id).then(res => {
+      const info = res.result
+      this.setData({info})
+    })
     const info = {
       id: 0,
       cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
