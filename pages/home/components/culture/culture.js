@@ -51,10 +51,6 @@ Component({
         })
         this.setData({tabs})
         this.getList()
-        // const tabsMap = this.data.tabsMap
-        // tabs.forEach(item => {
-        //   tabsMap.set('')
-        // })
       })
     },
 
@@ -70,7 +66,6 @@ Component({
           item.date = item.time.split(' ')[0]
         })
         this.setData({list})
-        console.log(list)
       })
     },
 
