@@ -7,7 +7,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    
+
   },
 
   /**
@@ -34,7 +34,6 @@ Component({
       getTopicResource(this.data.code, params).then(res => {
         const books = res.data.result.records
         this.setData({books})
-        console.log(books)
       })
     },
 

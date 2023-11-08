@@ -7,17 +7,17 @@
   <view class="content">
     <!-- 好书推荐 -->
     <view class="recommend">
-      <recommend books="{{ recommends }}" />
+      <recommend />
     </view>
 
     <!-- 数字听书 -->
     <view class="listener">
-      <listener navs="{{ listeners }}"/>
+      <listener />
     </view>
 
     <!-- 图书分类 -->
     <view class="reader">
-      <reader tabs="{{ readers }}"/>
+      <reader />
     </view>
   </view>
 </view>
