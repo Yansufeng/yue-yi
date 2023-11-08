@@ -23,12 +23,14 @@ const getAction = function(url, config = {}) {
   })
 }
 
+// 获取code下的分类信息 -> 用于检索标签
 const getTopicChild = function(code) {
   const url = `${baseUrl}/party/open/topic/${code}/child`
 
   return getAction(url)
 }
 
+// 按code获取资源
 const getTopicResource = function(code, params = {}) {
   const url = `${baseUrl}/party/open/topic/${code}/page`
 
