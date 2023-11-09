@@ -14,7 +14,7 @@
         class="book"
         wx:for="{{ books }}"
         wx:key="id"
-        data-i="{{ index }}"
+        data-id="{{ item.id }}"
         bind:tap="toDetail"
         src="{{ item.cover }}"
       />
