@@ -1,4 +1,6 @@
 // pages/column/show/components/info/info.js
+import { getTopicResourceData } from '../../../../../apis/commonApi'
+
 Component({
 
   /**
