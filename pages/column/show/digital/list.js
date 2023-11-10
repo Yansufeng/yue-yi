@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    code: 'yy-whzl-shu-zi-zhan-ting',
     tabs: [],
     exhibits: []
   },
