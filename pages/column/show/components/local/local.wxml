@@ -1,11 +1,6 @@
 <!--pages/column/show/components/local/local.wxml-->
 <view class="header">
   <titlebar title="线下展览" path="/pages/column/show/local/list" />
-  <!-- <text>线下展览</text>
-  <view class="more">
-    <text>更多</text>
-    <t-icon name="chevron-right" color="#9B7437"/>
-  </view> -->
 </view>
 
 <scroll-view class="shows" scroll-x>

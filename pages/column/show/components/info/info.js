@@ -12,6 +12,7 @@ Component({
    * 组件的初始数据
    */
   data: {
+    code: 'yy-whzl-zhan-lan-zi-xun',
     info: []
   },
 
@@ -26,27 +27,13 @@ Component({
    */
   methods: {
     getInfo() {
-      const info = [
-        {
-          id: 0,
-          cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-          title: '线上展览丨自古知兵非好战——中国古代兵书专题展',
-          time: '2023.06.21'
-        },
-        {
-          id: 1,
-          cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-          title: '线上展览丨自古知兵非好战——中国古代兵书专题展',
-          time: '2023.06.21'
-        },
-        {
-          id: 2,
-          cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-          title: '线上展览丨自古知兵非好战——中国古代兵书专题展',
-          time: '2023.06.21'
-        },
-      ]
-      this.setData({info})
+      const params = {
+        pageSize: 4
+      }
+      getTopicResourceData(this.data.code, params).then(res => {
+        const info = res.result.records
+        this.setData({info})
+      })
     }
   }
 })

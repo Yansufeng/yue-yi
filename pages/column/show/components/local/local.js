@@ -1,4 +1,6 @@
 // pages/column/show/components/local/local.js
+import { getTopicResourceData } from '../../../../../apis/commonApi'
+
 Component({
 
   /**
@@ -12,6 +14,7 @@ Component({
    * 组件的初始数据
    */
   data: {
+    code: 'yy-whzl-xian-xia-zhan-lan',
     shows: []
   },
 
@@ -26,24 +29,13 @@ Component({
    */
   methods: {
     getShows() {
-      const shows = [
-        {
-          id: 0,
-          cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-          title: '有温度·有故事——非遗手工艺展'
-        },
-        {
-          id: 1,
-          cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-          title: '有温度·有故事——非遗手工艺展'
-        },
-        {
-          id: 2,
-          cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-          title: '有温度·有故事——非遗手工艺展'
-        },
-      ]
-      this.setData({shows})
+      const params = {
+        pageSize: 4
+      }
+      getTopicResourceData(this.data.code, params).then(res => {
+        const shows = res.result.records
+        this.setData({shows})
+      })
     }
   }
 })
