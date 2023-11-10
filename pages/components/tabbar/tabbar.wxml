@@ -8,7 +8,7 @@
     bindtap="onTab"
   >
     <text>{{ item.name || item.title }}</text>
-        <view wx:if="{{ index == active }}" class="line"></view>
+    <view wx:if="{{ index == active }}" class="line"></view>
   </view>
 </scroll-view>
 
@@ -21,6 +21,6 @@
     bindtap="onTab"
   >
     <text>{{ item.name || item.title }}</text>
-        <view wx:if="{{ index == active }}" class="line"></view>
+    <view wx:if="{{ index == active }}" class="line"></view>
   </view>
 </view>
