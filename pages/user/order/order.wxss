@@ -1,0 +1,45 @@
+/* pages/user/order/order.wxss */
+.body {
+  min-height: 100vh;
+  background: linear-gradient(#FCF5E7, #FFF);
+}
+
+.cards {
+  padding: 4vw;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  padding: 3vw;
+  height: 27vw;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4vw;
+  z-index: 5;
+}
+
+.bkg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.info {
+  height: 27vw;
+  width: 49vw;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20rpx;
+}

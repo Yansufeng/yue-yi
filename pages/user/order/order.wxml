@@ -1,0 +1,39 @@
+<!--pages/user/order/order.wxml-->
+<view class="body">
+  <tabbar tabs="{{ tabs }}" />
+
+  <view class="cards">
+    <view 
+      class="card"
+      wx:for="{{ list }}"
+      wx:key="id"
+    >
+      <t-image 
+        src="{{ item.cover }}" 
+        width="31vw"
+        height="25vw"
+        shape="round"
+      />
+      <view class="info">
+        <view class="title">{{ item.title }}</view>
+        <view class="date">
+          <text>入馆日期：</text>
+          <text>{{ item.date }}</text>
+        </view>
+        <view class="tiem">
+          <text>入馆时段：</text>
+          <text>{{ item.time }}</text>
+        </view>
+        <view class="status">
+          <text>{{ item.status }}</text>
+        </view>
+      </view>
+      <t-image 
+        class="bkg"
+        src="{{ imgs.bkg }}" 
+        width="92vw"
+        height="33vw"  
+      />
+    </view>
+  </view>
+</view>
