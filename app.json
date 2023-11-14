@@ -34,6 +34,10 @@
     "pages/user/mall/history/history",
     "pages/map/branch/branch",
     "pages/map/activity/activity"
+    "pages/user/order/order",
+    "pages/user/ticket/ticket",
+    "pages/user/point/point",
+    "pages/user/collect/collect"
   ],
   "window": {
     "backgroundTextStyle": "light",
