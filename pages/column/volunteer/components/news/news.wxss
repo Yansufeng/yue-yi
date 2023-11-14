@@ -1,0 +1,29 @@
+/* pages/column/volunteer/components/news/news.wxss */
+.cards {
+  margin-top: 5vw;
+}
+
+.card {
+  display: flex;
+  padding: 3vw;
+  border-radius: 10rpx;
+  box-shadow: 2rpx 10rpx 20rpx 2rpx rgba(155, 116, 55, 0.08);
+  margin-bottom: 5vw;
+}
+
+.info {
+  width: 51vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 3vw;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+
+.date {
+  text-align: right;
+}

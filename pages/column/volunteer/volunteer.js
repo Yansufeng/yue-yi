@@ -1,18 +1,28 @@
 // pages/column/volunteer/volunteer.js
+import { initImgs } from '../../../utils/init.js'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    isInit: false,
+    imgs: {
+      cover: 'cover.png',
+      heart: 'icon_heart.png',
+      signUp: 'icon_signup.png'
+    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    initImgs('/column/volunteer/', this)
+    this.setData({
+      isInit: true
+    })
   },
 
   /**

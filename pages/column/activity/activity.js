@@ -1,10 +1,15 @@
 // pages/column/activity/activity.js
+import { getTopicChildData, getTopicResourceData } from '../../../apis/commonApi'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    code: 'yy-gong-yi-huo-dong',
+    active: 0,
+    page: 0,
     tabs: [],
     shows: []
   },
@@ -18,82 +23,66 @@ Page({
   },
 
   getTabs() {
-    const tabs = [
-      {
-        id: 0,
-        code: '',
-        name: '全部'
-      },
-      {
-        id: 1,
-        code: '',
-        name: '演出'
-      },
-      {
-        id: 2,
-        code: '',
-        name: '演出'
-      },
-      {
-        id: 3,
-        code: '',
-        name: '演出'
-      },
-      {
-        id: 4,
-        code: '',
-        name: '演出'
-      },
-      {
-        id: 5,
-        code: '',
-        name: '演出'
-      },
-      {
-        id: 6,
-        code: '',
-        name: '演出'
-      },
-      {
-        id: 7,
-        code: '',
-        name: '演出'
-      },
-    ]
-    this.setData({tabs})
+    const code = this.data.code
+    getTopicChildData(code).then(res => {
+      const tabs = res.result
+      tabs.unshift({
+        code: code,
+        title: '全部'
+      })
+      this.setData({tabs})
+    }).then(() => {
+      this.getShows()
+    })
   },
 
   getShows() {
-    const shows = [
-      {
-        id: 0,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        title: '体验余音绕梁的声乐之美讲座',
-        date: '2023.06.10',
-        time: '09:00-10:00',
-        loc: '张家界市永定区文化馆',
-        status: 0
-      },
-      {
-        id: 1,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        title: '体验余音绕梁的声乐之美讲座',
-        date: '2023.06.10',
-        time: '09:00-10:00',
-        loc: '张家界市永定区文化馆',
-        status: 1
-      },
-      {
-        id: 2,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        title: '体验余音绕梁的声乐之美讲座',
-        date: '2023.06.10',
-        time: '09:00-10:00',
-        loc: '张家界市永定区文化馆',
-        status: 2
-      }
-    ]
-    this.setData({shows})
+    const active = this.data.active
+    const page = this.data.page + 1
+    const code = this.data.tabs[active]
+    const params = {
+      page: page,
+      pageSize: 5
+    }
+
+    getTopicResourceData(code, params).then(res => {
+      const shows = res.result.records
+      this.setData({
+        shows: this.data.shows.concat(...shows),
+        page: page
+      })
+      console.log(shows)
+    })
+    // const shows = [
+    //   {
+    //     id: 0,
+    //     cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
+    //     title: '体验余音绕梁的声乐之美讲座',
+    //     date: '2023.06.10',
+    //     time: '09:00-10:00',
+    //     loc: '张家界市永定区文化馆',
+    //     status: 0
+    //   },
+    //   {
+    //     id: 1,
+    //     cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
+    //     title: '体验余音绕梁的声乐之美讲座',
+    //     date: '2023.06.10',
+    //     time: '09:00-10:00',
+    //     loc: '张家界市永定区文化馆',
+    //     status: 1
+    //   },
+    //   {
+    //     id: 2,
+    //     cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
+    //     title: '体验余音绕梁的声乐之美讲座',
+    //     date: '2023.06.10',
+    //     time: '09:00-10:00',
+    //     loc: '张家界市永定区文化馆',
+    //     status: 2
+    //   }
+    // ]
+    
   },
 
   tabChange(e) {

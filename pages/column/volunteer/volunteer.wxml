@@ -1,2 +1,50 @@
 <!--pages/column/volunteer/volunteer.wxml-->
-<text>pages/column/volunteer/volunteer.wxml</text>
+<searchbar />
+
+<view class="body">
+  <t-image 
+    wx:if="{{ isInit }}"
+    src="{{ imgs.cover }}" 
+    width="92vw"
+    height="37vw"
+  />
+
+  <view class="btns">
+    <view class="volunteer btn">
+      <view class="info">
+        <view class="title">加入志愿者</view>
+        <view class="content">
+          <text>累计注册：</text>
+          <text> {{ volunteer.num }} </text>
+          <view> 人</view>
+        </view>
+      </view>
+      <t-image 
+        wx:if="{{ isInit }}"
+        src="{{ imgs.heart }}" 
+        width="13vw"
+        height="13vw"  
+      />
+    </view>
+
+    <view class="activity btn">
+      <view class="info">
+        <view class="title">加入志愿活动</view>
+        <view class="content">
+          <text>志愿组织：</text>
+          <text>{{ organization.num }}</text>
+          <view>人</view>
+        </view>
+      </view>
+      <t-image 
+        wx:if="{{ isInit }}"
+        src="{{ imgs.signUp }}"
+        width="13vw"
+        height="13vw"   
+      />
+    </view>
+  </view>
+
+  <news />
+</view>
+

@@ -1,0 +1,21 @@
+<!--pages/column/volunteer/components/news/news.wxml-->
+<titlebar title="志愿资讯" />
+
+<view class="cards">
+  <view 
+    class="card"
+    wx:for="{{ list }}"
+    wx:key="id"
+  >
+    <t-image 
+      src="{{ item.cover }}" 
+      width="32vw"
+      height="24.5vw"
+      shape="round"
+    />
+    <view class="info">
+      <view class="title">{{ item.title }}</view>
+      <view class="date">{{ item.date }}</view>
+    </view>
+  </view>
+</view>

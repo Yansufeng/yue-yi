@@ -1,1 +1,45 @@
 /* pages/column/volunteer/volunteer.wxss */
+.body {
+  padding: 4vw;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 44vw;
+  display: flex;
+  padding: 16rpx;
+  border-radius: 20rpx;
+  margin-top: 6vw;
+  margin-bottom: 9vw;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.volunteer {
+  background-color: #FFF2F2;
+}
+
+.activity {
+  background-color: #FFF8ED;
+}
+
+.btn .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn .title {
+  font-size: 32rpx;
+  color: #962121;
+}
+
+.btn .content {
+  display: flex;
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.4);
+}
