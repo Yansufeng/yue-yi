@@ -53,7 +53,7 @@ Component({
       },
       {
         cover: 'volunteer.png',
-        title: '志愿者分采',
+        title: '志愿者风采',
         path: 'volunteer'
       }
     ]
