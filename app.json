@@ -1,10 +1,12 @@
 {
   "pages": [
+
     "pages/home/home",
     "pages/map/map",
     "pages/resource/resource",
     "pages/user/user",
     "pages/qr/qr",
+
     "pages/column/book/book",
     "pages/column/book/list/list",
     "pages/column/book/list/listL",
@@ -24,11 +26,12 @@
     "pages/column/media/course/list",
     "pages/column/media/course/detail",
     "pages/column/local/local",
+    "pages/column/local/detail/detail",
     "pages/column/celebrity/celebrity",
     "pages/column/celebrity/detail/detail",
     "pages/column/volunteer/volunteer",
+
     "pages/heritage/main",
-    "pages/column/local/detail/detail",
     "pages/user/mall/mall",
     "pages/user/mall/exchange/exchange",
     "pages/user/mall/history/history"
