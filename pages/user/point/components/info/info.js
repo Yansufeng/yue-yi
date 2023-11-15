@@ -38,7 +38,7 @@ Component({
   methods: {
     getInfo() {
       getPointInfo().then(res => {
-        const info = res.data.result
+        const info = res.result
         this.setData({info})
       })
     }
