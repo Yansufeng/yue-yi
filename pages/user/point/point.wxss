@@ -1,0 +1,44 @@
+/* pages/user/point/point.wxss */
+.bkg {
+  position: absolute;
+  background-color: #FCF5E7;
+  height: 20rpx;
+  width: 100vw;
+  z-index: -1;
+}
+
+.body {    
+  border-radius: 20rpx 20rpx 0 0;
+  background-color: #FFF;
+  min-height: 100vh;
+  padding: 4vw;
+  box-sizing: border-box;
+}
+
+.his {
+  margin-top: 9vw;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 32rpx;
+}
+
+.date {
+  font-size: 28rpx;
+  font-weight: 300;
+  margin-top: 10rpx;
+}
+
+.add {
+  color: #D0A669;
+}
+
+.sub {
+  color: rgba(0, 0, 0, 0.4);
+}

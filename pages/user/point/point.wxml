@@ -1,0 +1,30 @@
+<!--pages/user/point/point.wxml-->
+<view class="bkg"></view>
+
+<view class="body">
+
+  <info />
+
+  <tabbar tabs="{{ tabs }}" bind:tabEvent="onChange" />
+
+  <view class="his">
+    <view 
+      class="item"
+      wx:for="{{ his[active] }}"
+      wx:key="id"
+    >
+      <view class="info">
+        <view class="title">{{ item.title }}</view>
+        <view class="date">{{ item.date }}</view>
+      </view>
+
+      <view class="point {{ item.type }}">
+        <text wx:if="{{ item.points > 0}}">+</text>
+        <text>{{ item.points }}</text>
+        <text>分</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
