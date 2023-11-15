@@ -21,6 +21,8 @@
         class="btn"
         wx:for="{{ btns }}"
         wx:key="id"
+        data-path="{{ item.path }}"
+        bind:tap="onBtn"
       >
         <t-image class="btn-icon" src="{{ item.icon }}" />
         <view class="btn-title">
