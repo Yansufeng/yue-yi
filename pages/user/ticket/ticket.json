@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的订票",
+  "usingComponents": {
+    "tabbar": "/pages/components/tabbar/tabbar"
+  }
+}
