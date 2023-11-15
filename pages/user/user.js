@@ -43,13 +43,13 @@ Page({
         id: 2,
         icon: 'point.png',
         title: '我的积分',
-        path: 'pages/user/point/point'
+        path: '/pages/user/point/point'
       },
       {
         id: 3,
         icon: 'collect.png',
         title: '我的收藏',
-        path: 'pages/user/point/point'
+        path: '/pages/user/collect/collect'
       }
     ]
 
