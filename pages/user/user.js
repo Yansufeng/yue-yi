@@ -30,22 +30,26 @@ Page({
       {
         id: 0,
         icon: 'order.png',
-        title: '我的预约'
+        title: '我的预约',
+        path: '/pages/user/order/order'
       },
       {
         id: 1,
         icon: 'ticket.png',
-        title: '我的订票'
+        title: '我的订票',
+        path: '/pages/user/ticket/ticket'
       },
       {
         id: 2,
         icon: 'point.png',
-        title: '我的积分'
+        title: '我的积分',
+        path: 'pages/user/point/point'
       },
       {
         id: 3,
         icon: 'collect.png',
-        title: '我的收藏'
+        title: '我的收藏',
+        path: 'pages/user/point/point'
       }
     ]
 
@@ -95,14 +99,23 @@ Page({
     ]
     this.setData({navs})
   },
+
   toDetail(e){
-    const path=e.currentTarget.dataset.path
-    if(path.length >0){
+    const path = e.currentTarget.dataset.path
+    if(path.length > 0){
       wx.navigateTo({
         url: path,
       })
     }
   },
+
+  onBtn(e) {
+    const path = e.currentTarget.dataset.path
+    wx.navigateTo({
+      url: path,
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
