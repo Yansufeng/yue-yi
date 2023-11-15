@@ -1,0 +1,31 @@
+/* pages/user/point/components/info/info.wxss */
+
+.info {
+  padding: 0 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  font-size: 70rpx;
+  font-weight: 600;
+  color: #D0A669;
+}
+
+.point .icon {
+  margin-right: 20rpx;
+}
+
+.tody {
+  font-size: 24rpx;
+  font-weight: 300;
+  text-align: right;
+}
+
+.tody-count {
+  color: #D0A669;
+  padding: 0 10rpx;
+}

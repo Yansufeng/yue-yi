@@ -1,0 +1,23 @@
+<!--pages/user/point/components/info/info.wxml-->
+<view class="info">
+    <view wx:if="{{ isInit }}" class="point">
+      <t-image 
+        class="icon"
+        src="{{ imgs.coins }}" 
+        width="6vw"
+        height="6vw"
+      />
+      <view class="point-count">{{ info.total || 0 }}</view>
+    </view>
+
+    <view class="tody">
+      <view>
+        <text>今日已获取</text>
+        <text class="tody-count">{{ info.today || 0 }}</text>
+        <text>分</text>
+      </view>
+      <view class="txt">
+        <text>每日累计上限100分</text>
+      </view>
+    </view>
+  </view>
