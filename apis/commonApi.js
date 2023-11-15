@@ -3,10 +3,12 @@ const baseUrl = app.globalData.globalRequestUrl
 
 const getAction = function(url, config = {}) {
   config.headers = config.headers || {}
-  // const token = localStorage.getItem('token')
-  // if(token){
-  //   config.headers['X-User-Token'] = token
-  // }
+
+  // 测试用
+  const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxNjgzNzk3NTgxMTk3NzcwNzUzIiwidHlwZSI6InBhcnR5IiwiZXhwIjoxNzAyNjQ5ODkzfQ.6wqvyEMv7rs0-Y5hdwII3JU2ZcSeOLM0MnWz5rxLNx0'
+  if(token){
+    config.headers['X-User-Token'] = token
+  }
   return new Promise((resolve, reject) => {
     wx.request({
       url: url,
