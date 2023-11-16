@@ -1,0 +1,34 @@
+<!--pages/map/branch/branch.wxml-->
+<t-image src="{{imgs.bkg}}" class="cover">
+</t-image>
+<view class="cardBox">
+  <view class="name">张家界市永定区文化馆</view>
+  <view class="content">
+  <view class=" item time">
+    <t-icon name="alarm" color="#D0A669" size="30rpx" />
+    <text> 开放时间：周一至周五09:00-17:00</text>
+  </view>
+  <view class="item tel">
+    <t-icon name="call" color="#D0A669" size="30rpx"/>
+   <text> 联系电话：(0744)8596681  杨起</text>
+  </view>
+  <view class="item address">
+    <t-icon name="map-location" color="#D0A669" size="30rpx"/>
+   <text> {{address}}</text>
+  </view>
+  <view class="nav-btn">
+  导航
+  </view>
+  </view>
+</view>
+<view class="intro">
+  <view class="name">场馆详情</view>
+  <view class="content">
+    张家界市永定区文化馆，国家一级文化馆，座落于张家界市西溪坪办事处区治大院内，馆舍近5000平方米，其中剧场面积4500平方米。现有干部职工12人，工作职能设三部（基层部、活动部、培训部）一室（办公室）。工作职责:策划、组织、开展各类群众文化活动及文化赛事；挖掘、整理、收集各类非物质文化遗产项目档案；开展各类文化艺术辅导培训；创作艺术精品；举办各类展览及公益讲座；开展文化志愿服务等工作。
+  </view>
+
+</view>
+<view class="line"></view>
+<view class="comment">
+<comment />
+</view>

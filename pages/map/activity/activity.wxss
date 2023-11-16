@@ -1,0 +1,76 @@
+/* pages/map/activity/activity.wxss */
+page{
+  padding-bottom: 12vw;
+}
+.cover{
+  width: 100vw;
+  height: 56.26vw;
+}
+.cardBox{
+  box-sizing: border-box;
+  width: 91.46vw;
+  margin: 4.26vw 4.26vw 0 4.26vw;
+  padding: 4.26vw;
+  background: #FFFFFF;
+  box-shadow: 2rpx 2rpx 16rpx rgba(204, 181, 148, 0.16);
+  border-radius: 16rpx;
+  transform: translateY(-9.82vw);
+  position: relative;
+}
+.cardBox .name{
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32rpx;
+  line-height: 48rpx;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 5.33vw;
+}
+.cardBox .content .item{
+  display: flex;
+  align-items: center;
+}
+.cardBox .content .item text{
+  width: 53.33vw;
+  margin-left: 1.6vw;
+  font-size: 24rpx;
+  line-height: 44rpx;
+}
+.cardBox .content .tel{
+  margin: 1.6vw 0;
+}
+.nav-btn{ 
+position: absolute;
+background: rgba(208, 166, 105, 0.4);
+border-radius: 20px;
+font-weight: 600;
+font-size: 24rpx;
+line-height: 48rpx;
+text-align: center;
+width: 11.73vw;
+height: 6.4vw;
+color: #9B7437;
+bottom: 5.86vw;
+right:  4.26vw;
+}
+.intro{
+  margin: 0 5.33vw;
+}
+.intro .name{
+  font-weight: 600;
+  font-size: 32rpx;
+  margin-bottom: 4.26vw;
+}
+.intro .content{
+  text-indent: 2em;
+  font-size: 28rpx;
+  line-height: 46rpx;
+}
+.line{
+margin:19.73vw  4.26vw 8vw;
+/* Gray 中性/Gray3 */
+border: 1rpx solid #E7E7E7;
+}
+.comment{
+  padding:0 4.26vw;
+}
