@@ -14,6 +14,11 @@ Page({
   onLoad(options) {
     this.getList()
   },
+toDetail(){
+  wx.navigateTo({
+    url: '/pages/column/training/detail/detail',
+  })
+},
 getList(){
   const list = [
     {
@@ -52,6 +57,7 @@ getList(){
       time:'2023.06.23 10:00'
     }
   ]
+
   const now = Date.now();
   const newlist=list.map((item)=>{
     item.isExpired = now > +new Date(item.time.replace(/\./g, '/'));

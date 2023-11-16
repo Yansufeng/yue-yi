@@ -59,6 +59,7 @@ Page({
       }
     ]
     this.setData({subtabs})
+   
   },
 
   getCards() {
@@ -104,6 +105,7 @@ Page({
   onSubtab(e) {
     const activeSubtab = e.currentTarget.dataset.index
     this.setData({activeSubtab})
+
   },
 
   /**
@@ -112,7 +114,19 @@ Page({
   onReady() {
 
   },
-
+  toDetail(){
+    console.log(this.data.activeSubtab)
+    if(this.data.activeSubtab==0){      
+      wx.navigateTo({
+        url: '/pages/map/branch/branch',
+      })
+    }
+    if(this.data.activeSubtab==1){
+      wx.navigateTo({
+        url: '/pages/map/activity/activity',
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面显示
    */

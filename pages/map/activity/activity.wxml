@@ -1,0 +1,31 @@
+<!--pages/map/activity/activity.wxml-->
+<t-image src="https://oteam-tdesign-1258344706.cos.ap-guangzhou.myqcloud.com/introduce-oteam.png" class="cover">
+</t-image>
+<view class="cardBox">
+  <view class="name">{{title}}</view>
+  <view class="content">
+  <view class=" item time">
+    <t-icon name="alarm" color="#D0A669" size="30rpx" />
+    <text> 活动时间：{{time}}</text>
+  </view>
+  <view class="item tel">
+    <t-icon name="call" color="#D0A669" size="30rpx"/>
+   <text> 联系电话：{{tel}}</text>
+  </view>
+  <view class="item address">
+    <t-icon name="map-location" color="#D0A669" size="30rpx"/>
+   <text> 活动地点：{{location}}</text>
+  </view>
+  </view>
+</view>
+<view class="intro">
+  <view class="name">场馆详情</view>
+  <view class="content">
+   {{content}}
+  </view>
+
+</view>
+<view class="line"></view>
+<view class="comment">
+<comment />
+</view>

@@ -1,0 +1,37 @@
+<!--pages/column/book/detail/components/comment/comment.wxml-->
+<view class="title">热门评论</view>
+
+<view class="comments">
+  <view
+    class="comment"
+    wx:for="{{ comments }}"
+    wx:key="id"
+  >
+      <t-image 
+        src="{{ item.avatar }}" 
+        shape="circle" 
+        width="12.8vw"
+        height="12.8vw"
+      />
+
+      <view class="info">
+        <view class="name">{{ item.name }}</view>
+        <view class="content">{{ item.content }}</view>
+      </view>
+
+    <view class="like" data-i="{{ index }}" bind:tap="doLike">
+      <t-icon name="thumb-up-2" color="{{ item.isLiked ? '#D0A669' : 'rgba(0, 0, 0, 0.4)' }}" />
+      <text class="like-count">{{ item.like }}</text>
+    </view>
+  </view>
+</view>
+
+<view class="commit">
+  <view class="commit-input">
+    <t-input 
+      placeholder="请文明留言，规范用语" 
+      borderless
+    />
+  </view>
+  <view class="commit-btn">提交</view>
+</view>
