@@ -5,6 +5,7 @@
     "pages/resource/resource",
     "pages/user/user",
     "pages/qr/qr",
+
     "pages/column/book/book",
     "pages/column/book/list/list",
     "pages/column/book/list/listL",
@@ -28,12 +29,15 @@
     "pages/column/celebrity/celebrity",
     "pages/column/celebrity/detail/detail",
     "pages/column/volunteer/volunteer",
+
     "pages/heritage/main",
+
+    "pages/map/branch/branch",
+    "pages/map/activity/activity",
+
     "pages/user/mall/mall",
     "pages/user/mall/exchange/exchange",
     "pages/user/mall/history/history",
-    "pages/map/branch/branch",
-    "pages/map/activity/activity"
     "pages/user/order/order",
     "pages/user/ticket/ticket",
     "pages/user/point/point",
