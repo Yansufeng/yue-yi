@@ -1,5 +1,6 @@
 // pages/column/activity/activity.js
 import { getTopicChildData, getTopicResourceData } from '../../../apis/commonApi'
+import { getByPage } from '../../../utils/list'
 
 Page({
 
@@ -9,7 +10,6 @@ Page({
   data: {
     code: 'yy-gong-yi-huo-dong',
     active: 0,
-    page: 0,
     tabs: [],
     shows: []
   },
@@ -19,7 +19,6 @@ Page({
    */
   onLoad(options) {
     this.getTabs()
-    this.getShows()
   },
 
   getTabs() {
@@ -30,68 +29,37 @@ Page({
         code: code,
         title: '全部'
       })
-      this.setData({tabs})
-    }).then(() => {
-      this.getShows()
+      this.setData({tabs}, () => {
+        this.getShows()
+      })
     })
   },
 
   getShows() {
     const active = this.data.active
-    const page = this.data.page + 1
-    const code = this.data.tabs[active]
-    const params = {
-      page: page,
-      pageSize: 5
-    }
+    const code = this.data.tabs[active].code
+    const shows = this.data.shows
 
-    getTopicResourceData(code, params).then(res => {
-      const shows = res.result.records
-      this.setData({
-        shows: this.data.shows.concat(...shows),
-        page: page
-      })
-      console.log(shows)
+    getByPage(code, this, shows).then(res => {
+      const shows = res
+      this.setData({shows})
     })
-    // const shows = [
-    //   {
-    //     id: 0,
-    //     cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-    //     title: '体验余音绕梁的声乐之美讲座',
-    //     date: '2023.06.10',
-    //     time: '09:00-10:00',
-    //     loc: '张家界市永定区文化馆',
-    //     status: 0
-    //   },
-    //   {
-    //     id: 1,
-    //     cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-    //     title: '体验余音绕梁的声乐之美讲座',
-    //     date: '2023.06.10',
-    //     time: '09:00-10:00',
-    //     loc: '张家界市永定区文化馆',
-    //     status: 1
-    //   },
-    //   {
-    //     id: 2,
-    //     cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-    //     title: '体验余音绕梁的声乐之美讲座',
-    //     date: '2023.06.10',
-    //     time: '09:00-10:00',
-    //     loc: '张家界市永定区文化馆',
-    //     status: 2
-    //   }
-    // ]
-    
   },
 
   tabChange(e) {
+    const active = e.detail
+    this.setData({
+      active,
+      page: 0,
+      shows: []
+    })
+    this.getShows()
   },
 
   toDetail(e) {
-    const i = e.currentTarget.dataset.i 
+    const id = e.currentTarget.dataset.id 
     wx.navigateTo({
-      url: './detail/detail',
+      url: './detail/detail?id=' + id,
     })
   },
 

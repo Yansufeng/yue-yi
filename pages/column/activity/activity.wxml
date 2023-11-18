@@ -8,7 +8,7 @@
     class="card"
     wx:for="{{ shows }}"
     wx:key="id"
-    data-i="{{ index }}"
+    data-id="{{ item.id }}"
     bind:tap="toDetail"
   >
     <t-image 
