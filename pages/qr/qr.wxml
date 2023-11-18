@@ -9,6 +9,7 @@
 
 <view class="tabs">
   <t-image 
+    wx:if="{{ isInit }}" 
     class="bkg-tabs"
     src="{{ imgs.bkgTab }}"             
     width="44vw"
@@ -16,6 +17,7 @@
   />
 
   <t-image 
+    wx:if="{{ isInit }}" 
     class="active-{{ active == 0 ? 'left' : 'right' }}"
     src="{{ imgs.bkgActive }}"
     width="22.5vw"
@@ -36,6 +38,7 @@
 
 <view class="qr">
   <t-image 
+    wx:if="{{ isInit }}" 
     src="{{ imgs.bkgQr }}"
     width="67vw"
     height="67vw"
@@ -48,6 +51,7 @@
 <view class="btns">
   <view class="btn">
     <t-image 
+      wx:if="{{ isInit }}" 
       src="{{ imgs.iconLoc }}"
       width="16vw"
       height="16vw"
@@ -57,6 +61,7 @@
 
   <view class="btn">
     <t-image 
+      wx:if="{{ isInit }}" 
       src="{{ imgs.iconTicket }}"
       width="16vw"
       height="16vw"
