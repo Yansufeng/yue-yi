@@ -1,7 +1,7 @@
 <!--pages/column/show/digital/list.wxml-->
 <searchbar />
 
-<tabbar tabs="{{ tabs }}" />
+<!-- <tabbar tabs="{{ tabs }}" /> -->
 
 <view class="cards">
   <view 
