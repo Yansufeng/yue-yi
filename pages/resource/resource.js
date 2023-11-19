@@ -22,26 +22,38 @@ Page({
     const cards = [
       {
         id: 0,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/cover.png',
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/book.png',
         title: '艺术图书',
         nav: 'nav2艺术图书'
       },
       {
         id: 1,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/cover.png',
-        title: '艺术图书',
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/music.png',
+        title: '库克音乐',
         nav: 'nav2艺术图书'
       },
       {
         id: 2,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/cover.png',
-        title: '艺术图书',
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/art.png',
+        title: '爱艺术+',
         nav: 'nav2艺术图书'
       },
       {
         id: 3,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/cover.png',
-        title: '艺术图书',
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/heritage.png',
+        title: '非遗特色',
+        nav: 'nav2艺术图书'
+      },
+      {
+        id: 4,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/party.png',
+        title: '党建专题',
+        nav: 'nav2艺术图书'
+      },
+      {
+        id: 5,
+        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/resource/resource.png',
+        title: '资源访问',
         nav: 'nav2艺术图书'
       }
     ]
