@@ -1,0 +1,31 @@
+<!--pages/user/components/signin/signin.wxml-->
+<view class="check-btn" bind:tap="onSignin">签到</view>
+
+<t-popup visible="{{ visible }}" bind:visible-change="onVisibleChange" placement="center">
+  <view class="block">
+    <t-image 
+      class="icon"
+      src="{{ imgs.signin }}"
+      width="32vw"
+      height="32.5vw"
+    />
+
+    <view class="info">
+      <view class="title">签到成功</view>
+      <view class="point">
+        <text>累计获得 </text>
+        <text>{{ point }}</text>
+        <text> 分</text>
+      </view>
+    </view>
+
+    <view class="rule">
+      <view>1.用户每天可签到1次，签到1次可获得10积分。</view>
+      <view>2.积分可用于兑换礼品或其他。</view>
+    </view>
+
+    <t-icon t-class="close-btn" name="close-circle" size="32" color="#fff" bind:tap="onClose" />
+  </view>
+</t-popup>
+
+<t-toast class="toast" id="t-toast" />

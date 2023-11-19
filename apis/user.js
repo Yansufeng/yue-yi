@@ -1,4 +1,4 @@
-import { getAction } from './commonApi'
+import { getAction, postAction } from './commonApi'
 
 const app = getApp()
 const baseUrl = app.globalData.globalRequestUrl
@@ -18,10 +18,16 @@ const getPointInfo = function() {
 const getPointHis = function(params = {}) {
   const url = `${baseUrl}/party/open/user/point/history`
 
-    return getAction(url, {params}).then(res => handleResult(res))
+  return getAction(url, {params}).then(res => handleResult(res))
+}
+
+const doSignin = function () {
+  const url = `${baseUrl}/party/open/user/sign-in`
+  return postAction(url).then(res => handleResult(res))
 }
 
 module.exports = {
   getPointInfo,
-  getPointHis
+  getPointHis,
+  doSignin
 }

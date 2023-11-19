@@ -11,7 +11,7 @@
         </view>
       </view>
 
-      <view class="check-btn">签到</view>
+      <signin />
     </view>
 
     <view class="line"></view>
