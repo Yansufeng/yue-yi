@@ -4,8 +4,9 @@
 <t-popup visible="{{ visible }}" bind:visible-change="onVisibleChange" placement="center">
   <view class="block">
     <t-image 
+      wx:if="{{ isInit }}"
       class="icon"
-      src="{{ imgs.signin }}"
+      src="{{ imgs.signin || '' }}"
       width="32vw"
       height="32.5vw"
     />

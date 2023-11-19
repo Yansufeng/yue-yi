@@ -5,20 +5,6 @@
   <tabbar tabs="{{ tabs }}" bind:tabEvent="onTab" />
 </view>
 
-<!-- <view class="content">
-  <view class="cover left">
-    <cover />
-  </view>
-
-  <view class="cover now">
-    <cover />
-  </view>
-
-  <view class="cover right">
-    <cover />
-  </view>
-</view> -->
-
 <t-swiper
   class="content"
   height="92vw"

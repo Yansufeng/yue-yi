@@ -16,6 +16,7 @@ Component({
    * 组件的初始数据
    */
   data: {
+    isInit: false,
     visible: false,
     point: 0,
     imgs: {
@@ -26,6 +27,9 @@ Component({
   lifetimes: {
     attached() {
       initImgs('/user/', this)
+      this.setData({
+        isInit: true
+      })
     }
   },
 
