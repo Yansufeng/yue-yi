@@ -10,10 +10,10 @@
     <t-image 
       class="avatar" 
       shape="circle"
-      src="{{ item.avatar }}"
+      src="{{ item.cover }}"
     />
     <view class="name">
-      <text>{{ item.name }}</text>
+      <text>{{ item.title }}</text>
     </view>
     <t-image 
       class="bkg"

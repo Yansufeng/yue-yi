@@ -1,4 +1,6 @@
 // pages/column/media/media.js
+import { getTopicChildData, getTopicResourceData } from '../../../apis/commonApi'
+
 const app = getApp()
 
 Page({
@@ -8,9 +10,11 @@ Page({
    */
   data: {
     isInit: false,
+    code: 'yy-stjs-pei-xun-shi-zi',
     imgs: {
       cover: 'cover.png'
     },
+    active: 0,
     tabs: [],
     teachers: []
   },
@@ -21,8 +25,8 @@ Page({
   onLoad(options) {
     this.initImgs()
     this.getTabs()
-    this.getTeachers()
-    this.getCourses()
+    // this.getTeachers()
+    // this.getCourses()
 
     this.setData({
       isInit: true
@@ -40,115 +44,43 @@ Page({
   },
 
   getTabs() {
-    const tabs = [
-      {
-        id: 0,
-        code: '',
-        name: '舞蹈'
-      },
-      {
-        id: 1,
-        code: '',
-        name: '声乐'
-      },
-      {
-        id: 2,
-        code: '',
-        name: '声乐'
-      },
-      {
-        id: 3,
-        code: '',
-        name: '声乐'
-      },
-      {
-        id: 4,
-        code: '',
-        name: '声乐'
-      },
-      {
-        id: 5,
-        code: '',
-        name: '声乐'
-      },
-      {
-        id: 6,
-        code: '',
-        name: '声乐'
-      },
-      {
-        id: 7,
-        code: '',
-        name: '声乐'
-      },
-    ]
-    this.setData({tabs})
+    getTopicChildData(this.data.code).then(res => {
+      const tabs = res.result 
+      this.setData({tabs}, () => {
+        this.getTeachers()
+        this.getCourses()
+      })
+    })
   },
 
   getTeachers() {
-    const teachers = [
-      {
-        id: 0,
-        avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
-        name: '张苏苏'
-      },
-      {
-        id: 1,
-        avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
-        name: '张苏苏'
-      },
-      {
-        id: 2,
-        avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
-        name: '张苏苏'
-      },
-      {
-        id: 3,
-        avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
-        name: '张苏苏'
-      },
-      {
-        id: 4,
-        avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
-        name: '张苏苏'
-      },
-      {
-        id: 5,
-        avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
-        name: '张苏苏'
-      },
-    ]
-    this.setData({teachers})
+    const active = this.data.active
+    const code = this.data.tabs[active].code
+    
+    getTopicResourceData(code).then(res => {
+      const teachers = res.result.records
+      this.setData({teachers})
+    })
   },
 
   getCourses() {
-    const courses = [
-      {
-        id: 0,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        title: '摆手舞教学（一）',
-        teacher: '张苏苏'
-      },
-      {
-        id: 1,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        title: '摆手舞教学（一）',
-        teacher: '张苏苏'
-      },
-      {
-        id: 2,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        title: '摆手舞教学（一）',
-        teacher: '张苏苏'
-      },
-      {
-        id: 3,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        title: '摆手舞教学（一）',
-        teacher: '张苏苏'
-      },
-    ]
-    this.setData({courses})
+    const active = this.data.active
+    const codeT = this.data.tabs[active].code 
+    const codeList = codeT.split('-')
+    const code = `${codeList[0]}-${codeList[1]}-xskc-${codeList[3]}-${codeList[4]}`
+
+    getTopicResourceData(code).then(res => {
+      const courses = res.result.records 
+      this.setData({courses})
+    })
+  },
+
+  onChange(e) {
+    const active = e.detail 
+    this.setData({active}, () => {
+      this.getTeachers()
+      this.getCourses()
+    })
   },
 
   /**

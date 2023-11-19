@@ -11,13 +11,13 @@
 </view>
 
 <view class="content">
-  <tabbar tabs="{{ tabs }}" />
+  <tabbar tabs="{{ tabs }}" bind:tabEvent="onChange" />
 
   <view class="teachers">
-    <teachers class="teacher" teachers="{{ teachers }}"/>
+    <teachers class="teacher" teachers="{{ teachers || [] }}"/>
   </view>
 
   <view class="courses">
-    <courses courses="{{ courses }}"/>
+    <courses courses="{{ courses || [] }}"/>
   </view>
 </view>

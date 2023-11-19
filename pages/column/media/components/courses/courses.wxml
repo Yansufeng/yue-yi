@@ -19,7 +19,7 @@
 
       <view class="teacher">
         <text>主讲：</text>
-        <text>{{ item.teacher }}</text>
+        <text>{{ item.author }}</text>
       </view>
     </view>
   </view>

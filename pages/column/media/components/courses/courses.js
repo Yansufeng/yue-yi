@@ -6,7 +6,8 @@ Component({
    */
   properties: {
     courses: {
-      type: Array
+      type: Array,
+      value: []
     }
   },
 
