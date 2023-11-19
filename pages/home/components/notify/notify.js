@@ -17,7 +17,12 @@ Component({
    */
   data: {
     isInit: false,
-    bkg: '/home/notify_bg.png'
+    bkg: '/home/notify_bg.png',
+    marquee: {
+      speed: 80,
+      loop: -1,
+      delay: 0,
+    }
   },
 
   /**

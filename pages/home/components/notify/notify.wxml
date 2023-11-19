@@ -1,11 +1,10 @@
 <!--pages/home/components/notify/notify.wxml-->
 <view wx:if="{{ isInit }}" class="body flex" style="background-image: url({{bkg}})">
-  <view class="label">
-    <t-icon name="loudspeaker" color="#FFF" size="40rpx"/>
-  </view>
-  <view class="line">:</view>
-  <view>
-    <!-- TODO：添加字幕滚动或截断 -->
-    <text>{{ content }}</text>
-  </view>
+  <t-notice-bar
+    visible
+    prefixIcon="sound"
+    marquee="{{ marquee }}"
+    t-class="notice-bar"
+    content="{{ content }}"
+  ></t-notice-bar>
 </view>

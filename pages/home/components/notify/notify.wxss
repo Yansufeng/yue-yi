@@ -14,3 +14,13 @@
 .line {
   margin: 0 8rpx;
 }
+
+.notice-bar {
+  width: 78.6vw;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 0;
+  color: #FFF;
+  --td-notice-bar-font-color: #FFF;
+  --td-notice-bar-info-bg-color: none;
+}
