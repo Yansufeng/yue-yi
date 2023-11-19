@@ -25,6 +25,30 @@ const getAction = function(url, config = {}) {
   })
 }
 
+const postAction = function(url, data, config = {}) {
+  config.headers = config.headers || {}
+
+  // 测试用
+  const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxNjgzNzk3NTgxMTk3NzcwNzUzIiwidHlwZSI6InBhcnR5IiwiZXhwIjoxNzAyNjQ5ODkzfQ.6wqvyEMv7rs0-Y5hdwII3JU2ZcSeOLM0MnWz5rxLNx0'
+  if(token){
+    config.headers['X-User-Token'] = token
+  }
+  return new Promise((resolve, reject) => {
+    wx.request({
+      url: url,
+      method: 'POST',
+      data: data,
+      header: config.headers,
+      success: res => {
+        resolve(res)
+      },
+      fail: err => {
+        reject(err)
+      }
+    })
+  })
+}
+
 const handleResult = function(res){
     const code = res.data.code
     if(code !== 200 && code !== 0) throw new Error(res.data.message)
@@ -60,6 +84,7 @@ const getResourceById = function(id) {
 
 module.exports = {
   getAction,
+  postAction,
   getTopicChild,
   getTopicResource,
   getTopicChildData,
