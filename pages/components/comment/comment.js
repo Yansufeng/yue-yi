@@ -5,13 +5,19 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    sourceID: {
+      type: String,
+      observer: function (newVal, oldVal) {
+        // 在这里处理 sourceID 变化后的逻辑
+        this.setData({id:newVal})
+      }
   },
-
+  },
   /**
    * 组件的初始数据
    */
   data: {
+    id:"",
     comments: []
   },
 
