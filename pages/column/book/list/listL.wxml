@@ -1,14 +1,14 @@
 <!--pages/column/book/list/listL.wxml-->
 <searchbar />
 
-<tabbar tabs="{{ tabs }}" />
+<tabbar tabs="{{ tabs }}" bind:tabEvent="onTab" />
 
 <view class="books">
   <view 
     class="book"
     wx:for="{{ books }}"
     wx:key="id"
-    data-i="{{ index }}"
+    data-id="{{ item.id }}"
     bind:tap="toDetail"
   >
     <t-image 
@@ -16,6 +16,7 @@
       src="{{ item.cover }}" 
       width="25.6vw"
       height="36.5vw"
+      mode="aspectFill"
     />
 
     <view class="content">
@@ -28,7 +29,7 @@
         </view>
 
         <view>
-          <text class="tag">{{ item.tag }}</text>
+          <text class="tag">{{ item.topicTitle }}</text>
         </view>
       </view>
     </view>

@@ -1,5 +1,5 @@
 // pages/column/book/detail/detail.js
-import { getResourceById } from "../../../../apis/commonApi";
+import { getResourceById } from "../../../../apis/commonApi"
 
 Page({
 

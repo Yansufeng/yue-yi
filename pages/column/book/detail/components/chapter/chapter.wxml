@@ -10,7 +10,7 @@
     wx:for="{{ list }}"
     wx:key="id"
   >
-    <view class="name">{{ item.name }}</view>
+    <view class="name">{{ item.title }}</view>
     <t-icon name="play-circle" color="#D0A669" size="40rpx" />
   </view>
 </view>

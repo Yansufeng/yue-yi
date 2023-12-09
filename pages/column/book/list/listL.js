@@ -1,10 +1,15 @@
 // pages/column/book/list/listL.js
+import { getTopicChildData, getTopicResourceData } from '../../../../apis/commonApi'
+import { getByPage } from '../../../../utils/list'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    code: 'yy-hstj-szts',
+    active: 0,
     tabs: [],
     books: []
   },
@@ -14,60 +19,36 @@ Page({
    */
   onLoad(options) {
     this.getTabs()
-    this.getBooks()
   },
 
   getTabs() {
-    const tabs = [
-      {
-        id: 0,
-        name: '全部'
-      },
-      {
-        id: 1,
-        name: '小说传记'
-      },
-      {
-        id: 2,
-        name: '小说传记'
-      },
-      {
-        id: 3,
-        name: '小说传记'
-      },
-      {
-        id: 4,
-        name: '小说传记'
-      },
-    ]
-    this.setData({tabs})
+    getTopicChildData(this.data.code).then(res => {
+      const tabs = res.result
+      this.setData({ tabs })
+    }).then(() => {
+      this.getBooks()
+    })
   },
 
   getBooks() {
-    const books = [
-      {
-        id: 0,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
-        title: '无用之美',
-        author: '林白',
-        tag: '小说传记'
-      },
-      {
-        id: 1,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
-        title: '无用之美',
-        author: '林白',
-        tag: '小说传记'
-      },
-    ]
-    this.setData({ books })
+    const code = this.data.tabs[this.data.active].code
+
+    getByPage(code, this, this.data.books).then(books => this.setData({books}))
+  },
+
+  onTab(e) {
+    const active = e.detail
+    if(active == this.data.active) return
+    this.setData({ active })
+    this.setData({ books: [] })
+    this.getBooks()
   },
 
   toDetail(e) {
-    const index = e.currentTarget.dataset.i
+    const id = e.currentTarget.dataset.id
     
     wx.navigateTo({
-      url: '/pages/column/book/detail/detailL',
+      url: '/pages/column/book/detail/detailL?id=' + id,
     })
   },
 

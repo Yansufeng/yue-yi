@@ -1,16 +1,17 @@
 <!--pages/column/book/detail/detailL.wxml-->
 <view class="body">
-  <view class="info">
+  <view class="info" wx:if="{{ info.cover }}">
     <t-image 
       class="cover"
       src="{{ info.cover }}" 
       width="38vw"
       height="54vw"
+      mode="aspectFill"
     />
     <view class="title">{{ info.title }}</view>
   </view>
 
-  <view class="tabs">
+  <view class="tabs" wx:if="{{ info }}">
     <view 
       class="tab {{ active == 0 ? 'active' : '' }}"
       data-i="0"
@@ -30,9 +31,9 @@
     </view>
   </view>
 
-  <des wx:if="{{ active == 0 }}" des="{{ info.des }}" />
+  <des wx:if="{{ info.description && active == 0 }}" des="{{ info.description }}" />
   
-  <chapter wx:if="{{ active == 1}}" />
+  <chapter wx:if="{{ active == 1}}" list="{{ list }}" />
 </view>
 
 <actionbar label="开始听书" />
