@@ -1,10 +1,16 @@
 // pages/column/book/list/list.js
+import { getTopicChildData, getTopicResourceData } from '../../../../apis/commonApi'
+// import { getEllipsis } from '../../../../utils/string'
+import { getByPage } from '../../../../utils/list'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    active: 0,
+    code: 'yy-hao-shu-tui-jian',
     tabs: [],
     books: []
   },
@@ -14,53 +20,39 @@ Page({
    */
   onLoad(options) {
     this.getTabs()
-    this.getBooks()
   },
 
   getTabs() {
-    const tabs = [
-      {
-        id: 0,
-        name: '全部'
-      },
-      {
-        id: 1,
-        name: '小说传记'
-      },
-      {
-        id: 2,
-        name: '小说传记'
-      },
-      {
-        id: 3,
-        name: '小说传记'
-      },
-      {
-        id: 4,
-        name: '小说传记'
-      },
-    ]
-    this.setData({tabs})
+    const code = this.data.code
+
+    getTopicChildData(code).then(res => {
+      const tabs = res.result
+      tabs.unshift({
+        title: '全部',
+        code: code
+      })
+      this.setData({tabs})
+    }).then(() => this.getBooks())
   },
 
   getBooks() {
-    const books = [
-      {
-        id: 0,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
-        title: '无用之美',
-        author: '林白',
-        tag: '小说传记'
-      },
-      {
-        id: 1,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/column/book/book.png',
-        title: '无用之美',
-        author: '林白',
-        tag: '小说传记'
-      },
-    ]
-    this.setData({ books })
+    const code = this.data.tabs[this.data.active].code
+
+    getByPage(code, this, this.data.books).then(books => {
+      // books.map(item => {
+      //   item.title = getEllipsis(item.title, 6)
+      // })
+      this.setData({books})
+    })
+  },
+
+  onTab(e) {
+    const active = e.detail 
+    this.setData({
+      active,
+      books: []
+    })
+    this.getBooks()
   },
 
   toDetail(e) {
@@ -110,7 +102,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-
+    this.getBooks()
   },
 
   /**

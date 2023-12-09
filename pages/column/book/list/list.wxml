@@ -1,7 +1,7 @@
 <!--pages/column/book/list/list.wxml-->
 <searchbar />
 
-<tabbar tabs="{{ tabs }}" />
+<tabbar tabs="{{ tabs }}" bind:tabEvent="onTab" />
 
 <view class="books">
   <view 
@@ -24,11 +24,11 @@
       <view class="info">
         <view class="author">
           <text>作者：</text>
-          <text>{{ item.author }}</text>
+          <text>{{ item.author || '暂无' }}</text>
         </view>
 
         <view>
-          <text class="tag">{{ item.tag }}</text>
+          <text class="tag">{{ item.topicTitle }}</text>
         </view>
       </view>
     </view>
