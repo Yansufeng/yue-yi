@@ -1,10 +1,13 @@
 // pages/column/show/local/list.js
+import { getByPage } from '../../../../utils/list'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    code: 'yy-whzl-xian-xia-zhan-lan',
     shows: []
   },
 
@@ -16,44 +19,14 @@ Page({
   },
 
   getShows() {
-    const shows = [
-      {
-        id: 0,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        title: '有温度·有故事——非遗手工艺展',
-        date: '2023年6月1日-2023年6月20日',
-        loc: '张家界市永定区文化馆'
-      },
-      {
-        id: 1,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        title: '有温度·有故事——非遗手工艺展',
-        date: '2023年6月1日-2023年6月20日',
-        loc: '张家界市永定区文化馆'
-      },
-      {
-        id: 2,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        title: '有温度·有故事——非遗手工艺展',
-        date: '2023年6月1日-2023年6月20日',
-        loc: '张家界市永定区文化馆'
-      },
-      {
-        id: 3,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        title: '有温度·有故事——非遗手工艺展',
-        date: '2023年6月1日-2023年6月20日',
-        loc: '张家界市永定区文化馆'
-      },
-    ]
-    this.setData({shows})
+    getByPage(this.data.code, this, this.data.shows).then(shows => this.setData({shows}))
   },
 
   toDetail(e) {
-    const i = e.currentTarget.dataset.i
+    const id = e.currentTarget.dataset.id
 
     wx.navigateTo({
-      url: './detail',
+      url: './detail?id=' + id,
     })
   },
 

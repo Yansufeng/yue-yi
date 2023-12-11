@@ -9,7 +9,7 @@
       wx:for="{{ shows }}"
       wx:key="id"
     >
-      <t-image class="cover" src="{{ item.cover }}" shape="round" />
+      <t-image class="cover" src="{{ item.cover }}" shape="round" mode="aspectFill" />
       <view class="title">
         <text>{{ item.title }}</text>
       </view>
