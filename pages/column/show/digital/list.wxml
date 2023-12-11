@@ -8,7 +8,7 @@
     class="card"
     wx:for="{{ exhibits }}"
     wx:key="id"
-    data-i="{{ index }}"
+    data-id="{{ item.id }}"
     bind:tap="toDetail"
   >
     <t-image 
@@ -17,6 +17,6 @@
       height="28vw"
       mode="aspectFill"
     />
-    <view class="name">{{ item.name }}</view>
+    <view class="name">{{ item.title }}</view>
   </view>
 </view>

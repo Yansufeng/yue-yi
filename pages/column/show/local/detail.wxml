@@ -16,17 +16,17 @@
 />
 
 <view class="content">
-  <view class="name">{{ info.name }}</view>
+  <view class="name">{{ info.title }}</view>
   <view class="info-body">
     <view class="info">
       <view class="date info-item">
         <t-icon class="info-icon" name="alarm" color="#D0A669" />
-        <text>{{ info.date }}</text>
+        <text>{{ info.extern.openTime }}</text>
       </view>
 
       <view class="date info-item">
         <t-icon class="info-icon" name="city-ancient-1" color="#D0A669" />
-        <text>{{ info.loc }}</text>
+        <text>{{ info.extern.address }}</text>
       </view>
     </view>
 
@@ -55,6 +55,9 @@
 
   <view class="detail">
     <view class="detail-title">展览详情</view>
+    <view class="detail-content">
+      <rich-text nodes="{{ info.firstItem.content }}" />
+    </view>
   </view>
   
   <view class="line"></view>

@@ -1,4 +1,6 @@
 // pages/column/show/local/detail.js
+import { getResourceById } from '../../../../apis/commonApi'
+
 Page({
 
   /**
@@ -12,19 +14,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.getInfo()
+    const id = options.id
+
+    this.getInfo(id)
   },
 
-  getInfo() {
-    const info = {
-      id: 0,
-      cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-      name: '湖南考古出图陶瓷特展',
-      date: '2023年6月1日-2023年6月20日',
-      loc: '张家界市永定区文化馆',
-      content: ''
-    }
-    this.setData({info})
+  getInfo(id) {
+    getResourceById(id).then(res => {
+      const info = res.result
+      this.setData({ info })
+    })
   },
 
   /**

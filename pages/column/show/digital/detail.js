@@ -1,4 +1,6 @@
 // pages/column/show/digital/detail.js
+import { getResourceById } from '../../../../apis/commonApi'
+
 Page({
 
   /**
@@ -12,18 +14,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.getInfo()
+    const id = options.id
+    this.getInfo(id)
   },
 
-  getInfo() {
-    const info = {
-      id: 0,
-      cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-      name: '土家族织锦技艺',
-      tag: '国家级展项',
-      content: ''
-    }
-    this.setData({info})
+  getInfo(id) {
+    getResourceById(id).then(res => {
+      const info = res.result
+      this.setData({info})
+    })
   },
 
   /**

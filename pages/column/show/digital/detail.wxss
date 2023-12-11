@@ -49,3 +49,9 @@
   font-weight: 600;
 }
 
+.detail-des {
+  font-size: 32rpx;
+  font-weight: 300;
+  margin-top: 32rpx;
+}
+

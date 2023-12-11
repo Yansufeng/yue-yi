@@ -9,10 +9,10 @@
 
 <view class="content">
   <view class="info">
-    <view class="name">{{ info.name }}</view>
+    <view class="name">{{ info.title }}</view>
     <view class="info-content">
       <view class="tag">
-        <text>{{ info.tag }}</text>
+        <text>{{ info.tag[0] }}</text>
       </view>
 
       <view class="actions">
@@ -42,6 +42,7 @@
 
   <view class="detail">
     <view class="detail-title">展品详情</view>
+    <view class="detail-des">{{ info.description }}</view>
   </view>
 
   <view class="line"></view>

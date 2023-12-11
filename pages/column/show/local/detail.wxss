@@ -78,3 +78,7 @@
   font-weight: 600;
 }
 
+.detail-content {
+  margin-top: 32rpx;
+}
+

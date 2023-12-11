@@ -1,12 +1,14 @@
 // pages/column/show/digital/list.js
+import { getByPage } from '../../../../utils/list'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    code: 'yy-whzl-shu-zi-zhan-ting',
-    tabs: [],
+    code: 'yy-whzl-shu-zi-zhan-ping',
+    // tabs: [],
     exhibits: []
   },
 
@@ -14,7 +16,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.getTabs()
+    // this.getTabs()
     this.getExhibits()
   },
 
@@ -45,48 +47,14 @@ Page({
   },
 
   getExhibits() {
-    const exhibits = [
-      {
-        id: 0,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        name: '土家族织锦技艺'
-      },
-      {
-        id: 1,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        name: '土家族织锦技艺'
-      },
-      {
-        id: 2,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        name: '土家族织锦技艺'
-      },
-      {
-        id: 3,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        name: '土家族织锦技艺'
-      },
-      {
-        id: 4,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        name: '土家族织锦技艺'
-      },
-      {
-        id: 5,
-        cover: 'https://yansufeng.github.io/img/yuanxi/yue-yi/home/bkg.png',
-        name: '土家族织锦技艺'
-      },
-    ]
-
-    this.setData({ exhibits })
+    getByPage(this.data.code, this, this.data.exhibits).then(exhibits => this.setData({ exhibits }))
   },
 
   toDetail(e) {
-    const i = e.currentTarget.dataset.i
-    const exhibit = this.data.exhibits[i]
+    const id = e.currentTarget.dataset.id
 
     wx.navigateTo({
-      url: '/pages/column/show/digital/detail',
+      url: '/pages/column/show/digital/detail?id=' + id,
     })
   },
 
