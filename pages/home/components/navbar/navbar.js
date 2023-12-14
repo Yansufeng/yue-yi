@@ -89,7 +89,7 @@ Component({
     onTap(e) {
       const i = e.currentTarget.dataset.i
       const path = this.data.list[i].path
-      console.log(path)
+      // console.log(path)
       wx.navigateTo({
         url: path,
       })
