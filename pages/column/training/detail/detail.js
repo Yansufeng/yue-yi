@@ -2,7 +2,7 @@
 import {
   getResourceById
 } from "../../../../apis/commonApi";
-import { formatTime } from '../../../../utils/util'
+import { formatTime } from '../../../../utils/string'
 Page({
 
   /**
