@@ -1,5 +1,6 @@
 {
   "pages": [
+    
     "pages/home/home",
     "pages/map/map",
     "pages/resource/resource",
@@ -41,7 +42,9 @@
     "pages/user/order/order",
     "pages/user/ticket/ticket",
     "pages/user/point/point",
-    "pages/user/collect/collect"
+    "pages/user/collect/collect",
+
+    "pages/user/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
