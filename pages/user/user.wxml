@@ -1,7 +1,7 @@
 <!--pages/user/user.wxml-->
 <view class="body">
   <view class="info-body">
-    <view class="info">
+    <view class="info" wx:if="{{ isLogin }}">
       <t-image class="avatar" shape="circle" src="{{ info.avatar }}" />
 
       <view class="content">
@@ -12,6 +12,17 @@
       </view>
 
       <signin />
+    </view>
+
+    <view class="info" wx:else bind:tap="toLogin">
+      <view class="avatar">
+        <view class="avatar-body">
+          <t-icon name="user" size="60rpx" />
+        </view>
+      </view>
+      <view class="content">
+        <view class="name">登录/注册</view>
+      </view>
     </view>
 
     <view class="line"></view>

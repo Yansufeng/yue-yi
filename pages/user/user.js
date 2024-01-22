@@ -8,6 +8,7 @@ Page({
    */
   data: {
     isShowSignin: false,
+    isLogin: false,
     info: {
       name: '',
       avatar: '',
@@ -114,6 +115,12 @@ Page({
     const path = e.currentTarget.dataset.path
     wx.navigateTo({
       url: path,
+    })
+  },
+
+  toLogin() {
+    wx.navigateTo({
+      url: '/pages/user/login/login',
     })
   },
 
