@@ -17,13 +17,16 @@ Component({
    * 组件的初始数据
    */
   data: {
-    id:"",
+    isInit: false,
     comments: []
   },
 
   lifetimes: {
     attached() {
       this.getComments()
+      this.setData({
+        isInit: true
+      })
     }
   },
 

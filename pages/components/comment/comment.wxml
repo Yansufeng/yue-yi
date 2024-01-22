@@ -1,7 +1,7 @@
 <!--pages/column/book/detail/components/comment/comment.wxml-->
 <view class="title">热门评论</view>
 
-<view class="comments">
+<view class="comments" wx:if="{{ isInit }}">
   <view
     class="comment"
     wx:for="{{ comments }}"
