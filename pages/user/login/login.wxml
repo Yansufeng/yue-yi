@@ -33,6 +33,7 @@
   <view class="code">
     <view class="code-input">
       <t-input 
+        model:value="{{ smsCode }}"
         placeholder="输入验证码"  
         prefixIcon="secured"
         borderless

@@ -1,6 +1,6 @@
 // pages/user/login/login.js
 import { getUuid } from '../../../utils/string'
-import { getImgTest, getCode, doLoginByWx, doLoginByWxWithPhone } from '../../../apis/user'
+import { getImgTest, getCode, doLoginByWx, doLoginByWxWithPhone,doLogin } from '../../../apis/user'
 
 Page({
 
@@ -13,7 +13,9 @@ Page({
     key: '',
     imgTest: '',
     phone: '',
-    imgTestCode: ''
+    imgTestCode: '',
+    smsCode:'',
+    openidToken:{}
   },
 
   /**
@@ -69,7 +71,11 @@ Page({
       value: code
     }
 
-    getCode(phone, data).then(res => console.log(res))
+    getCode(phone, data).then(res => {
+      // 设置倒计时
+    }).catch(() => { // 出错后重新请求新验证码
+      this.getImgTest()
+    })
   },
 
   onLogin() {
@@ -80,6 +86,24 @@ Page({
       })
       return
     }
+    // 获取表单内容
+    const data = {
+      account: this.data.phone,
+      captcha: {
+        key: this.data.key,
+        value: this.data.imgTestCode
+      },
+      smsCode: this.data.smsCode,
+      autoRegister: true,
+      smsLogin: true
+    }
+    // 发送到服务器请求登录
+    doLogin(data).then(res => {
+      console.log(res)
+      // 登录成功 设置token并后退一页
+      wx.setStorageSync('X-User-Token', res.result)
+      wx.navigateBack()
+    })
   },
 
   onWxLogin() {
@@ -89,15 +113,23 @@ Page({
         console.log(code)
         doLoginByWx(code).then(res => {
           console.log(res)
-          const message = res.data.message 
-          const wxGetPhoneToken = message.split('rid: ')[1]
-          const success = res.data.success 
-          if(success) {
+          // 如果后台显示登录成功，则 设置token并后退一页
+          if(res.result.loginSuccess){
+            wx.setStorageSync('X-User-Token', res.result.token)
+            wx.navigateBack()
             return
           }
-          this.setData({
-            showGetPhone: true,
-            wxGetPhoneToken
+          // 如果登录失败，看是否需要注册,如需注册，发起手机号注册流程
+          if(res.result.needRegister){
+            this.setData({
+              openidToken:res.result.openidToken,
+              showGetPhone: true,
+            })
+            return
+          }
+          wx.showModal({
+            title: '登录识别',
+            content: res.result.message
           })
         })
       },
@@ -107,14 +139,15 @@ Page({
   getPhone(e) {
     const code = e.detail.code
     const data = {
-      openidToken: {
-        token: this.data.wxGetPhoneToken
-      },
+      openidToken: this.data.openidToken,
       wxGetPhone: {
         code: code
       }
     }
-    doLoginByWxWithPhone(data).then(res => console.log(res))
+    doLoginByWxWithPhone(data).then(res => {
+      wx.setStorageSync('X-User-Token', res.result)
+      wx.navigateBack()
+    })
   },
 
   /**

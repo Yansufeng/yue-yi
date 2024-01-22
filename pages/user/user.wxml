@@ -7,7 +7,7 @@
       <view class="content">
         <view class="name">{{ info.name }}</view>
         <view class="check">
-          <text>已连续签到 {{ info.check }} 天</text>
+          <!-- <text>已连续签到 {{ info.check }} 天</text> -->
         </view>
       </view>
 

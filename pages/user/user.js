@@ -1,5 +1,6 @@
 // pages/user/user.js
 const app = getApp()
+import {getUserinfo} from '../../apis/user'
 
 Page({
 
@@ -64,12 +65,24 @@ Page({
   },
 
   getInfo() {
-    const info = {
-      name: '果果昔',
-      avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
-      check: 7
-    }
-    this.setData({info})
+    // const info = {
+    //   name: '果果昔',
+    //   avatar: 'https://yansufeng.github.io/img/yuanxi/yue-yi/user/avatar.png',
+    //   check: 7
+    // }
+    getUserinfo().then(res => {
+      console.log(res)
+      this.setData({
+        isLogin:true,
+        info:{
+          name:res.result.username,
+          avatar:res.result.profile,
+        }
+      })
+    }).catch(e => {
+      this.setData({isLogin:false})
+    })
+    
   },
 
   getNavs() {
@@ -140,6 +153,8 @@ Page({
         active: 3
       })
     }
+    // 获取用户信息，检验是否登录
+    this.getInfo()
   },
 
   /**
