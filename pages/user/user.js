@@ -91,7 +91,7 @@ Page({
         id: 0,
         icon: 'user-setting',
         title: '个人信息',
-        path: ''
+        path: '/pages/user/info/info'
       },
       {
         id: 1,
@@ -103,7 +103,7 @@ Page({
         id: 2,
         icon: 'chat-bubble-1',
         title: '意见反馈',
-        path: ''
+        path: '/pages/user/dissback/dissback'
       },
       {
         id: 3,

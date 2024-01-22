@@ -71,7 +71,7 @@
       theme="primary" 
       size="large"
       open-type="getPhoneNumber"
-      bindgetphonenumber="getPhone"
+      bindgetphonenumber="getPhone"    
     >获取手机号</t-button>
   </view>
 </t-popup>

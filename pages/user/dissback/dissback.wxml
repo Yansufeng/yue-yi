@@ -1,0 +1,36 @@
+<!--pages/user/dissback/dissback.wxml-->
+<view class="body">
+<view class="text">
+  <t-textarea
+    t-class="external-class"
+    placeholder="提出你的宝贵反馈"
+    maxlength="200"
+    disableDefaultPadding="{{true}}"
+    indicator
+    style="{{style}}"
+  />
+</view>
+<view class="uploadBox">
+  <t-upload
+    disabled
+    mediaType="{{['video','image']}}"
+    max="{{1}}"
+    files="{{fileList}}"
+    bind:add="handleAdd"
+    bind:remove="handleRemove"
+  >
+  </t-upload>
+</view>
+<view class="options">
+  <t-button 
+      theme="primary" 
+      size="large"    
+      class="back"
+    >返回</t-button>
+    <t-button 
+      theme="primary" 
+      size="large"    
+      class="submit"
+    >提交</t-button>
+</view>
+</view>
