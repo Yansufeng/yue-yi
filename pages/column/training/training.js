@@ -1,5 +1,5 @@
 // pages/column/training/training.js
-import {getTopicResourceData} from '../../../apis/commonApi'
+import { getTopicResourceData } from '../../../apis/commonApi'
 import { formatTime } from '../../../utils/util'
 Page({
 
