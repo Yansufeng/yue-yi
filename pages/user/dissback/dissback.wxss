@@ -1,0 +1,41 @@
+page{
+  position: relative;
+  min-height: calc(100vh - 14vw);
+}
+.external-class {
+  width: 98vw;
+  min-height: 324rpx;
+  border-bottom: 0.2px solid #e7e7e7;
+}
+.text{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.uploadBox{
+  margin: 4.27vw 0 0 4.27vw;
+}
+.options{
+  width: 100vw;
+  position: absolute;
+  bottom:0;
+  display: flex;
+  justify-content: space-around;
+}
+.options  .back{
+  display: block;
+  width: 43.86vw;
+  color: #D0A669;
+  line-height: 6.67vw;
+  background: #F3F3F3;
+  border-radius:1.6vw;
+  }
+  .options  .submit{
+    display: block;
+    width: 43.86vw;
+    color: #fff;
+    line-height: 6.67vw;
+    background: #D0A669;
+    border-radius:1.6vw;
+    }

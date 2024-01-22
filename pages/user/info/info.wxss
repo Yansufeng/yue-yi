@@ -1,0 +1,27 @@
+/* pages/user/info/info.wxss */
+page{
+  min-height: calc(100vh - 14vw);
+}
+.body{
+    padding-top: 5.33vw;
+    padding-right: 4.27vw;
+}
+.top{
+  margin-bottom: 34.67vw;
+}
+.btn{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn button{
+  display: block;
+  width: 91.46vw;
+  background-color: #fff;
+  color: #D0A669;
+  border: 0.6vw #D0A669 solid;
+  line-height: 6.67vw;
+  border-radius: 26.67vw;
+  
+}
